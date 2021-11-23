@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Color
-parent: Utilities
+title: test1
+parent: C++
 ---
 
-# Color Utilities
+# test1
 {: .no_toc }
 
 ## Table of contents
