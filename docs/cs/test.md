@@ -1,7 +1,7 @@
 ---
 layout: default
 title: test1
-parent: C++
+parent: CS
 ---
 
 # test1

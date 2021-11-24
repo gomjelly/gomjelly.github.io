@@ -1,7 +1,7 @@
 ---
 layout: default
-title: C++
-nav_order: 3
+title: CS
+nav_order: 2
 has_children: true
 permalink: docs/cs
 ---
