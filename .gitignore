@@ -6,3 +6,7 @@
 _site
 Gemfile.lock
 node_modules
+bin/
+docs/
+lib/
+script/
