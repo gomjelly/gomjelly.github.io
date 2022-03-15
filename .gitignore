@@ -5,7 +5,6 @@
 .sass-cache
 Gemfile.lock
 node_modules
-_site/
 bin/
 docs/
 lib/
