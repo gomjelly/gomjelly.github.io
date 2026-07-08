@@ -6,9 +6,10 @@ interface Props {
   date: Date;
   tags: string[];
   category: '취미' | '스터디';
+  subcategory?: string;
 }
 
-const { href, title, description, date, tags, category } = Astro.props;
+const { href, title, description, date, tags, category, subcategory } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('ko-KR', {
   year: 'numeric',
@@ -33,6 +34,12 @@ const categoryStyle =
     <time datetime={date.toISOString()} class="text-xs text-neutral-400 dark:text-neutral-500">
       {formattedDate}
     </time>
+    {subcategory && (
+      <>
+        <span class="text-neutral-300 dark:text-neutral-700">·</span>
+        <span class="text-xs text-neutral-400 dark:text-neutral-500">{subcategory}</span>
+      </>
+    )}
   </div>
 
   <h3 class="mt-3 text-lg font-semibold tracking-tight text-neutral-900 group-hover:text-accent-600 dark:text-white dark:group-hover:text-accent-400">

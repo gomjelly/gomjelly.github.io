@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import AdSlot from '../components/AdSlot.astro';
+import { slugifySubcategory } from '../utils/slug';
 
 interface Props {
   title: string;
@@ -8,9 +9,10 @@ interface Props {
   date: Date;
   tags: string[];
   category: '취미' | '스터디';
+  subcategory?: string;
 }
 
-const { title, description, date, tags, category } = Astro.props;
+const { title, description, date, tags, category, subcategory } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('ko-KR', {
   year: 'numeric',
@@ -19,6 +21,9 @@ const formattedDate = date.toLocaleDateString('ko-KR', {
 });
 
 const categoryHref = category === '취미' ? '/hobby/' : '/study/';
+const topicHref = subcategory
+  ? `${categoryHref}topic/${slugifySubcategory(subcategory)}/`
+  : undefined;
 const categoryStyle =
   category === '취미'
     ? 'bg-amber-50 text-amber-700 dark:bg-amber-500/10 dark:text-amber-400'
@@ -28,9 +33,16 @@ const categoryStyle =
 <BaseLayout title={title} description={description}>
   <article class="mx-auto max-w-3xl px-5 py-14">
     <header class="mb-10">
-      <a href={categoryHref} class:list={['inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold', categoryStyle]}>
-        {category}
-      </a>
+      <div class="flex items-center gap-2">
+        <a href={categoryHref} class:list={['inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold', categoryStyle]}>
+          {category}
+        </a>
+        {topicHref && (
+          <a href={topicHref} class="text-xs font-medium text-neutral-400 hover:text-neutral-600 dark:text-neutral-500 dark:hover:text-neutral-300">
+            / {subcategory}
+          </a>
+        )}
+      </div>
       <h1 class="mt-4 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">
         {title}
       </h1>

@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { slugifySubcategory } from '../../../utils/slug';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('study', ({ data }) => !data.draft && !!data.subcategory);
+  const labels = [...new Set(posts.map((p) => p.data.subcategory as string))];
+
+  return labels.map((label) => ({
+    params: { subcategory: slugifySubcategory(label) },
+    props: { label },
+  }));
+}
+
+const { label } = Astro.props;
+
+const posts = (
+  await getCollection('study', ({ data }) => !data.draft && data.subcategory === label)
+).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title={`스터디 · ${label}`} description={`스터디 - ${label} 관련 글 모음`}>
+  <section class="mx-auto max-w-4xl px-5 py-14">
+    <p class="text-sm font-medium text-accent-600 dark:text-accent-400">
+      <a href="/study/" class="hover:underline">스터디</a> / {label}
+    </p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">{label}</h1>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      {posts.map((post) => (
+        <PostCard
+          href={`/study/${post.id}/`}
+          title={post.data.title}
+          description={post.data.description}
+          date={post.data.date}
+          tags={post.data.tags}
+          category="스터디"
+          subcategory={post.data.subcategory}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

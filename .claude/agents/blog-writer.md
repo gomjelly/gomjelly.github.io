@@ -22,10 +22,15 @@ ask the user before writing.
 
 1. Pick a short, kebab-case, English slug for the topic.
 2. Write `src/content/{hobby|study}/{slug}.mdx` following the spec exactly:
-   frontmatter (title, description, date, tags), widget imports only for
-   widgets actually used, and at least one interactive widget (Quiz, Tabs,
-   or Stepper) where it fits the content naturally — don't force one into a
-   post that doesn't need it.
+   frontmatter (title, description, date, tags, subcategory), widget imports
+   only for widgets actually used, and at least one interactive widget
+   (Quiz, Tabs, or Stepper) where it fits the content naturally — don't
+   force one into a post that doesn't need it.
+   For `subcategory`, ask the user which sub-topic this belongs to (e.g.
+   "요리", "TypeScript") if not given, and reuse the exact same string as
+   existing posts on that topic — check `src/content/{hobby|study}/*.mdx`
+   for prior usage before inventing a new label, since it drives the
+   auto-generated `/hobby/topic/{sub}/` and `/study/topic/{sub}/` pages.
 3. Remember the Korean bold bug: never emit markdown `**bold**` immediately
    followed by a Korean particle with no space — use `<strong>` instead.
 4. After writing the file, run `npm run build` to confirm it compiles

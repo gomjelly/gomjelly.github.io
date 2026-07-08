@@ -2,10 +2,13 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
+import { slugifySubcategory } from '../../utils/slug';
 
 const posts = (await getCollection('hobby', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
+
+const subcategories = [...new Set(posts.map((p) => p.data.subcategory).filter((s): s is string => !!s))];
 ---
 
 <BaseLayout title="취미" description="취미 생활을 기록한 글 모음">
@@ -13,6 +16,19 @@ const posts = (await getCollection('hobby', ({ data }) => !data.draft)).sort(
     <p class="text-sm font-medium text-amber-600 dark:text-amber-400">Hobby</p>
     <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">취미</h1>
     <p class="mt-2 text-neutral-500 dark:text-neutral-400">여가 시간에 즐기고 만든 것들의 기록.</p>
+
+    {subcategories.length > 0 && (
+      <div class="mt-6 flex flex-wrap gap-2">
+        {subcategories.map((sub) => (
+          <a
+            href={`/hobby/topic/${slugifySubcategory(sub)}/`}
+            class="rounded-full border border-neutral-200 px-3 py-1 text-xs font-medium text-neutral-600 transition-colors hover:border-amber-300 hover:text-amber-700 dark:border-neutral-800 dark:text-neutral-400 dark:hover:border-amber-500/40 dark:hover:text-amber-400"
+          >
+            {sub}
+          </a>
+        ))}
+      </div>
+    )}
 
     {posts.length === 0 ? (
       <p class="mt-10 rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-sm text-neutral-400 dark:border-neutral-700">
@@ -28,6 +44,7 @@ const posts = (await getCollection('hobby', ({ data }) => !data.draft)).sort(
             date={post.data.date}
             tags={post.data.tags}
             category="취미"
+            subcategory={post.data.subcategory}
           />
         ))}
       </div>

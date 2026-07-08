@@ -1,0 +1,54 @@
+---
+title: "TypeScript 제네릭, 예제로 감 잡기"
+description: "any 대신 제네릭을 써야 하는 이유를 코드로 비교"
+date: 2026-07-07
+tags: ["typescript", "frontend"]
+subcategory: "TypeScript"
+---
+
+import Tabs from '../../components/widgets/Tabs.astro';
+import Quiz from '../../components/widgets/Quiz.astro';
+
+제네릭이 어렵게 느껴지는 이유는 "왜 굳이 이렇게까지 해야 하나" 싶어서예요.
+<strong>any</strong>를 쓰면 타입 에러 없이 훨씬 간단해 보이거든요. 근데
+그게 바로 문제입니다.
+
+## any vs 제네릭
+
+같은 함수를 두 방식으로 짜보면 차이가 명확해져요.
+
+<Tabs>
+  <div data-tab="any 사용">
+    ```ts
+    function firstItem(arr: any[]): any {
+      return arr[0];
+    }
+
+    const result = firstItem([1, 2, 3]);
+    // result의 타입이 any라서, result.toUpperCase() 같은 잘못된 호출도
+    // 컴파일 타임에 안 걸러짐
+    ```
+  </div>
+  <div data-tab="제네릭 사용">
+    ```ts
+    function firstItem<T>(arr: T[]): T {
+      return arr[0];
+    }
+
+    const result = firstItem([1, 2, 3]);
+    // result의 타입이 number로 자동 추론됨
+    // result.toUpperCase()는 컴파일 에러로 바로 잡힘
+    ```
+  </div>
+</Tabs>
+
+제네릭은 "타입을 나중에 결정하되, 함수 안에서는 그 타입을 계속 일관되게
+유지하고 싶을 때" 씁니다. any는 타입 검사를 아예 꺼버리는 것이고, 제네릭은
+타입 검사를 유지하면서 유연하게 만드는 것이라는 차이가 핵심이에요.
+
+<Quiz
+  question="any 대신 제네릭을 쓰면 가장 크게 얻는 이점은?"
+  options={["코드가 더 짧아진다", "실행 속도가 빨라진다", "타입 안정성을 유지하면서도 재사용 가능한 함수를 만들 수 있다", "자바스크립트로 컴파일이 안 된다"]}
+  answerIndex={2}
+  explanation="제네릭의 핵심은 타입 검사를 포기하지 않으면서도 다양한 타입에 재사용 가능한 코드를 짤 수 있다는 점이에요."
+/>

@@ -1,0 +1,60 @@
+---
+title: "이진 탐색, 언제 왜 쓰는가"
+description: "정렬된 배열에서 O(log n)이 나오는 이유부터 짚어보기"
+date: 2026-07-08
+tags: ["알고리즘", "자료구조"]
+subcategory: "알고리즘"
+---
+
+import Tabs from '../../components/widgets/Tabs.astro';
+import Quiz from '../../components/widgets/Quiz.astro';
+
+이진 탐색이 빠른 이유는 단순해요. 탐색할 때마다 <strong>남은 범위를
+절반씩 버리기</strong> 때문입니다. 대신 조건이 하나 있어요 — 배열이
+정렬되어 있어야 한다는 것.
+
+## 선형 탐색 vs 이진 탐색
+
+원소 100만 개짜리 정렬된 배열에서 특정 값을 찾는다고 해봅시다.
+
+<Tabs>
+  <div data-tab="선형 탐색 O(n)">
+    ```js
+    function linearSearch(arr, target) {
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) return i;
+      }
+      return -1;
+    }
+    // 최악의 경우 100만 번 비교
+    ```
+  </div>
+  <div data-tab="이진 탐색 O(log n)">
+    ```js
+    function binarySearch(arr, target) {
+      let lo = 0, hi = arr.length - 1;
+      while (lo <= hi) {
+        const mid = Math.floor((lo + hi) / 2);
+        if (arr[mid] === target) return mid;
+        if (arr[mid] < target) lo = mid + 1;
+        else hi = mid - 1;
+      }
+      return -1;
+    }
+    // 최악의 경우 약 20번 비교 (log2(1,000,000) ≈ 20)
+    ```
+  </div>
+</Tabs>
+
+100만 개 중에서 20번 비교로 끝난다는 게 처음엔 잘 안 믿기는데, 매번 절반을
+버리기 때문에 데이터가 커져도 비교 횟수는 아주 천천히 늘어납니다.
+
+<Quiz
+  question="정렬되지 않은 배열에 이진 탐색을 그대로 적용하면 어떻게 될까?"
+  options={["더 빨라진다", "정답을 못 찾거나 잘못된 결과를 반환할 수 있다", "자동으로 정렬한 뒤 탐색한다", "속도는 같고 결과만 달라진다"]}
+  answerIndex={1}
+  explanation="이진 탐색은 '왼쪽은 작고 오른쪽은 크다'는 정렬 가정 위에서 절반을 버리는 알고리즘이라, 정렬이 안 되어 있으면 그 가정이 깨져서 탐색이 틀릴 수 있어요."
+/>
+
+그래서 이진 탐색을 쓰기 전에 "이 데이터가 정렬되어 있는가, 혹은 정렬할
+비용을 감수할 가치가 있는가"를 먼저 따져보는 게 중요해요.

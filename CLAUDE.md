@@ -5,7 +5,11 @@ tools live in [docs/new-post-prompt.md](docs/new-post-prompt.md). Read it
 before writing or editing any file under `src/content/`. Key points:
 
 - New posts go in `src/content/hobby/{slug}.mdx` or `src/content/study/{slug}.mdx`.
-  Frontmatter: `title`, `description`, `date` (YYYY-MM-DD), `tags` (array).
+  Frontmatter: `title`, `description`, `date` (YYYY-MM-DD), `tags` (array),
+  `subcategory` (a single free-text sub-topic, e.g. "요리", "TypeScript" —
+  reuse the exact same string across posts on the same topic so they group
+  correctly on the auto-generated `/hobby/topic/{sub}/` and
+  `/study/topic/{sub}/` pages).
 - Only use the three existing widgets from `src/components/widgets/`
   (`Quiz`, `Tabs`, `Stepper`) inside post content — don't invent new ones
   without being asked. Import path from a content file is

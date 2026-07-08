@@ -1,0 +1,42 @@
+---
+title: "C++ 포인터, 그림 대신 순서로 이해하기"
+description: "포인터가 헷갈릴 때 메모리 주소 개념부터 다시 잡는 글"
+date: 2026-07-02
+tags: ["c++", "포인터"]
+subcategory: "C++"
+---
+
+import Stepper from '../../components/widgets/Stepper.astro';
+import Quiz from '../../components/widgets/Quiz.astro';
+
+포인터가 어려운 이유는 <strong>변수, 주소, 포인터 변수</strong> 세 가지
+개념이 한 번에 섞여서 등장하기 때문이에요. 순서대로 하나씩만 쌓아보면
+생각보다 단순합니다.
+
+<Stepper>
+  <div data-step="1. 일반 변수 선언">
+    `int a = 10;` — 메모리 어딘가에 10이라는 값이 저장되고, 그 자리에 `a`라는 이름이 붙어요.
+  </div>
+  <div data-step="2. 주소 확인">
+    `&a`는 `a`가 저장된 메모리 주소예요. `printf("%p", &a);`로 출력해보면 16진수 주소가 나옵니다.
+  </div>
+  <div data-step="3. 포인터 변수 선언">
+    `int* p = &a;` — `p`는 값이 아니라 "a의 주소"를 저장하는 변수예요.
+  </div>
+  <div data-step="4. 역참조로 값 접근">
+    `*p`는 "p가 가리키는 주소에 있는 값"이에요. `*p`를 출력하면 10이 나옵니다.
+  </div>
+</Stepper>
+
+## 헷갈리는 포인트
+
+`*`가 선언할 때와 사용할 때 의미가 달라서 헷갈려요. `int* p`에서 `*`는
+"p는 포인터다"라는 타입 선언이고, `*p`에서 `*`는 "역참조해서 값을 가져와라"는
+연산입니다.
+
+<Quiz
+  question="int a = 5; int* p = &a; *p = 10; 실행 후 a의 값은?"
+  options={["5", "10", "주소값", "컴파일 에러"]}
+  answerIndex={1}
+  explanation="*p = 10은 p가 가리키는 주소, 즉 a가 저장된 자리에 10을 써넣는 것이므로 a도 10으로 바뀝니다."
+/>
