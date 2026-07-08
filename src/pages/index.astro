@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+
+const hobbyPosts = (await getCollection('hobby', ({ data }) => !data.draft)).map((p) => ({ ...p, category: '취미' as const }));
+const studyPosts = (await getCollection('study', ({ data }) => !data.draft)).map((p) => ({ ...p, category: '스터디' as const }));
+
+const allPosts = [...hobbyPosts, ...studyPosts]
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 6);
+---
+
+<BaseLayout>
+  <section class="mx-auto max-w-4xl px-5 pb-8 pt-16 sm:pt-24">
+    <p class="text-sm font-medium text-accent-600 dark:text-accent-400">Hi, 반갑습니다 👋</p>
+    <h1 class="mt-3 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">
+      취미와 스터디를 기록하는<br class="hidden sm:block" /> 곰젤리의 블로그
+    </h1>
+    <p class="mt-4 max-w-xl text-neutral-500 dark:text-neutral-400">
+      배우고 만든 것들을 인터랙티브한 형태로 정리합니다. 그냥 읽는 글이 아니라
+      직접 눌러보고 실험해볼 수 있는 글을 지향해요.
+    </p>
+    <div class="mt-6 flex gap-3">
+      <a href="/study/" class="rounded-full bg-accent-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-600">
+        스터디 보러가기
+      </a>
+      <a href="/hobby/" class="rounded-full border border-neutral-200 px-4 py-2 text-sm font-semibold text-neutral-700 transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900">
+        취미 보러가기
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-5 py-10">
+    <div class="mb-6 flex items-center justify-between">
+      <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">최근 글</h2>
+    </div>
+
+    {allPosts.length === 0 ? (
+      <p class="rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-sm text-neutral-400 dark:border-neutral-700">
+        아직 작성된 글이 없어요. 곧 첫 글이 올라올 예정입니다.
+      </p>
+    ) : (
+      <div class="grid gap-4 sm:grid-cols-2">
+        {allPosts.map((post) => (
+          <PostCard
+            href={`/${post.collection}/${post.id}/`}
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            tags={post.data.tags}
+            category={post.category}
+          />
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

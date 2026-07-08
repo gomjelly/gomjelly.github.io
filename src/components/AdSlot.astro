@@ -1,0 +1,25 @@
+---
+// 애드센스 승인 전까지는 자리만 차지하는 플레이스홀더.
+// 승인 후 이 자리에 <ins class="adsbygoogle" ...> 스니펫만 넣으면 됨.
+interface Props {
+  variant?: 'inline' | 'sidebar';
+}
+
+const { variant = 'inline' } = Astro.props;
+const ADSENSE_ENABLED = false;
+---
+
+{ADSENSE_ENABLED ? (
+  <div class="ad-slot" data-variant={variant}>
+    <!-- <ins class="adsbygoogle" ...></ins> -->
+  </div>
+) : (
+  import.meta.env.DEV && (
+    <div class:list={[
+      'flex items-center justify-center rounded-lg border border-dashed border-neutral-300 text-xs text-neutral-400 dark:border-neutral-700 dark:text-neutral-600',
+      variant === 'sidebar' ? 'h-64 w-full' : 'my-8 h-24 w-full',
+    ]}>
+      광고 영역 ({variant})
+    </div>
+  )
+)}

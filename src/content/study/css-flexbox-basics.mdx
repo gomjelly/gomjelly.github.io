@@ -1,0 +1,76 @@
+---
+title: "CSS Flexbox 기초, 그림으로 이해하기"
+description: "justify-content와 align-items가 헷갈릴 때 보는 인터랙티브 정리"
+date: 2026-06-20
+tags: ["css", "frontend"]
+---
+
+import Tabs from '../../components/widgets/Tabs.astro';
+import Stepper from '../../components/widgets/Stepper.astro';
+import Quiz from '../../components/widgets/Quiz.astro';
+
+Flexbox를 쓸 때마다 `justify-content`랑 `align-items`가 헷갈렸다면, 이 글이 도움이 될 거예요.
+축(axis) 개념부터 차근차근 짚어봅니다.
+
+## 1. 두 개의 축
+
+Flexbox에는 <strong>주축(main axis)</strong>과 <strong>교차축(cross axis)</strong>이 있어요. `flex-direction`이 `row`면
+주축은 가로, 교차축은 세로가 됩니다.
+
+<Stepper>
+  <div data-step="1. 컨테이너에 display: flex 적용">
+    가장 먼저 부모 요소에 `display: flex`를 줘야 자식 요소들이 flex item이 됩니다.
+  </div>
+  <div data-step="2. flex-direction으로 주축 결정">
+    `row`(기본값)는 가로 방향, `column`은 세로 방향이 주축이 됩니다.
+  </div>
+  <div data-step="3. justify-content로 주축 정렬">
+    주축 방향으로 아이템을 어떻게 배치할지 정합니다. `center`, `space-between` 등을 사용해요.
+  </div>
+  <div data-step="4. align-items로 교차축 정렬">
+    교차축 방향(주축과 수직)으로 아이템을 정렬합니다.
+  </div>
+</Stepper>
+
+## 2. 속성별 비교
+
+아래 탭을 눌러보면서 각 속성이 어떻게 다른지 비교해보세요.
+
+<Tabs>
+  <div data-tab="justify-content: center">
+    ```css
+    .container {
+      display: flex;
+      justify-content: center; /* 주축 방향 가운데 정렬 */
+    }
+    ```
+  </div>
+  <div data-tab="align-items: center">
+    ```css
+    .container {
+      display: flex;
+      align-items: center; /* 교차축 방향 가운데 정렬 */
+    }
+    ```
+  </div>
+  <div data-tab="둘 다 center">
+    ```css
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* 완전 가운데 정렬 - 가장 많이 쓰는 조합 */
+    }
+    ```
+  </div>
+</Tabs>
+
+## 3. 개념 확인 퀴즈
+
+<Quiz
+  question="flex-direction: row일 때, align-items는 어느 방향을 정렬하나요?"
+  options={["가로 방향(주축)", "세로 방향(교차축)", "둘 다", "정렬과 무관함"]}
+  answerIndex={1}
+  explanation="row일 때 주축은 가로이므로, align-items는 그와 수직인 세로(교차축)를 정렬합니다."
+/>
+
+정리하면, <strong>주축은 justify-content, 교차축은 align-items</strong>로 외워두면 헷갈리지 않아요.

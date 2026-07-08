@@ -1,0 +1,55 @@
+---
+// 사용법: 자식 요소마다 data-tab="라벨"을 지정
+// <Tabs><div data-tab="HTML">...</div><div data-tab="CSS">...</div></Tabs>
+---
+
+<div class="tabs not-prose my-8 overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800">
+  <div class="tabs-nav flex gap-1 overflow-x-auto border-b border-neutral-200 bg-neutral-50 p-1.5 dark:border-neutral-800 dark:bg-neutral-900/50"></div>
+  <div class="tabs-panels p-5">
+    <slot />
+  </div>
+</div>
+
+<script>
+  function initTabs() {
+    document.querySelectorAll<HTMLDivElement>('.tabs').forEach((tabs) => {
+      if (tabs.dataset.initialized) return;
+      tabs.dataset.initialized = 'true';
+
+      const nav = tabs.querySelector<HTMLDivElement>('.tabs-nav');
+      const panels = tabs.querySelectorAll<HTMLElement>('.tabs-panels > [data-tab]');
+      if (!nav || panels.length === 0) return;
+
+      panels.forEach((panel, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = panel.dataset.tab ?? `탭 ${i + 1}`;
+        btn.className =
+          'tab-btn shrink-0 rounded-lg px-3.5 py-1.5 text-sm font-medium text-neutral-500 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white';
+        btn.addEventListener('click', () => activate(i));
+        nav.appendChild(btn);
+
+        panel.style.display = i === 0 ? '' : 'none';
+      });
+
+      function activate(index: number) {
+        panels.forEach((panel, i) => {
+          panel.style.display = i === index ? '' : 'none';
+        });
+        nav?.querySelectorAll('.tab-btn').forEach((btn, i) => {
+          btn.classList.toggle('bg-white', i === index);
+          btn.classList.toggle('dark:bg-neutral-800', i === index);
+          btn.classList.toggle('text-accent-600', i === index);
+          btn.classList.toggle('dark:text-accent-400', i === index);
+          btn.classList.toggle('shadow-sm', i === index);
+          btn.classList.toggle('text-neutral-500', i !== index);
+        });
+      }
+
+      activate(0);
+    });
+  }
+
+  initTabs();
+  document.addEventListener('astro:page-load', initTabs);
+</script>

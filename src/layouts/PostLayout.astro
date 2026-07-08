@@ -1,0 +1,56 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  tags: string[];
+  category: '취미' | '스터디';
+}
+
+const { title, description, date, tags, category } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const categoryHref = category === '취미' ? '/hobby/' : '/study/';
+const categoryStyle =
+  category === '취미'
+    ? 'bg-amber-50 text-amber-700 dark:bg-amber-500/10 dark:text-amber-400'
+    : 'bg-accent-50 text-accent-700 dark:bg-accent-500/10 dark:text-accent-300';
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="mx-auto max-w-3xl px-5 py-14">
+    <header class="mb-10">
+      <a href={categoryHref} class:list={['inline-block rounded-full px-2.5 py-0.5 text-xs font-semibold', categoryStyle]}>
+        {category}
+      </a>
+      <h1 class="mt-4 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">
+        {title}
+      </h1>
+      <p class="mt-3 text-neutral-500 dark:text-neutral-400">{description}</p>
+      <div class="mt-4 flex flex-wrap items-center gap-3 text-sm text-neutral-400 dark:text-neutral-500">
+        <time datetime={date.toISOString()}>{formattedDate}</time>
+        {tags.length > 0 && (
+          <div class="flex flex-wrap gap-1.5">
+            {tags.map((tag) => (
+              <span class="rounded-md bg-neutral-100 px-2 py-0.5 text-xs dark:bg-neutral-900">#{tag}</span>
+            ))}
+          </div>
+        )}
+      </div>
+    </header>
+
+    <div class="prose-post">
+      <slot />
+    </div>
+
+    <AdSlot variant="inline" />
+  </article>
+</BaseLayout>

@@ -1,0 +1,70 @@
+---
+interface Props {
+  question: string;
+  options: string[];
+  answerIndex: number;
+  explanation?: string;
+}
+
+const { question, options, answerIndex, explanation } = Astro.props;
+---
+
+<div class="quiz not-prose my-8 rounded-2xl border border-neutral-200 bg-neutral-50 p-5 dark:border-neutral-800 dark:bg-neutral-900/50" data-answer={answerIndex} data-explanation={explanation ?? ''}>
+  <p class="font-semibold text-neutral-900 dark:text-white">🧠 {question}</p>
+  <div class="mt-4 space-y-2">
+    {options.map((option, i) => (
+      <button
+        type="button"
+        class="quiz-option block w-full rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-left text-sm text-neutral-700 transition-colors hover:border-accent-300 hover:bg-accent-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:border-accent-500/40 dark:hover:bg-accent-500/10"
+        data-index={i}
+      >
+        {option}
+      </button>
+    ))}
+  </div>
+  <p class="quiz-feedback mt-3 hidden text-sm font-medium"></p>
+</div>
+
+<script>
+  function initQuizzes() {
+    document.querySelectorAll<HTMLDivElement>('.quiz').forEach((quiz) => {
+      if (quiz.dataset.initialized) return;
+      quiz.dataset.initialized = 'true';
+
+      const answerIndex = Number(quiz.dataset.answer);
+      const feedback = quiz.querySelector<HTMLParagraphElement>('.quiz-feedback');
+      const options = quiz.querySelectorAll<HTMLButtonElement>('.quiz-option');
+
+      options.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          if (quiz.dataset.answered) return;
+          quiz.dataset.answered = 'true';
+
+          const chosenIndex = Number(btn.dataset.index);
+          const isCorrect = chosenIndex === answerIndex;
+
+          options.forEach((opt) => {
+            const idx = Number(opt.dataset.index);
+            opt.classList.remove('hover:border-accent-300', 'hover:bg-accent-50');
+            if (idx === answerIndex) {
+              opt.classList.add('!border-emerald-400', '!bg-emerald-50', 'dark:!bg-emerald-500/10');
+            } else if (idx === chosenIndex) {
+              opt.classList.add('!border-rose-400', '!bg-rose-50', 'dark:!bg-rose-500/10');
+            }
+          });
+
+          if (feedback) {
+            feedback.classList.remove('hidden');
+            const base = isCorrect ? '✅ 정답이에요!' : '❌ 다시 생각해볼까요?';
+            const explanation = quiz.dataset.explanation;
+            feedback.textContent = explanation ? `${base} ${explanation}` : base;
+            feedback.classList.add(isCorrect ? 'text-emerald-600' : 'text-rose-600');
+          }
+        });
+      });
+    });
+  }
+
+  initQuizzes();
+  document.addEventListener('astro:page-load', initQuizzes);
+</script>

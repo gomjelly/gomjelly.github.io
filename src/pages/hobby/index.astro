@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+const posts = (await getCollection('hobby', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BaseLayout title="취미" description="취미 생활을 기록한 글 모음">
+  <section class="mx-auto max-w-4xl px-5 py-14">
+    <p class="text-sm font-medium text-amber-600 dark:text-amber-400">Hobby</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">취미</h1>
+    <p class="mt-2 text-neutral-500 dark:text-neutral-400">여가 시간에 즐기고 만든 것들의 기록.</p>
+
+    {posts.length === 0 ? (
+      <p class="mt-10 rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-sm text-neutral-400 dark:border-neutral-700">
+        아직 작성된 글이 없어요.
+      </p>
+    ) : (
+      <div class="mt-8 grid gap-4 sm:grid-cols-2">
+        {posts.map((post) => (
+          <PostCard
+            href={`/hobby/${post.id}/`}
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            tags={post.data.tags}
+            category="취미"
+          />
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+const posts = (await getCollection('study', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BaseLayout title="스터디" description="공부하며 정리한 노트 모음">
+  <section class="mx-auto max-w-4xl px-5 py-14">
+    <p class="text-sm font-medium text-accent-600 dark:text-accent-400">Study</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">스터디</h1>
+    <p class="mt-2 text-neutral-500 dark:text-neutral-400">공부하면서 정리한 개념과 노트.</p>
+
+    {posts.length === 0 ? (
+      <p class="mt-10 rounded-2xl border border-dashed border-neutral-300 p-10 text-center text-sm text-neutral-400 dark:border-neutral-700">
+        아직 작성된 글이 없어요.
+      </p>
+    ) : (
+      <div class="mt-8 grid gap-4 sm:grid-cols-2">
+        {posts.map((post) => (
+          <PostCard
+            href={`/study/${post.id}/`}
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            tags={post.data.tags}
+            category="스터디"
+          />
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

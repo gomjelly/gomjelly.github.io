@@ -1,0 +1,42 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+const navItems = [
+  { href: '/', label: '홈' },
+  { href: '/hobby/', label: '취미' },
+  { href: '/study/', label: '스터디' },
+  { href: '/about/', label: '소개' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/80 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-950/80">
+  <div class="mx-auto flex max-w-4xl items-center justify-between px-5 py-4">
+    <a href="/" class="text-lg font-bold tracking-tight text-neutral-900 dark:text-white">
+      곰젤리 <span class="text-accent-500">.log</span>
+    </a>
+
+    <nav class="flex items-center gap-1">
+      {navItems.map((item) => {
+        const isActive = item.href === '/' ? currentPath === '/' : currentPath.startsWith(item.href);
+        return (
+          <a
+            href={item.href}
+            class:list={[
+              'rounded-full px-3 py-1.5 text-sm font-medium transition-colors',
+              isActive
+                ? 'bg-accent-50 text-accent-700 dark:bg-accent-500/10 dark:text-accent-300'
+                : 'text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-900',
+            ]}
+          >
+            {item.label}
+          </a>
+        );
+      })}
+      <div class="ml-2">
+        <ThemeToggle />
+      </div>
+    </nav>
+  </div>
+</header>
