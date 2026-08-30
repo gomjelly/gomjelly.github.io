@@ -33,6 +33,9 @@ ask the user before writing.
    auto-generated `/hobby/topic/{sub}/` and `/study/topic/{sub}/` pages.
 3. Remember the Korean bold bug: never emit markdown `**bold**` immediately
    followed by a Korean particle with no space — use `<strong>` instead.
+   Also never put anything (a comment, a blank line) before the opening
+   `---` of the frontmatter — the file must start with `---` on line 1, or
+   frontmatter parsing silently fails and every field is reported missing.
 4. After writing the file, run `npm run build` to confirm it compiles
    (catches bad frontmatter, broken imports, or invalid widget usage) and
    fix any errors before finishing.
@@ -46,3 +49,7 @@ ask the user before writing.
   doesn't exist yet, tell the user instead of inventing it silently.
 - Don't write filler content to hit a length target; keep it as tight as the
   topic warrants.
+- Don't generate AI illustrations/art for a post. Photos are always supplied
+  by the user afterward via a `![...](/images/{slug}/...)` placeholder; for
+  any other visual flourish, use at most a couple of emoji or keep it to
+  clean text.
