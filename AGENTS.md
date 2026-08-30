@@ -22,6 +22,13 @@ before writing or editing any file under `src/content/`. Key points:
 
 ## Development
 
+After running `npm install <pkg>` (or any change that touches dependencies),
+always verify with `rm -rf node_modules && npm ci` before pushing — sharp's
+optional platform sub-dependencies (`@emnapi/*`) have twice ended up missing
+from `package-lock.json` after a plain `npm install`, which passes locally
+but makes GitHub Actions' `npm ci` step fail. `npm run build` alone won't
+catch this since it doesn't reinstall from the lockfile.
+
 When starting the dev server, use background mode:
 
 ```
