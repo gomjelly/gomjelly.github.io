@@ -1,0 +1,97 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const items = (await getCollection('minecraft')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'ko'));
+
+const categories = ['전체', '블록', '아이템', '몹', '작물', '기타'];
+---
+
+<BaseLayout title="마인크래프트 백과사전" description="아이템·블록·몹·작물을 분류별로 찾아보고, 획득법·사육법·용도까지 정리한 백과사전">
+  <section class="mx-auto max-w-4xl px-5 py-14">
+    <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">Minecraft</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">마인크래프트 백과사전</h1>
+    <p class="mt-2 text-neutral-500 dark:text-neutral-400">
+      아이템·블록·몹·작물을 분류별로 찾아보고, 획득법·사육법·용도까지 한눈에 확인하세요. (총 {items.length}개 항목)
+    </p>
+
+    <input
+      id="search-input"
+      type="text"
+      placeholder="이름으로 검색 (예: 다이아몬드, 밀, 소)"
+      class="mt-6 w-full rounded-lg border border-neutral-300 bg-white px-4 py-2 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+    />
+
+    <div id="category-tabs" class="mt-4 flex flex-wrap gap-2">
+      {categories.map((cat, i) => (
+        <button
+          type="button"
+          class="cat-tab rounded-full border border-neutral-300 px-3 py-1.5 text-sm text-neutral-700 aria-selected:border-emerald-600 aria-selected:bg-emerald-600 aria-selected:text-white dark:border-neutral-700 dark:text-neutral-300"
+          data-category={cat}
+          aria-selected={i === 0 ? 'true' : 'false'}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
+    <div id="item-grid" class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+      {items.map((item) => (
+        <a
+          href={`/minecraft/item/${item.id}/`}
+          class="item-card block rounded-lg border border-neutral-200 p-3 transition-colors hover:border-emerald-500 dark:border-neutral-800"
+          data-name={item.data.name}
+          data-category={item.data.category}
+        >
+          <div class="mb-1 text-xs text-neutral-500 dark:text-neutral-400">
+            {item.data.category} · {item.data.subcategory}
+          </div>
+          <div class="font-medium text-neutral-900 dark:text-neutral-100">
+            {item.data.name}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <p id="no-results" class="mt-8 hidden text-center text-neutral-500 dark:text-neutral-400">
+      검색 결과가 없어요.
+    </p>
+  </section>
+</BaseLayout>
+
+<script>
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.cat-tab');
+  const cards = document.querySelectorAll<HTMLAnchorElement>('.item-card');
+  const noResults = document.getElementById('no-results');
+
+  let activeCategory = '전체';
+
+  function applyFilter() {
+    const keyword = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const name = (card.dataset.name || '').toLowerCase();
+      const category = card.dataset.category || '';
+      const matchesCategory = activeCategory === '전체' || category === activeCategory;
+      const matchesKeyword = keyword === '' || name.includes(keyword);
+      const visible = matchesCategory && matchesKeyword;
+      card.style.display = visible ? '' : 'none';
+      if (visible) visibleCount++;
+    });
+
+    noResults?.classList.toggle('hidden', visibleCount > 0);
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => t.setAttribute('aria-selected', 'false'));
+      tab.setAttribute('aria-selected', 'true');
+      activeCategory = tab.dataset.category || '전체';
+      applyFilter();
+    });
+  });
+
+  searchInput.addEventListener('input', applyFilter);
+</script>

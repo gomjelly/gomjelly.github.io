@@ -1,0 +1,3277 @@
+[
+  {
+    "id": "diamond",
+    "name": "다이아몬드",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "도구·방어구 제작과 인챈트 테이블에 쓰이는 희귀 광물 재료입니다.",
+    "acquisition": "다이아몬드 원석(diamond_ore)을 철 곡괭이 이상으로 채굴해 얻습니다. 상자에서 드랍되기도 합니다.",
+    "uses": [
+      "다이아몬드 도구/무기 제작",
+      "다이아몬드 방어구 제작",
+      "인챈트 테이블 제작"
+    ],
+    "relatedItems": [
+      "diamond_ore",
+      "diamond_sword",
+      "diamond_pickaxe"
+    ]
+  },
+  {
+    "id": "diamond_ore",
+    "name": "다이아몬드 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "지하 깊은 곳에서 발견되는 광물 블록. 채굴하면 다이아몬드를 얻습니다.",
+    "acquisition": "주로 Y좌표 -58 부근 깊은 곳에서 발견됩니다. 철 곡괭이 이상으로만 채굴 가능합니다.",
+    "uses": [
+      "채굴하여 다이아몬드 획득"
+    ],
+    "relatedItems": [
+      "diamond"
+    ]
+  },
+  {
+    "id": "diamond_sword",
+    "name": "다이아몬드 검",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "철 검보다 강력한 근접 무기입니다.",
+    "acquisition": "다이아몬드 2개 + 막대기 1개로 제작합니다.",
+    "uses": [
+      "전투용 근접 무기"
+    ],
+    "relatedItems": [
+      "diamond",
+      "diamond_pickaxe"
+    ]
+  },
+  {
+    "id": "diamond_pickaxe",
+    "name": "다이아몬드 곡괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "흑요석을 포함한 대부분의 광물을 채굴할 수 있는 상위 도구입니다.",
+    "acquisition": "다이아몬드 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흑요석·다이아몬드 원석 등 고레벨 채굴"
+    ],
+    "relatedItems": [
+      "diamond",
+      "diamond_sword"
+    ]
+  },
+  {
+    "id": "wheat",
+    "name": "밀",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "빵의 재료이자 소·양을 번식시키는 데 쓰이는 기본 작물입니다.",
+    "acquisition": "밀 작물을 다 자란 뒤 수확해서 얻습니다. 마을 농경지에서도 발견됩니다.",
+    "uses": [
+      "빵 제작 (밀 3개)",
+      "소·양 번식용 먹이"
+    ],
+    "relatedItems": [
+      "cow"
+    ],
+    "farming": "경작지에 밀 씨앗을 심고 물 근처에서 재배합니다. 다 자라면(황금색) 수확 후 씨앗 1~4개와 밀을 드랍합니다."
+  },
+  {
+    "id": "cow",
+    "name": "소",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "가죽과 소고기를 얻을 수 있는 우호적 동물입니다.",
+    "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "소고기(익히면 스테이크)",
+      "가죽 획득"
+    ],
+    "relatedItems": [
+      "wheat",
+      "leather"
+    ],
+    "farming": "밀을 든 채로 소 두 마리에게 사용하면 번식하며, 새끼 소가 태어나 성체가 될 때까지 자랍니다."
+  },
+  {
+    "id": "leather",
+    "name": "가죽",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "방어구, 책 등 다양한 제작에 쓰이는 기본 재료입니다.",
+    "acquisition": "소·말 등을 처치하면 드랍됩니다.",
+    "uses": [
+      "가죽 방어구 제작",
+      "책 제작",
+      "지도 제작"
+    ],
+    "relatedItems": [
+      "cow"
+    ]
+  },
+  {
+    "id": "oak_log",
+    "name": "참나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "참나무를 베어 얻는 기본 목재 블록입니다.",
+    "acquisition": "참나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "참나무 판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "coal_ore",
+    "name": "석탄 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "가장 흔한 광물 블록으로, 채굴하면 석탄을 얻습니다.",
+    "acquisition": "지표면 근처부터 넓은 높이대에서 발견됩니다. 나무 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "채굴하여 석탄 획득"
+    ],
+    "relatedItems": [
+      "coal",
+      "torch"
+    ]
+  },
+  {
+    "id": "coal",
+    "name": "석탄",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "연료와 횃불 제작에 쓰이는 기본 자원입니다.",
+    "acquisition": "석탄 원석을 채굴하거나 좀비 등 일부 몹에게서 드랍됩니다.",
+    "uses": [
+      "화로 연료 (8개 제련)",
+      "횃불 제작"
+    ],
+    "relatedItems": [
+      "coal_ore",
+      "torch"
+    ]
+  },
+  {
+    "id": "iron_ore",
+    "name": "철 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "제련하면 철 주괴가 나오는 광물 블록입니다.",
+    "acquisition": "중간 깊이 지하에서 발견됩니다. 돌 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "제련하여 철 주괴 획득"
+    ],
+    "relatedItems": [
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "iron_ingot",
+    "name": "철 주괴",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "도구·방어구·다양한 장치 제작에 쓰이는 핵심 재료입니다.",
+    "acquisition": "철 원석을 화로에 제련해 얻습니다.",
+    "uses": [
+      "철 도구/무기/방어구 제작",
+      "양동이, 가위, 레일 제작",
+      "블록 조합 재료"
+    ],
+    "relatedItems": [
+      "iron_ore",
+      "iron_sword",
+      "iron_pickaxe"
+    ]
+  },
+  {
+    "id": "gold_ore",
+    "name": "금 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "제련하면 금 주괴가 나오는 광물 블록입니다.",
+    "acquisition": "지하 깊은 곳이나 바드랜드 지표면에서 발견됩니다. 철 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "제련하여 금 주괴 획득"
+    ],
+    "relatedItems": [
+      "gold_ingot"
+    ]
+  },
+  {
+    "id": "gold_ingot",
+    "name": "금 주괴",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "채굴 속도가 빠르지만 내구도는 낮은 도구·방어구 재료입니다.",
+    "acquisition": "금 원석을 제련하거나 좀비 피글린 등에게서 드랍됩니다.",
+    "uses": [
+      "금 도구/방어구 제작",
+      "종 제작",
+      "네더라이트 정련(주괴+금 4개)"
+    ],
+    "relatedItems": [
+      "gold_ore",
+      "netherite_ingot"
+    ]
+  },
+  {
+    "id": "redstone_ore",
+    "name": "레드스톤 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "채굴하면 레드스톤 가루를 얻는 광물 블록입니다.",
+    "acquisition": "지하 깊은 곳에서 발견됩니다. 철 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "채굴하여 레드스톤 가루 획득"
+    ],
+    "relatedItems": [
+      "redstone"
+    ]
+  },
+  {
+    "id": "redstone",
+    "name": "레드스톤 가루",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "회로·장치를 연결하는 마인크래프트의 '전선' 역할을 하는 자원입니다.",
+    "acquisition": "레드스톤 원석을 채굴하거나 마녀에게서 드랍됩니다.",
+    "uses": [
+      "레드스톤 회로 배선",
+      "레드스톤 횃불/블록/비교기 등 제작"
+    ],
+    "relatedItems": [
+      "redstone_ore",
+      "repeater",
+      "piston"
+    ]
+  },
+  {
+    "id": "lapis_ore",
+    "name": "청금석 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "채굴하면 청금석을 얻는 광물 블록입니다.",
+    "acquisition": "지하 중간~깊은 층에서 발견됩니다. 돌 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "채굴하여 청금석 획득"
+    ],
+    "relatedItems": [
+      "lapis_lazuli"
+    ]
+  },
+  {
+    "id": "lapis_lazuli",
+    "name": "청금석",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "인챈트 테이블에서 인챈트할 때 소모되는 재료입니다.",
+    "acquisition": "청금석 원석을 채굴해 얻습니다.",
+    "uses": [
+      "인챈트 테이블 사용",
+      "파란색 염료로 사용"
+    ],
+    "relatedItems": [
+      "lapis_ore"
+    ]
+  },
+  {
+    "id": "emerald_ore",
+    "name": "에메랄드 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "채굴하면 에메랄드를 얻는 희귀 광물 블록입니다.",
+    "acquisition": "산악 바이옴에서만 발견됩니다. 철 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "채굴하여 에메랄드 획득"
+    ],
+    "relatedItems": [
+      "emerald"
+    ]
+  },
+  {
+    "id": "emerald",
+    "name": "에메랄드",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "주민과의 거래에서 화폐처럼 쓰이는 희귀 자원입니다.",
+    "acquisition": "에메랄드 원석 채굴, 주민 거래, 상자 등에서 얻습니다.",
+    "uses": [
+      "주민 거래 화폐",
+      "장식 블록 제작"
+    ],
+    "relatedItems": [
+      "emerald_ore"
+    ]
+  },
+  {
+    "id": "copper_ore",
+    "name": "구리 원석",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "제련하면 구리 주괴가 나오는 광물 블록입니다.",
+    "acquisition": "넓은 높이대에 걸쳐 다량으로 매장되어 있습니다. 돌 곡괭이 이상으로 채굴 가능합니다.",
+    "uses": [
+      "제련하여 구리 주괴 획득"
+    ],
+    "relatedItems": [
+      "copper_ingot"
+    ]
+  },
+  {
+    "id": "copper_ingot",
+    "name": "구리 주괴",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "피뢰침, 통신문 등 장식·기능 블록에 쓰이는 재료입니다. 시간이 지나면 산화됩니다.",
+    "acquisition": "구리 원석을 제련해 얻습니다.",
+    "uses": [
+      "피뢰침 제작",
+      "구리 블록/통 제작",
+      "망원경 제작"
+    ],
+    "relatedItems": [
+      "copper_ore"
+    ]
+  },
+  {
+    "id": "ancient_debris",
+    "name": "고대 잔해",
+    "category": "블록",
+    "subcategory": "광물",
+    "description": "네더라이트 주괴 제작에 필요한 네더의 희귀 자원입니다.",
+    "acquisition": "네더 Y좌표 8~22 부근에서 다이아몬드 곡괭이로 채굴합니다. 폭발에 강해 폭파로도 잘 안 부서집니다.",
+    "uses": [
+      "제련하여 네더라이트 스크랩 획득"
+    ],
+    "relatedItems": [
+      "netherite_scrap"
+    ]
+  },
+  {
+    "id": "netherite_scrap",
+    "name": "네더라이트 스크랩",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "네더라이트 주괴의 재료가 되는 중간 산물입니다.",
+    "acquisition": "고대 잔해를 화로나 용광로에 제련해 얻습니다.",
+    "uses": [
+      "금 주괴 4개와 조합해 네더라이트 주괴 제작"
+    ],
+    "relatedItems": [
+      "ancient_debris",
+      "netherite_ingot"
+    ]
+  },
+  {
+    "id": "netherite_ingot",
+    "name": "네더라이트 주괴",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "게임 내 최상급 도구·방어구 재료로, 화염에 타지 않습니다.",
+    "acquisition": "네더라이트 스크랩 4개 + 금 주괴 4개를 조합대에서 조합합니다.",
+    "uses": [
+      "네더라이트 도구/무기/방어구 업그레이드"
+    ],
+    "relatedItems": [
+      "netherite_scrap",
+      "gold_ingot"
+    ]
+  },
+  {
+    "id": "spruce_log",
+    "name": "가문비나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "가문비나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "가문비나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "birch_log",
+    "name": "자작나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "자작나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "자작나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "jungle_log",
+    "name": "정글나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "정글나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "정글나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "acacia_log",
+    "name": "아카시아나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "아카시아나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "아카시아나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "dark_oak_log",
+    "name": "짙은 참나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "짙은 참나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "짙은 참나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "mangrove_log",
+    "name": "맹그로브나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "맹그로브나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "맹그로브나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "cherry_log",
+    "name": "벚나무 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "벚나무를 베어 얻는 목재 블록입니다.",
+    "acquisition": "벚나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "oak_log"
+    ]
+  },
+  {
+    "id": "stone",
+    "name": "돌",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "지하 곳곳에 매장된 가장 기본적인 채굴 블록입니다.",
+    "acquisition": "곡괭이로 채굴하면 통나무돌(cobblestone)로 드랍됩니다.",
+    "uses": [
+      "제련하여 매끄러운 돌 제작",
+      "건축 재료"
+    ],
+    "relatedItems": [
+      "cobblestone"
+    ]
+  },
+  {
+    "id": "cobblestone",
+    "name": "통나무돌",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "돌을 채굴하면 얻는 기본 건축·제작 재료입니다.",
+    "acquisition": "돌을 곡괭이로 채굴해 얻습니다.",
+    "uses": [
+      "화로/조합대 등 기능 블록 제작",
+      "건축 재료"
+    ],
+    "relatedItems": [
+      "stone"
+    ]
+  },
+  {
+    "id": "deepslate",
+    "name": "심층암",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "Y좌표 0 이하 깊은 지역에서 돌을 대체하는 블록입니다.",
+    "acquisition": "심층암 지대를 곡괭이로 채굴하면 조각난 심층암으로 드랍됩니다.",
+    "uses": [
+      "건축 재료",
+      "제련하여 매끄러운 심층암 제작"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "granite",
+    "name": "화강암",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "붉은빛을 띠는 화성암 계열 장식용 블록입니다.",
+    "acquisition": "지하에서 자연적으로 발견되며 곡괭이로 채굴합니다.",
+    "uses": [
+      "건축·장식용 블록"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "obsidian",
+    "name": "흑요석",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "매우 단단하며 폭발에 강한 검은색 블록입니다.",
+    "acquisition": "용암에 물을 부으면 생성되며, 다이아몬드 곡괭이 이상으로만 채굴 가능합니다.",
+    "uses": [
+      "네더 포털 제작",
+      "인챈트 테이블 제작",
+      "가마솥·비콘 제작"
+    ],
+    "relatedItems": [
+      "diamond_pickaxe"
+    ]
+  },
+  {
+    "id": "glass",
+    "name": "유리",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "투명한 건축용 블록으로 빛을 통과시킵니다.",
+    "acquisition": "모래를 화로에 제련해 얻습니다.",
+    "uses": [
+      "창문 등 건축",
+      "유리병 제작 재료(모래 자체)"
+    ],
+    "relatedItems": [
+      "sand"
+    ]
+  },
+  {
+    "id": "sand",
+    "name": "모래",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "사막·해변에 있는 블록으로, 제련하면 유리가 됩니다.",
+    "acquisition": "삽으로 채취합니다. 중력의 영향을 받아 떨어집니다.",
+    "uses": [
+      "제련하여 유리 제작",
+      "콘크리트 가루 제작 재료"
+    ],
+    "relatedItems": [
+      "glass"
+    ]
+  },
+  {
+    "id": "bookshelf",
+    "name": "책장",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "인챈트 테이블 주변에 두면 인챈트 레벨을 높여주는 블록입니다.",
+    "acquisition": "나무 판자 6개 + 책 3개로 제작합니다.",
+    "uses": [
+      "인챈트 테이블 강화(최대 15레벨)"
+    ],
+    "relatedItems": [
+      "book",
+      "enchanting_table"
+    ]
+  },
+  {
+    "id": "crafting_table",
+    "name": "조합대",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "3x3 조합 칸을 열어 다양한 아이템을 제작할 수 있는 기본 블록입니다.",
+    "acquisition": "나무 판자 4개로 제작합니다.",
+    "uses": [
+      "3x3 제작 칸 사용"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "furnace",
+    "name": "화로",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "광물 제련, 요리 등에 쓰이는 기본 제련 블록입니다.",
+    "acquisition": "통나무돌 8개로 제작합니다.",
+    "uses": [
+      "광물 제련",
+      "음식 조리",
+      "연료 소모"
+    ],
+    "relatedItems": [
+      "blast_furnace",
+      "smoker"
+    ]
+  },
+  {
+    "id": "blast_furnace",
+    "name": "용광로",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "광물을 화로보다 2배 빠르게 제련하는 전용 블록입니다.",
+    "acquisition": "화로 1개 + 철 주괴 5개 + 매끄러운 돌 3개로 제작합니다.",
+    "uses": [
+      "광물 제련 (화로보다 빠름)"
+    ],
+    "relatedItems": [
+      "furnace",
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "smoker",
+    "name": "훈연기",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "음식을 화로보다 2배 빠르게 조리하는 전용 블록입니다.",
+    "acquisition": "화로 1개 + 통나무 4개로 제작합니다.",
+    "uses": [
+      "음식 조리 (화로보다 빠름)"
+    ],
+    "relatedItems": [
+      "furnace"
+    ]
+  },
+  {
+    "id": "anvil",
+    "name": "모루",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "아이템 수리, 이름 변경, 인챈트 합성에 쓰이는 블록입니다.",
+    "acquisition": "철 블록 3개 + 철 주괴 4개로 제작합니다.",
+    "uses": [
+      "도구/방어구 수리",
+      "아이템 이름 변경",
+      "인챈트북 적용"
+    ],
+    "relatedItems": [
+      "iron_ingot",
+      "enchanted_book"
+    ]
+  },
+  {
+    "id": "enchanting_table",
+    "name": "인챈트 테이블",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "경험치와 청금석을 소모해 도구·무기에 마법 효과를 부여하는 블록입니다.",
+    "acquisition": "흑요석 4개 + 다이아몬드 2개 + 책 1개로 제작합니다.",
+    "uses": [
+      "도구·무기·방어구 인챈트"
+    ],
+    "relatedItems": [
+      "obsidian",
+      "diamond",
+      "lapis_lazuli",
+      "book"
+    ]
+  },
+  {
+    "id": "brewing_stand",
+    "name": "양조대",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "네더 사마귀 등을 이용해 물약을 제조하는 블록입니다.",
+    "acquisition": "블레이즈 막대 1개 + 조각난 석재 3개로 제작합니다.",
+    "uses": [
+      "물약 양조"
+    ],
+    "relatedItems": [
+      "blaze_rod",
+      "nether_wart"
+    ]
+  },
+  {
+    "id": "ender_chest",
+    "name": "엔더 상자",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "설치한 위치와 관계없이 같은 플레이어끼리 내용물을 공유하는 상자입니다.",
+    "acquisition": "흑요석 8개 + 엔더 진주 1개로 제작합니다.",
+    "uses": [
+      "개인 전용 아이템 저장 공간"
+    ],
+    "relatedItems": [
+      "obsidian",
+      "ender_pearl"
+    ]
+  },
+  {
+    "id": "chest",
+    "name": "상자",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "아이템을 저장하는 기본 보관함입니다.",
+    "acquisition": "나무 판자 8개로 제작합니다.",
+    "uses": [
+      "아이템 보관",
+      "이중 상자로 확장 가능"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "hopper",
+    "name": "호퍼",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "아이템을 자동으로 옮기는 레드스톤 장치 블록입니다.",
+    "acquisition": "철 주괴 5개 + 상자 1개로 제작합니다.",
+    "uses": [
+      "자동 아이템 이동/분배 시스템 구성"
+    ],
+    "relatedItems": [
+      "iron_ingot",
+      "chest"
+    ]
+  },
+  {
+    "id": "piston",
+    "name": "피스톤",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "레드스톤 신호를 받아 블록을 밀어내는 장치입니다.",
+    "acquisition": "통나무돌 4개 + 철 주괴 1개 + 레드스톤 1개 + 나무 판자 3개로 제작합니다.",
+    "uses": [
+      "레드스톤 회로로 블록 이동",
+      "자동문·함정 제작"
+    ],
+    "relatedItems": [
+      "redstone",
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "tnt",
+    "name": "TNT",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "점화하면 강력한 폭발을 일으키는 블록입니다.",
+    "acquisition": "화약 5개 + 모래 4개로 제작합니다.",
+    "uses": [
+      "채굴 폭파",
+      "함정·연출용 폭발"
+    ],
+    "relatedItems": [
+      "gunpowder",
+      "sand"
+    ]
+  },
+  {
+    "id": "wood_pickaxe",
+    "name": "나무 곡괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "나무 재질로 만든 채굴 도구입니다. (내구도 59)",
+    "acquisition": "나무 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "돌·광물 채굴"
+    ],
+    "relatedItems": [
+      "crafting_table"
+    ]
+  },
+  {
+    "id": "wood_axe",
+    "name": "나무 도끼",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "나무 재질로 만든 벌목 도구입니다. 근접 무기로도 쓸 수 있습니다.",
+    "acquisition": "나무 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "나무 블록 채취",
+      "근접 공격"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "wood_shovel",
+    "name": "나무 삽",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "나무 재질로 만든 굴착 도구입니다.",
+    "acquisition": "나무 재료 1개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙·모래·자갈 등 채취"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "wood_hoe",
+    "name": "나무 괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "나무 재질로 만든 농사 도구입니다.",
+    "acquisition": "나무 재료 2개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙을 경작지로 개간",
+      "농사 시작"
+    ],
+    "relatedItems": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "wood_sword",
+    "name": "나무 검",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "나무 재질로 만든 근접 무기입니다.",
+    "acquisition": "나무 재료 2개 + 막대기 1개로 제작합니다.",
+    "uses": [
+      "전투용 근접 무기"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "stone_pickaxe",
+    "name": "돌 곡괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "돌 재질로 만든 채굴 도구입니다. (내구도 131)",
+    "acquisition": "돌 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "돌·광물 채굴"
+    ],
+    "relatedItems": [
+      "crafting_table"
+    ]
+  },
+  {
+    "id": "stone_axe",
+    "name": "돌 도끼",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "돌 재질로 만든 벌목 도구입니다. 근접 무기로도 쓸 수 있습니다.",
+    "acquisition": "돌 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "나무 블록 채취",
+      "근접 공격"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "stone_shovel",
+    "name": "돌 삽",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "돌 재질로 만든 굴착 도구입니다.",
+    "acquisition": "돌 재료 1개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙·모래·자갈 등 채취"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "stone_hoe",
+    "name": "돌 괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "돌 재질로 만든 농사 도구입니다.",
+    "acquisition": "돌 재료 2개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙을 경작지로 개간",
+      "농사 시작"
+    ],
+    "relatedItems": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "stone_sword",
+    "name": "돌 검",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "돌 재질로 만든 근접 무기입니다.",
+    "acquisition": "돌 재료 2개 + 막대기 1개로 제작합니다.",
+    "uses": [
+      "전투용 근접 무기"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_pickaxe",
+    "name": "철 곡괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "철 재질로 만든 채굴 도구입니다. (내구도 250)",
+    "acquisition": "철 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "돌·광물 채굴"
+    ],
+    "relatedItems": [
+      "crafting_table"
+    ]
+  },
+  {
+    "id": "iron_axe",
+    "name": "철 도끼",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "철 재질로 만든 벌목 도구입니다. 근접 무기로도 쓸 수 있습니다.",
+    "acquisition": "철 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "나무 블록 채취",
+      "근접 공격"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_shovel",
+    "name": "철 삽",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "철 재질로 만든 굴착 도구입니다.",
+    "acquisition": "철 재료 1개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙·모래·자갈 등 채취"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_hoe",
+    "name": "철 괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "철 재질로 만든 농사 도구입니다.",
+    "acquisition": "철 재료 2개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙을 경작지로 개간",
+      "농사 시작"
+    ],
+    "relatedItems": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "iron_sword",
+    "name": "철 검",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "철 재질로 만든 근접 무기입니다.",
+    "acquisition": "철 재료 2개 + 막대기 1개로 제작합니다.",
+    "uses": [
+      "전투용 근접 무기"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_pickaxe",
+    "name": "금 곡괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "금 재질로 만든 채굴 도구입니다. (내구도 32)",
+    "acquisition": "금 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "돌·광물 채굴"
+    ],
+    "relatedItems": [
+      "crafting_table"
+    ]
+  },
+  {
+    "id": "gold_axe",
+    "name": "금 도끼",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "금 재질로 만든 벌목 도구입니다. 근접 무기로도 쓸 수 있습니다.",
+    "acquisition": "금 재료 3개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "나무 블록 채취",
+      "근접 공격"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_shovel",
+    "name": "금 삽",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "금 재질로 만든 굴착 도구입니다.",
+    "acquisition": "금 재료 1개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙·모래·자갈 등 채취"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_hoe",
+    "name": "금 괭이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "금 재질로 만든 농사 도구입니다.",
+    "acquisition": "금 재료 2개 + 막대기 2개로 제작합니다.",
+    "uses": [
+      "흙을 경작지로 개간",
+      "농사 시작"
+    ],
+    "relatedItems": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "gold_sword",
+    "name": "금 검",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "금 재질로 만든 근접 무기입니다.",
+    "acquisition": "금 재료 2개 + 막대기 1개로 제작합니다.",
+    "uses": [
+      "전투용 근접 무기"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "stick",
+    "name": "막대기",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "대부분의 도구·무기 제작에 쓰이는 기본 재료입니다.",
+    "acquisition": "나무 판자 2개를 세로로 배치해 제작하거나, 대나무를 이용해 제작합니다.",
+    "uses": [
+      "도구/무기 자루",
+      "횃불, 화살 제작"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "netherite_sword",
+    "name": "네더라이트 검",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "게임 내 가장 강력한 근접 무기입니다. 용암에 타지 않습니다.",
+    "acquisition": "다이아몬드 검을 대장장이 용광로에서 네더라이트 주괴로 업그레이드합니다.",
+    "uses": [
+      "최상급 전투용 근접 무기"
+    ],
+    "relatedItems": [
+      "diamond_sword",
+      "netherite_ingot"
+    ]
+  },
+  {
+    "id": "bow",
+    "name": "활",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "화살을 발사하는 원거리 무기입니다.",
+    "acquisition": "막대기 3개 + 실 3개로 제작합니다.",
+    "uses": [
+      "원거리 공격"
+    ],
+    "relatedItems": [
+      "arrow",
+      "string"
+    ]
+  },
+  {
+    "id": "arrow",
+    "name": "화살",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "활·석궁으로 발사하는 투사체입니다.",
+    "acquisition": "막대기 1개 + 부싯돌 1개 + 깃털 1개로 제작하거나, 스켈레톤에게서 드랍됩니다.",
+    "uses": [
+      "활/석궁 탄약"
+    ],
+    "relatedItems": [
+      "bow",
+      "feather",
+      "flint"
+    ]
+  },
+  {
+    "id": "crossbow",
+    "name": "석궁",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "장전 후 발사하는 원거리 무기로, 불꽃 로켓도 발사할 수 있습니다.",
+    "acquisition": "막대기 3개 + 철 주괴 1개 + 실 2개 + 활시위(트립와이어 훅) 1개로 제작합니다.",
+    "uses": [
+      "원거리 공격",
+      "불꽃놀이 로켓 발사"
+    ],
+    "relatedItems": [
+      "arrow",
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "trident",
+    "name": "삼지창",
+    "category": "아이템",
+    "subcategory": "무기",
+    "description": "던지거나 근접전에 쓸 수 있는 강력한 무기로, 드라운드에게서만 얻을 수 있습니다.",
+    "acquisition": "드라운드를 처치하면 낮은 확률로 드랍됩니다. 제작은 불가능합니다.",
+    "uses": [
+      "근접 공격",
+      "투척 공격 (물속에서 회수 가능)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "shield",
+    "name": "방패",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "공격을 막아 피해를 줄여주는 방어 도구입니다.",
+    "acquisition": "나무 판자 6개 + 철 주괴 1개로 제작합니다.",
+    "uses": [
+      "공격 방어(막기)"
+    ],
+    "relatedItems": [
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "flint",
+    "name": "부싯돌",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "화살, 부싯돌과 부시 제작에 쓰이는 재료입니다.",
+    "acquisition": "자갈을 삽으로 채취할 때 낮은 확률로 얻습니다.",
+    "uses": [
+      "화살 제작",
+      "부싯돌과 부시 제작"
+    ],
+    "relatedItems": [
+      "arrow"
+    ]
+  },
+  {
+    "id": "flint_and_steel",
+    "name": "부싯돌과 부시",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "블록에 불을 붙이거나 네더 포털을 활성화하는 도구입니다.",
+    "acquisition": "철 주괴 1개 + 부싯돌 1개로 제작합니다.",
+    "uses": [
+      "네더 포털 점화",
+      "TNT 점화",
+      "모닥불 점화"
+    ],
+    "relatedItems": [
+      "flint",
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "leather_helmet",
+    "name": "가죽 투구",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "가죽 재질로 만든 방어구입니다.",
+    "acquisition": "가죽 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "leather_chestplate",
+    "name": "가죽 흉갑",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "가죽 재질로 만든 방어구입니다.",
+    "acquisition": "가죽 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "leather_leggings",
+    "name": "가죽 레깅스",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "가죽 재질로 만든 방어구입니다.",
+    "acquisition": "가죽 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "leather_boots",
+    "name": "가죽 부츠",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "가죽 재질로 만든 방어구입니다.",
+    "acquisition": "가죽 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_helmet",
+    "name": "철 투구",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "철 재질로 만든 방어구입니다.",
+    "acquisition": "철 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_chestplate",
+    "name": "철 흉갑",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "철 재질로 만든 방어구입니다.",
+    "acquisition": "철 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_leggings",
+    "name": "철 레깅스",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "철 재질로 만든 방어구입니다.",
+    "acquisition": "철 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_boots",
+    "name": "철 부츠",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "철 재질로 만든 방어구입니다.",
+    "acquisition": "철 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_helmet",
+    "name": "금 투구",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "금 재질로 만든 방어구입니다.",
+    "acquisition": "금 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_chestplate",
+    "name": "금 흉갑",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "금 재질로 만든 방어구입니다.",
+    "acquisition": "금 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_leggings",
+    "name": "금 레깅스",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "금 재질로 만든 방어구입니다.",
+    "acquisition": "금 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "gold_boots",
+    "name": "금 부츠",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "금 재질로 만든 방어구입니다.",
+    "acquisition": "금 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "diamond_helmet",
+    "name": "다이아몬드 투구",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "다이아몬드 재질로 만든 방어구입니다.",
+    "acquisition": "다이아몬드 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "diamond_chestplate",
+    "name": "다이아몬드 흉갑",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "다이아몬드 재질로 만든 방어구입니다.",
+    "acquisition": "다이아몬드 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "diamond_leggings",
+    "name": "다이아몬드 레깅스",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "다이아몬드 재질로 만든 방어구입니다.",
+    "acquisition": "다이아몬드 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "diamond_boots",
+    "name": "다이아몬드 부츠",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "다이아몬드 재질로 만든 방어구입니다.",
+    "acquisition": "다이아몬드 재료를 대장장이 조합대나 조합대에서 방어구 모양으로 배치해 제작합니다.",
+    "uses": [
+      "방어력 증가"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "netherite_chestplate",
+    "name": "네더라이트 흉갑",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "최상급 방어구로, 용암에 타지 않습니다.",
+    "acquisition": "다이아몬드 흉갑을 대장장이 용광로에서 네더라이트 주괴로 업그레이드합니다.",
+    "uses": [
+      "최고 수준의 방어력 제공"
+    ],
+    "relatedItems": [
+      "diamond_chestplate",
+      "netherite_ingot"
+    ]
+  },
+  {
+    "id": "turtle_helmet",
+    "name": "거북 껍질",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "물속에서 숨 참는 시간을 늘려주는 투구입니다.",
+    "acquisition": "거북 비늘 5개로 제작합니다.",
+    "uses": [
+      "수중 호흡 보조",
+      "머리 방어구"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "apple",
+    "name": "사과",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "나무를 벨 때 가끔 드랍되는 기본 음식입니다.",
+    "acquisition": "참나무·짙은 참나무 잎을 채취할 때 낮은 확률로 드랍됩니다.",
+    "uses": [
+      "배고픔 회복",
+      "황금 사과 제작 재료"
+    ],
+    "relatedItems": [
+      "golden_apple"
+    ]
+  },
+  {
+    "id": "golden_apple",
+    "name": "황금 사과",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "허기 회복과 함께 잠깐의 효과를 주는 특별한 사과입니다.",
+    "acquisition": "사과 1개를 금 주괴 8개로 감싸 제작합니다.",
+    "uses": [
+      "배고픔 회복 + 흡수 효과"
+    ],
+    "relatedItems": [
+      "apple",
+      "gold_ingot"
+    ]
+  },
+  {
+    "id": "bread",
+    "name": "빵",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "밀로 만드는 기본 음식입니다.",
+    "acquisition": "밀 3개를 나란히 배치해 조합합니다.",
+    "uses": [
+      "배고픔 회복"
+    ],
+    "relatedItems": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "cooked_beef",
+    "name": "스테이크",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "소고기를 구워 만든 고배고픔 회복 음식입니다.",
+    "acquisition": "소고기를 화로나 모닥불에 익혀 만듭니다.",
+    "uses": [
+      "배고픔 대량 회복"
+    ],
+    "relatedItems": [
+      "cow"
+    ]
+  },
+  {
+    "id": "cooked_porkchop",
+    "name": "구운 돼지고기",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "돼지고기를 구워 만든 음식입니다.",
+    "acquisition": "돼지고기를 화로나 모닥불에 익혀 만듭니다.",
+    "uses": [
+      "배고픔 회복"
+    ],
+    "relatedItems": [
+      "pig"
+    ]
+  },
+  {
+    "id": "cooked_chicken",
+    "name": "구운 닭고기",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "닭고기를 구워 만든 음식입니다.",
+    "acquisition": "닭고기를 화로나 모닥불에 익혀 만듭니다.",
+    "uses": [
+      "배고픔 회복"
+    ],
+    "relatedItems": [
+      "chicken"
+    ]
+  },
+  {
+    "id": "golden_carrot",
+    "name": "황금 당근",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "당근을 금으로 감싸 만든 고급 음식으로, 물약 재료로도 쓰입니다.",
+    "acquisition": "당근 1개 + 금 조각(금 너겟) 8개로 제작합니다.",
+    "uses": [
+      "배고픔 회복",
+      "야간 투시 물약 재료"
+    ],
+    "relatedItems": [
+      "carrot",
+      "gold_ingot"
+    ]
+  },
+  {
+    "id": "cake",
+    "name": "케이크",
+    "category": "블록",
+    "subcategory": "음식",
+    "description": "설치해서 여러 번 나눠 먹을 수 있는 음식 블록입니다.",
+    "acquisition": "우유 3개 + 설탕 2개 + 계란 1개 + 밀 2개로 제작합니다.",
+    "uses": [
+      "배고픔 회복 (설치 후 여러 조각 섭취)"
+    ],
+    "relatedItems": [
+      "wheat",
+      "sugar"
+    ]
+  },
+  {
+    "id": "cookie",
+    "name": "쿠키",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "밀과 코코아로 만드는 간단한 간식입니다.",
+    "acquisition": "밀 2개 + 코코아 콩 1개로 8개 제작됩니다.",
+    "uses": [
+      "배고픔 소량 회복"
+    ],
+    "relatedItems": [
+      "wheat",
+      "cocoa_beans"
+    ]
+  },
+  {
+    "id": "pumpkin_pie",
+    "name": "호박 파이",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "호박으로 만드는 디저트 음식입니다.",
+    "acquisition": "호박 1개 + 설탕 1개 + 계란 1개로 제작합니다.",
+    "uses": [
+      "배고픔 회복"
+    ],
+    "relatedItems": [
+      "pumpkin"
+    ]
+  },
+  {
+    "id": "honey_bottle",
+    "name": "꿀병",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "벌집에서 채취한 꿀이 담긴 병입니다.",
+    "acquisition": "유리병을 벌집이나 양봉통에 사용해 얻습니다.",
+    "uses": [
+      "배고픔 회복",
+      "허기 효과 해제"
+    ],
+    "relatedItems": [
+      "bee"
+    ]
+  },
+  {
+    "id": "string",
+    "name": "실",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "거미줄이나 거미에게서 얻는 섬유 재료입니다.",
+    "acquisition": "거미를 처치하거나 거미줄을 채취해 얻습니다.",
+    "uses": [
+      "활, 낚싯대 제작",
+      "양털 대용(초기 침대 등)"
+    ],
+    "relatedItems": [
+      "bow"
+    ]
+  },
+  {
+    "id": "feather",
+    "name": "깃털",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "닭에게서 얻는 재료로 화살과 책 제작에 쓰입니다.",
+    "acquisition": "닭을 처치하면 드랍됩니다.",
+    "uses": [
+      "화살 제작",
+      "책과 깃펜 제작"
+    ],
+    "relatedItems": [
+      "chicken",
+      "arrow"
+    ]
+  },
+  {
+    "id": "gunpowder",
+    "name": "화약",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "TNT와 불꽃놀이 로켓 제작에 쓰이는 폭발 재료입니다.",
+    "acquisition": "크리퍼, 위치, 가스트를 처치하면 드랍됩니다.",
+    "uses": [
+      "TNT 제작",
+      "불꽃놀이 로켓 제작"
+    ],
+    "relatedItems": [
+      "tnt"
+    ]
+  },
+  {
+    "id": "ender_pearl",
+    "name": "엔더 진주",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "던지면 그 위치로 순간이동하는 신비한 아이템입니다.",
+    "acquisition": "엔더맨을 처치하면 드랍됩니다.",
+    "uses": [
+      "순간이동",
+      "엔더 눈 제작"
+    ],
+    "relatedItems": [
+      "ender_chest"
+    ]
+  },
+  {
+    "id": "ender_eye",
+    "name": "엔더의 눈",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "엔드 포탈을 찾고 활성화하는 데 쓰이는 아이템입니다.",
+    "acquisition": "엔더 진주 1개 + 블레이즈 가루 1개로 제작합니다.",
+    "uses": [
+      "엔드 포탈 위치 탐색",
+      "엔드 포탈 활성화"
+    ],
+    "relatedItems": [
+      "ender_pearl",
+      "blaze_powder"
+    ]
+  },
+  {
+    "id": "blaze_rod",
+    "name": "블레이즈 막대",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "네더 요새의 블레이즈를 처치해 얻는 재료입니다.",
+    "acquisition": "블레이즈를 처치하면 드랍됩니다.",
+    "uses": [
+      "블레이즈 가루 제작",
+      "양조대 제작"
+    ],
+    "relatedItems": [
+      "blaze_powder",
+      "brewing_stand"
+    ]
+  },
+  {
+    "id": "blaze_powder",
+    "name": "블레이즈 가루",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "블레이즈 막대를 가공해 얻는 물약·제작 재료입니다.",
+    "acquisition": "블레이즈 막대 1개를 조합대에서 가루로 만듭니다.",
+    "uses": [
+      "물약 양조 연료",
+      "엔더의 눈 제작"
+    ],
+    "relatedItems": [
+      "blaze_rod",
+      "ender_eye"
+    ]
+  },
+  {
+    "id": "nether_star",
+    "name": "네더의 별",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "위더를 처치해야 얻을 수 있는 희귀한 재료입니다.",
+    "acquisition": "위더 보스를 처치하면 드랍됩니다.",
+    "uses": [
+      "비콘 제작"
+    ],
+    "relatedItems": [
+      "beacon"
+    ]
+  },
+  {
+    "id": "beacon",
+    "name": "표지기",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "주변 플레이어에게 이로운 효과를 부여하는 특수 블록입니다.",
+    "acquisition": "네더의 별 1개 + 유리 5개 + 흑요석 3개로 제작합니다.",
+    "uses": [
+      "속도·힘 등 버프 효과 부여"
+    ],
+    "relatedItems": [
+      "nether_star"
+    ]
+  },
+  {
+    "id": "ghast_tear",
+    "name": "가스트의 눈물",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "가스트를 처치해 얻는 재료로 재생성 물약에 쓰입니다.",
+    "acquisition": "가스트를 처치하면 드랍됩니다.",
+    "uses": [
+      "재생성 물약 재료",
+      "물이 있는 네더 포탈 생성 재료"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "slime_ball",
+    "name": "슬라임 공",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "슬라임에게서 얻는 끈적한 재료입니다.",
+    "acquisition": "슬라임을 처치하면 드랍됩니다.",
+    "uses": [
+      "끈끈이 피스톤 제작",
+      "목줄 제작"
+    ],
+    "relatedItems": [
+      "piston"
+    ]
+  },
+  {
+    "id": "bone",
+    "name": "뼈",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "스켈레톤에게서 얻는 재료로 뼛가루의 원료입니다.",
+    "acquisition": "스켈레톤을 처치하면 드랍됩니다.",
+    "uses": [
+      "뼛가루 제작",
+      "늑대 길들이기"
+    ],
+    "relatedItems": [
+      "bone_meal"
+    ]
+  },
+  {
+    "id": "bone_meal",
+    "name": "뼛가루",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "식물의 성장을 즉시 촉진시키는 비료입니다.",
+    "acquisition": "뼈 1개를 조합대에서 가루로 만듭니다.",
+    "uses": [
+      "작물 즉시 성장",
+      "나무 묘목 성장 촉진",
+      "흰색 염료로 사용"
+    ],
+    "relatedItems": [
+      "bone",
+      "wheat"
+    ]
+  },
+  {
+    "id": "paper",
+    "name": "종이",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "사탕수수로 만드는 재료로 책과 지도 제작에 쓰입니다.",
+    "acquisition": "사탕수수 3개를 나란히 배치해 조합합니다.",
+    "uses": [
+      "책 제작",
+      "지도 제작"
+    ],
+    "relatedItems": [
+      "sugar_cane",
+      "book"
+    ]
+  },
+  {
+    "id": "book",
+    "name": "책",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "인챈트 테이블, 책장 등에 쓰이는 기본 아이템입니다.",
+    "acquisition": "종이 3개 + 가죽 1개로 제작합니다.",
+    "uses": [
+      "인챈트북 제작",
+      "책장 제작",
+      "제도 테이블 제작"
+    ],
+    "relatedItems": [
+      "paper",
+      "leather",
+      "enchanted_book"
+    ]
+  },
+  {
+    "id": "enchanted_book",
+    "name": "인챈트 책",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "모루를 이용해 도구나 무기에 인챈트를 옮길 수 있는 책입니다.",
+    "acquisition": "인챈트 테이블에서 책을 인챈트하거나 상자·낚시로 얻습니다.",
+    "uses": [
+      "모루로 도구/무기에 인챈트 부여"
+    ],
+    "relatedItems": [
+      "book",
+      "anvil"
+    ]
+  },
+  {
+    "id": "name_tag",
+    "name": "이름표",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "몹에게 고유한 이름을 붙여 디스폰을 방지하는 아이템입니다.",
+    "acquisition": "마을 대장장이 거래나 낚시, 던전 상자에서 얻습니다.",
+    "uses": [
+      "몹 이름 지정 및 디스폰 방지"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "saddle",
+    "name": "안장",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "말·돼지 등을 탈 수 있게 해주는 아이템입니다.",
+    "acquisition": "제작은 불가능하며 낚시, 상자, 마을 거래로 얻습니다.",
+    "uses": [
+      "말/돼지/줄무늬옥 등에 탑승"
+    ],
+    "relatedItems": [
+      "pig"
+    ]
+  },
+  {
+    "id": "compass",
+    "name": "나침반",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "스폰 지점이나 로드스톤 방향을 가리키는 도구입니다.",
+    "acquisition": "철 주괴 4개 + 레드스톤 1개로 제작합니다.",
+    "uses": [
+      "스폰/로드스톤 방향 탐색"
+    ],
+    "relatedItems": [
+      "iron_ingot",
+      "redstone"
+    ]
+  },
+  {
+    "id": "clock",
+    "name": "시계",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "현재 게임 내 시간을 보여주는 도구입니다.",
+    "acquisition": "금 주괴 4개 + 레드스톤 1개로 제작합니다.",
+    "uses": [
+      "낮/밤 시간 확인"
+    ],
+    "relatedItems": [
+      "gold_ingot",
+      "redstone"
+    ]
+  },
+  {
+    "id": "map",
+    "name": "지도",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "주변 지형을 기록해 보여주는 도구입니다.",
+    "acquisition": "종이 8개 + 나침반 1개로 제작합니다.",
+    "uses": [
+      "지형 탐색 및 기록"
+    ],
+    "relatedItems": [
+      "paper",
+      "compass"
+    ]
+  },
+  {
+    "id": "shears",
+    "name": "가위",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "양털, 나뭇잎, 거미줄 등을 채취하는 도구입니다.",
+    "acquisition": "철 주괴 2개로 제작합니다.",
+    "uses": [
+      "양털 채취",
+      "나뭇잎/거미줄 채취",
+      "양 무늬 다듬기"
+    ],
+    "relatedItems": [
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "bucket",
+    "name": "양동이",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "물, 용암, 우유 등을 담는 도구입니다.",
+    "acquisition": "철 주괴 3개로 제작합니다.",
+    "uses": [
+      "물/용암 채집 및 운반",
+      "우유 짜기"
+    ],
+    "relatedItems": [
+      "iron_ingot"
+    ]
+  },
+  {
+    "id": "fishing_rod",
+    "name": "낚싯대",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "물고기와 각종 아이템을 낚는 도구입니다.",
+    "acquisition": "막대기 3개 + 실 2개로 제작합니다.",
+    "uses": [
+      "낚시로 물고기/아이템 획득"
+    ],
+    "relatedItems": [
+      "string",
+      "stick"
+    ]
+  },
+  {
+    "id": "lead",
+    "name": "목줄",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "동물을 묶어서 끌고 다닐 수 있게 하는 도구입니다.",
+    "acquisition": "실 4개 + 슬라임볼 1개로 제작합니다.",
+    "uses": [
+      "동물 이동 통제"
+    ],
+    "relatedItems": [
+      "string",
+      "slime_ball"
+    ]
+  },
+  {
+    "id": "elytra",
+    "name": "겉날개",
+    "category": "아이템",
+    "subcategory": "방어구",
+    "description": "활공 비행을 가능하게 하는 특수 장비입니다.",
+    "acquisition": "엔드 함선에서 발견되는 상자에서 얻습니다. 제작은 불가능합니다.",
+    "uses": [
+      "등에 장착해 활공 비행"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "totem_of_undying",
+    "name": "불사의 토템",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "치명적인 피해를 한 번 막아주는 특수 아이템입니다.",
+    "acquisition": "이블린 처치 시 드랍됩니다.",
+    "uses": [
+      "손에 들고 있으면 사망 대신 부활 효과 발동"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "ink_sac",
+    "name": "먹물 주머니",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "오징어에게서 얻는 검은색 염료 재료입니다.",
+    "acquisition": "오징어를 처치하면 드랍됩니다.",
+    "uses": [
+      "검은색 염료로 사용",
+      "지도에 서명"
+    ],
+    "relatedItems": [
+      "squid"
+    ]
+  },
+  {
+    "id": "glow_ink_sac",
+    "name": "발광 먹물 주머니",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "글로우 오징어에게서 얻으며 발광 표지판 등에 쓰입니다.",
+    "acquisition": "글로우 오징어를 처치하면 드랍됩니다.",
+    "uses": [
+      "발광 표지판/아이템 프레임 제작"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "firework_rocket",
+    "name": "불꽃놀이 로켓",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "발사하면 폭죽 효과를 내며, 겉날개 비행 시 추진력으로도 쓰입니다.",
+    "acquisition": "종이 1개 + 화약 1~3개(+화약 별)로 제작합니다.",
+    "uses": [
+      "관상용 폭죽",
+      "겉날개 비행 추진"
+    ],
+    "relatedItems": [
+      "gunpowder",
+      "elytra"
+    ]
+  },
+  {
+    "id": "potion",
+    "name": "물약",
+    "category": "아이템",
+    "subcategory": "기타",
+    "description": "다양한 효과를 부여하는 액체 아이템입니다.",
+    "acquisition": "양조대에서 물병에 재료를 넣어 제조합니다.",
+    "uses": [
+      "체력 회복, 속도, 화염 저항 등 다양한 효과 부여"
+    ],
+    "relatedItems": [
+      "brewing_stand",
+      "nether_wart"
+    ]
+  },
+  {
+    "id": "carrot",
+    "name": "당근",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "돼지·좀비 좀비 조랑말 먹이 및 음식으로 쓰이는 작물입니다.",
+    "acquisition": "당근 작물을 수확하거나 좀비가 드랍하기도 합니다.",
+    "uses": [
+      "생으로 섭취",
+      "황금 당근 제작",
+      "돼지 번식용 먹이"
+    ],
+    "relatedItems": [],
+    "farming": "경작지에 당근을 심어 재배합니다. 다 자라면 수확해 여러 개를 얻습니다."
+  },
+  {
+    "id": "potato",
+    "name": "감자",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "익혀 먹는 것이 좋은 기본 작물입니다.",
+    "acquisition": "감자 작물을 수확해서 얻습니다.",
+    "uses": [
+      "구운 감자로 조리해 섭취",
+      "돼지 번식용 먹이는 아님(당근·감자류 참고)"
+    ],
+    "relatedItems": [],
+    "farming": "경작지에 감자를 심어 재배합니다. 다 자라면 수확해 여러 개를 얻습니다."
+  },
+  {
+    "id": "beetroot",
+    "name": "비트",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "비트 수프 재료로 쓰이는 붉은 작물입니다.",
+    "acquisition": "비트 작물을 수확해서 얻습니다.",
+    "uses": [
+      "비트 수프 제작",
+      "배고픔 소량 회복"
+    ],
+    "relatedItems": [],
+    "farming": "경작지에 비트 씨앗을 심어 재배합니다. 다 자라면 수확합니다."
+  },
+  {
+    "id": "melon",
+    "name": "수박 조각",
+    "category": "아이템",
+    "subcategory": "음식",
+    "description": "수박 블록을 채취하면 얻는 조각 음식입니다.",
+    "acquisition": "수박 블록을 도구로 채취합니다.",
+    "uses": [
+      "배고픔 회복",
+      "글리스틀 멜론 재료"
+    ],
+    "relatedItems": [
+      "melon_block"
+    ]
+  },
+  {
+    "id": "melon_block",
+    "name": "수박",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "줄기가 자라 열매를 맺는 블록형 작물입니다.",
+    "acquisition": "수박 줄기를 심고 옆 블록에 수박이 열리길 기다립니다.",
+    "uses": [
+      "채취해 수박 조각 획득"
+    ],
+    "relatedItems": [],
+    "farming": "흙에 수박 씨앗을 심고 물 근처에서 재배합니다. 줄기가 자라면 옆 칸에 수박이 열립니다."
+  },
+  {
+    "id": "pumpkin",
+    "name": "호박",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "장식·음식·골렘 제작에 쓰이는 작물입니다.",
+    "acquisition": "호박 줄기를 심어 재배합니다.",
+    "uses": [
+      "호박 파이 제작",
+      "골렘/허수아비 제작",
+      "호박 등 제작"
+    ],
+    "relatedItems": [],
+    "farming": "흙에 호박 씨앗을 심고 물 근처에서 재배합니다. 줄기가 자라면 옆 칸에 호박이 열립니다."
+  },
+  {
+    "id": "sugar_cane",
+    "name": "사탕수수",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "종이와 설탕의 원료가 되는 물가 식물입니다.",
+    "acquisition": "물가 근처 흙/모래 위에서 자랍니다.",
+    "uses": [
+      "종이 제작",
+      "설탕 제작"
+    ],
+    "relatedItems": [],
+    "farming": "물 옆 흙이나 모래에 심으면 자연적으로 위로 자랍니다."
+  },
+  {
+    "id": "sugar",
+    "name": "설탕",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "케이크, 쿠키 등 음식과 물약 제조에 쓰이는 재료입니다.",
+    "acquisition": "사탕수수를 조합대에서 가공해 얻습니다.",
+    "uses": [
+      "케이크/쿠키 제작",
+      "신속 물약 재료"
+    ],
+    "relatedItems": [
+      "sugar_cane"
+    ]
+  },
+  {
+    "id": "cocoa_beans",
+    "name": "코코아 콩",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "정글 나무에서 자라는 갈색 염료·쿠키 재료입니다.",
+    "acquisition": "정글 나무 옆면에 심어 재배하며, 다 자라면 채취합니다.",
+    "uses": [
+      "쿠키 제작",
+      "갈색 염료로 사용"
+    ],
+    "relatedItems": [],
+    "farming": "정글 원목 옆면에 심고 자랄 때까지 기다립니다."
+  },
+  {
+    "id": "nether_wart",
+    "name": "네더 사마귀",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "네더 요새에서 자라는 물약 양조의 기본 재료입니다.",
+    "acquisition": "영혼 모래 위에 심어 재배하며, 네더 요새에서 자생하는 것을 채취할 수도 있습니다.",
+    "uses": [
+      "대부분의 물약 제조 기본 재료"
+    ],
+    "relatedItems": [],
+    "farming": "영혼 모래 위에 심으면 시간이 지나 자랍니다. 물은 필요 없습니다."
+  },
+  {
+    "id": "sweet_berries",
+    "name": "달콤한 열매",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "눈덮인 타이가에서 자라는 열매로 여우가 좋아합니다.",
+    "acquisition": "달콤한 열매 덤불에서 채취합니다.",
+    "uses": [
+      "배고픔 소량 회복",
+      "여우 번식용 먹이"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "kelp",
+    "name": "켈프",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "물속에서 위로 자라는 해초로, 건조하면 연료가 됩니다.",
+    "acquisition": "물속 바다 흙 위에서 자랍니다.",
+    "uses": [
+      "건조 켈프로 만들어 연료 사용",
+      "거북 먹이"
+    ],
+    "relatedItems": [],
+    "farming": "물속 흙이나 자갈 위에 심으면 위로 계속 자랍니다."
+  },
+  {
+    "id": "bamboo",
+    "name": "대나무",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "빠르게 자라는 식물로, 판다 먹이이자 막대기·뗏목 재료입니다.",
+    "acquisition": "정글 지역에서 자연적으로 자랍니다.",
+    "uses": [
+      "막대기 대체 재료",
+      "판다 먹이",
+      "뗏목 제작"
+    ],
+    "relatedItems": [],
+    "farming": "흙이나 모래 위에 심으면 매우 빠르게 자랍니다."
+  },
+  {
+    "id": "pig",
+    "name": "돼지",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "돼지고기를 얻을 수 있는 우호적 동물입니다.",
+    "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "돼지고기(익히면 구운 돼지고기)",
+      "안장 장착 시 탑승 가능"
+    ],
+    "relatedItems": [],
+    "farming": "당근을 든 채로 두 마리에게 사용하면 번식합니다."
+  },
+  {
+    "id": "sheep",
+    "name": "양",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "양털과 양고기를 얻을 수 있는 우호적 동물입니다.",
+    "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "양털 채취(가위)",
+      "양고기 획득"
+    ],
+    "relatedItems": [],
+    "farming": "밀을 든 채로 두 마리에게 사용하면 번식합니다."
+  },
+  {
+    "id": "chicken",
+    "name": "닭",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "달걀·깃털·닭고기를 제공하는 우호적 동물입니다.",
+    "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "달걀 자연 생산",
+      "닭고기/깃털 획득"
+    ],
+    "relatedItems": [],
+    "farming": "씨앗류를 든 채로 두 마리에게 사용하면 번식합니다."
+  },
+  {
+    "id": "horse",
+    "name": "말",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "탑승해 빠르게 이동할 수 있는 동물입니다.",
+    "acquisition": "초원 등에서 자연 스폰되며 길들여서 탑승합니다.",
+    "uses": [
+      "안장 장착 후 탑승 및 이동 수단"
+    ],
+    "relatedItems": [],
+    "farming": "황금 사과나 황금 당근으로 번식시킬 수 있습니다."
+  },
+  {
+    "id": "villager",
+    "name": "주민",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "직업에 따라 다양한 아이템을 거래할 수 있는 마을 주민입니다.",
+    "acquisition": "마을에서 자연 스폰되거나 아기 주민이 자라서 생깁니다.",
+    "uses": [
+      "에메랄드로 아이템 거래"
+    ],
+    "relatedItems": [],
+    "farming": "충분한 음식과 침대가 있으면 마을에서 자연적으로 번식합니다."
+  },
+  {
+    "id": "cat",
+    "name": "고양이",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "길들이면 따라다니며 팬텀과 크리퍼를 쫓아내는 동물입니다.",
+    "acquisition": "마을이나 늪 오두막 주변에서 발견되며 생선으로 길들일 수 있습니다.",
+    "uses": [
+      "팬텀 접근 방지",
+      "크리퍼 회피 유도"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "wolf",
+    "name": "늑대",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "뼈로 길들이면 함께 싸워주는 충성스러운 동물입니다.",
+    "acquisition": "숲 지역에서 자연 스폰되며 뼈로 길들일 수 있습니다.",
+    "uses": [
+      "길들이면 전투 동료",
+      "앉기/따라오기 명령 가능"
+    ],
+    "relatedItems": [
+      "bone"
+    ]
+  },
+  {
+    "id": "bee",
+    "name": "꿀벌",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "꽃가루를 모아 꿀을 만드는 곤충으로, 공격받으면 침을 쏩니다.",
+    "acquisition": "꽃이 많은 평원·숲 지역에서 벌집과 함께 발견됩니다.",
+    "uses": [
+      "꿀 생산",
+      "작물 수분(성장 촉진)"
+    ],
+    "relatedItems": [
+      "honey_bottle"
+    ]
+  },
+  {
+    "id": "rabbit",
+    "name": "토끼",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "빠르게 움직이는 작은 동물로, 토끼 스튜 재료를 제공합니다.",
+    "acquisition": "초원, 사막 등 다양한 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "토끼고기/토끼 가죽 획득"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "iron_golem",
+    "name": "아이언 골렘",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "마을을 지키는 거대한 방어용 골렘입니다.",
+    "acquisition": "철 블록 4개 + 호박(조각된 호박) 1개로 직접 소환하거나 마을에서 자연 생성됩니다.",
+    "uses": [
+      "마을 및 주민 보호"
+    ],
+    "relatedItems": [
+      "carved_pumpkin"
+    ]
+  },
+  {
+    "id": "zombie",
+    "name": "좀비",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "밤에 나타나 플레이어를 공격하는 기본 언데드 몹입니다.",
+    "acquisition": "어두운 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 썩은 살점 드랍"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "skeleton",
+    "name": "스켈레톤",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "활로 원거리 공격을 하는 언데드 몹입니다.",
+    "acquisition": "어두운 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 뼈, 화살 드랍"
+    ],
+    "relatedItems": [
+      "bone",
+      "arrow"
+    ]
+  },
+  {
+    "id": "creeper",
+    "name": "크리퍼",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "가까이 다가가 폭발을 일으키는 대표적인 마인크래프트 몹입니다.",
+    "acquisition": "어두운 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 화약 드랍",
+      "고양이 근처에서 도망감"
+    ],
+    "relatedItems": [
+      "gunpowder"
+    ]
+  },
+  {
+    "id": "spider",
+    "name": "거미",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "벽을 타고 오를 수 있는 몹으로, 밝을 땐 중립적입니다.",
+    "acquisition": "어두운 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 실, 거미눈 드랍"
+    ],
+    "relatedItems": [
+      "string"
+    ]
+  },
+  {
+    "id": "enderman",
+    "name": "엔더맨",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "블록을 옮길 수 있고 눈을 마주치면 공격해오는 큰 몹입니다.",
+    "acquisition": "어두운 지역 및 엔드 차원에서 스폰됩니다.",
+    "uses": [
+      "처치 시 엔더 진주 드랍"
+    ],
+    "relatedItems": [
+      "ender_pearl"
+    ]
+  },
+  {
+    "id": "witch",
+    "name": "마녀",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "다양한 물약을 던져 공격하는 몹입니다.",
+    "acquisition": "늪 오두막 및 어두운 지역에서 스폰됩니다.",
+    "uses": [
+      "처치 시 화약, 레드스톤, 설탕 등 드랍"
+    ],
+    "relatedItems": [
+      "gunpowder",
+      "redstone"
+    ]
+  },
+  {
+    "id": "slime",
+    "name": "슬라임",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "죽으면 작게 분열되는 젤리 형태의 몹입니다.",
+    "acquisition": "늪 지역 및 지하 특정 구역에서 스폰됩니다.",
+    "uses": [
+      "처치 시 슬라임볼 드랍"
+    ],
+    "relatedItems": [
+      "slime_ball"
+    ]
+  },
+  {
+    "id": "phantom",
+    "name": "팬텀",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "오랫동안 잠을 자지 않으면 밤하늘에 나타나는 비행 몹입니다.",
+    "acquisition": "여러 날 동안 잠을 자지 않으면 스폰됩니다.",
+    "uses": [
+      "처치 시 팬텀 막",
+      "불사의 토템 등 고급 물약 재료"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "drowned",
+    "name": "드라운드",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "물속에 서식하는 좀비형 몹으로 삼지창을 드랍할 수 있습니다.",
+    "acquisition": "물속 어두운 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 삼지창(낮은 확률), 청동 조각 드랍"
+    ],
+    "relatedItems": [
+      "trident"
+    ]
+  },
+  {
+    "id": "piglin",
+    "name": "피글린",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "네더에 서식하며 금 아이템으로 물물교환하는 몹입니다.",
+    "acquisition": "네더 황금 숲 지역에서 스폰됩니다.",
+    "uses": [
+      "금 주괴로 물물교환"
+    ],
+    "relatedItems": [
+      "gold_ingot"
+    ]
+  },
+  {
+    "id": "blaze",
+    "name": "블레이즈",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "네더 요새에 서식하며 불덩이를 발사하는 몹입니다.",
+    "acquisition": "네더 요새 스포너에서 스폰됩니다.",
+    "uses": [
+      "처치 시 블레이즈 막대 드랍"
+    ],
+    "relatedItems": [
+      "blaze_rod"
+    ]
+  },
+  {
+    "id": "ghast",
+    "name": "가스트",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "네더에서 떠다니며 폭발성 화염구를 발사하는 대형 몹입니다.",
+    "acquisition": "네더 차원 전역에서 스폰됩니다.",
+    "uses": [
+      "처치 시 화약, 가스트의 눈물 드랍"
+    ],
+    "relatedItems": [
+      "gunpowder",
+      "ghast_tear"
+    ]
+  },
+  {
+    "id": "squid",
+    "name": "오징어",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "물속에서 발견되는 수중 생물입니다.",
+    "acquisition": "바다·강 등 물이 있는 곳에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 먹물 주머니 드랍"
+    ],
+    "relatedItems": [
+      "ink_sac"
+    ]
+  },
+  {
+    "id": "ender_dragon",
+    "name": "엔더 드래곤",
+    "category": "몹",
+    "subcategory": "보스",
+    "description": "엔드 차원에 서식하는 게임의 최종 보스입니다.",
+    "acquisition": "엔드 차원 중앙 섬에서 처음부터 존재하며, 엔드 수정을 부수고 공략합니다.",
+    "uses": [
+      "처치 시 엔드 포탈 활성화 및 용의 알 획득"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "wither",
+    "name": "위더",
+    "category": "몹",
+    "subcategory": "보스",
+    "description": "네더의 별을 드랍하는 소환형 보스 몹입니다.",
+    "acquisition": "영혼 모래 3개와 위더 스켈레톤 두개골 3개를 T자 모양으로 배치해 소환합니다.",
+    "uses": [
+      "처치 시 네더의 별 드랍"
+    ],
+    "relatedItems": [
+      "nether_star"
+    ]
+  },
+  {
+    "id": "donkey",
+    "name": "당나귀",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "말보다 느리지만 상자를 장착해 짐을 운반할 수 있는 동물입니다.",
+    "acquisition": "사바나·평원 등에서 자연 스폰됩니다.",
+    "uses": [
+      "안장+상자 장착 시 운송 수단"
+    ],
+    "relatedItems": [
+      "horse"
+    ]
+  },
+  {
+    "id": "llama",
+    "name": "라마",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "짐을 나를 수 있고 공격받으면 침을 뱉어 반격하는 동물입니다.",
+    "acquisition": "사바나, 산악 지역에서 무리지어 스폰됩니다.",
+    "uses": [
+      "카라반 구성(목줄로 연결)",
+      "짐 운반용 카펫/상자 장착"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "parrot",
+    "name": "앵무새",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "씨앗으로 길들일 수 있고 어깨에 올라탈 수 있는 동물입니다.",
+    "acquisition": "정글 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "씨앗으로 길들이기",
+      "몹 소리를 흉내내는 특징"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "fox",
+    "name": "여우",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "아이템을 입에 물고 다니는 타이가 지역의 동물입니다.",
+    "acquisition": "타이가, 눈 덮인 타이가에서 자연 스폰됩니다.",
+    "uses": [
+      "달콤한 열매 채집 도움 없이 관찰용"
+    ],
+    "relatedItems": [
+      "sweet_berries"
+    ]
+  },
+  {
+    "id": "panda",
+    "name": "판다",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "대나무 숲에서 발견되는 동물로 대나무를 주식으로 합니다.",
+    "acquisition": "대나무 숲 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "대나무로 먹이 주기 및 번식"
+    ],
+    "relatedItems": [
+      "bamboo"
+    ]
+  },
+  {
+    "id": "turtle",
+    "name": "거북",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "바다 근처 모래 해변에 서식하며 거북 등껍질 재료를 드랍합니다.",
+    "acquisition": "따뜻한 해변에서 자연 스폰됩니다.",
+    "uses": [
+      "거북 비늘 드랍(성체가 알에서 부화할 때)"
+    ],
+    "relatedItems": [
+      "turtle_helmet"
+    ]
+  },
+  {
+    "id": "dolphin",
+    "name": "돌고래",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "플레이어를 보물이 있는 곳으로 안내해주는 바다 생물입니다.",
+    "acquisition": "바다 전역에서 자연 스폰됩니다.",
+    "uses": [
+      "생선을 주면 보물 안내 효과",
+      "수영 속도 증가 효과 제공"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "bat",
+    "name": "박쥐",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "동굴에 서식하는 작은 야행성 생물입니다.",
+    "acquisition": "어두운 동굴 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "특별한 자원 제공 없음(장식성 몹)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "mooshroom",
+    "name": "무시룸",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "소의 변종으로 등에 버섯이 자라며 버섯 스튜를 만들 수 있습니다.",
+    "acquisition": "버섯 들판 바이옴에서만 스폰됩니다.",
+    "uses": [
+      "그릇 사용 시 버섯 스튜 획득",
+      "가위로 소로 변형 가능"
+    ],
+    "relatedItems": [
+      "cow"
+    ]
+  },
+  {
+    "id": "snow_golem",
+    "name": "눈 골렘",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "눈덩이를 던져 공격하는 플레이어 제작형 골렘입니다.",
+    "acquisition": "눈덩이 2개 + 호박(조각된 호박) 1개로 직접 소환합니다.",
+    "uses": [
+      "적대 몹에게 눈덩이 투척 공격"
+    ],
+    "relatedItems": [
+      "carved_pumpkin"
+    ]
+  },
+  {
+    "id": "allay",
+    "name": "알레이",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "지정한 아이템과 같은 종류를 찾아 모아다 주는 작은 정령입니다.",
+    "acquisition": "고대 도시 안 새장에서 발견해 해방시킵니다.",
+    "uses": [
+      "같은 아이템 자동 수집",
+      "음표 블록 소리에 반응해 춤춤"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "axolotl",
+    "name": "우파루파",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "물속에서 물고기를 자동으로 사냥해주는 수중 동물입니다.",
+    "acquisition": "무성한 동굴 바이옴의 물웅덩이에서 발견됩니다.",
+    "uses": [
+      "양동이로 포획해 이동",
+      "물속 몹과 전투 시 도움"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "goat",
+    "name": "염소",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "산악 지역에 서식하며 박치기 공격을 하는 동물입니다.",
+    "acquisition": "산악 바이옴 정상 부근에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 또는 뿔 획득 시 나팔피리 제작 재료"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "frog",
+    "name": "개구리",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "습지 지역에 서식하며 반딧불이를 사냥하는 동물입니다.",
+    "acquisition": "늪, 맹그로브 늪 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "작은 마그마 큐브 사냥 시 개구리 조명 드랍"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "strider",
+    "name": "스트라이더",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "용암 위를 걸어다닐 수 있는 네더의 생물입니다.",
+    "acquisition": "네더 차원의 용암 바다 위에서 스폰됩니다.",
+    "uses": [
+      "뒤틀린 균사체 사용 시 용암 위 이동 수단"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "glow_squid",
+    "name": "발광 오징어",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "어두운 물속에서 빛을 내는 오징어의 변종입니다.",
+    "acquisition": "동굴 및 깊은 물속에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 발광 먹물 주머니 드랍"
+    ],
+    "relatedItems": [
+      "glow_ink_sac"
+    ]
+  },
+  {
+    "id": "polar_bear",
+    "name": "북극곰",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "얼음 평원 지역에 서식하는 대형 동물입니다.",
+    "acquisition": "눈 덮인 평원, 얼음 봉우리 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "새끼를 데리고 있을 때만 공격적"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "ocelot",
+    "name": "오실롯",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "정글에 서식하며 생선으로 길들일 수 있는 야생 고양이입니다.",
+    "acquisition": "정글 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "관상용, 고양이의 야생 원종"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "cod",
+    "name": "대구",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "바다에서 헤엄치는 기본 물고기입니다.",
+    "acquisition": "차가운·따뜻한 바다에서 자연 스폰되며 낚시로도 얻습니다.",
+    "uses": [
+      "익혀서 음식으로 섭취"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "salmon",
+    "name": "연어",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "강과 차가운 바다에서 발견되는 물고기입니다.",
+    "acquisition": "강, 차가운 바다에서 자연 스폰되며 낚시로도 얻습니다.",
+    "uses": [
+      "익혀서 음식으로 섭취",
+      "북극곰 유인"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "tropical_fish",
+    "name": "열대어",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "따뜻한 바다에서 발견되는 화려한 색상의 물고기입니다.",
+    "acquisition": "따뜻한 바다, 산호초 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "양동이로 포획해 수족관 장식용"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "pufferfish",
+    "name": "복어",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "가까이 가면 부풀며 독 효과를 주는 물고기입니다.",
+    "acquisition": "따뜻한 바다에서 자연 스폰됩니다.",
+    "uses": [
+      "물속 호흡 물약 재료"
+    ],
+    "relatedItems": [
+      "potion"
+    ]
+  },
+  {
+    "id": "husk",
+    "name": "허스크",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "사막에 서식하며 공격 시 배고픔 효과를 주는 좀비 변종입니다.",
+    "acquisition": "사막 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 썩은 살점 드랍"
+    ],
+    "relatedItems": [
+      "zombie"
+    ]
+  },
+  {
+    "id": "stray",
+    "name": "스트레이",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "얼음 지역에 서식하며 화살에 느려짐 효과를 부여하는 스켈레톤 변종입니다.",
+    "acquisition": "눈 덮인 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 뼈, 화살, 느려짐 화살 드랍"
+    ],
+    "relatedItems": [
+      "skeleton"
+    ]
+  },
+  {
+    "id": "wither_skeleton",
+    "name": "위더 스켈레톤",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "네더 요새에 서식하며 공격 시 위더 효과를 주는 몹입니다.",
+    "acquisition": "네더 요새 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 위더 스켈레톤 두개골 드랍(위더 소환 재료)"
+    ],
+    "relatedItems": [
+      "wither"
+    ]
+  },
+  {
+    "id": "cave_spider",
+    "name": "동굴거미",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "독을 가진 작은 크기의 거미로 광산에 서식합니다.",
+    "acquisition": "폐광 스포너 주변에서 스폰됩니다.",
+    "uses": [
+      "처치 시 실 드랍"
+    ],
+    "relatedItems": [
+      "spider"
+    ]
+  },
+  {
+    "id": "silverfish",
+    "name": "은빛 벌레",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "벽 블록 안에 숨어있다가 부수면 튀어나오는 작은 몹입니다.",
+    "acquisition": "감염된 돌 블록을 부수면 등장합니다.",
+    "uses": [
+      "특별한 드랍 없음, 무리지어 공격"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "guardian",
+    "name": "가디언",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "해저 신전에 서식하며 레이저 빔으로 공격하는 몹입니다.",
+    "acquisition": "해저 신전 내부에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 프리즈머린 조각/수정, 대구/생선 드랍"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "elder_guardian",
+    "name": "엘더 가디언",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "해저 신전 보스급 몹으로 채광 피로 효과를 부여합니다.",
+    "acquisition": "해저 신전마다 3마리가 고정 배치되어 있습니다.",
+    "uses": [
+      "처치 시 해면 드랍, 채광 피로 디버프 해제"
+    ],
+    "relatedItems": [
+      "guardian"
+    ]
+  },
+  {
+    "id": "shulker",
+    "name": "쉴커",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "엔드 도시에 서식하며 상자로 위장할 수 있는 몹입니다.",
+    "acquisition": "엔드 도시 건물 내부에서 발견됩니다.",
+    "uses": [
+      "처치 시 쉘커 껍질 드랍(쉘커 상자 제작 재료)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "vindicator",
+    "name": "뱀부지기",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "도끼를 휘두르는 강한 약탈자 무리 몹입니다.",
+    "acquisition": "약탈자 전초기지 및 약탈 이벤트에서 스폰됩니다.",
+    "uses": [
+      "처치 시 에메랄드(낮은 확률) 드랍"
+    ],
+    "relatedItems": [
+      "emerald"
+    ]
+  },
+  {
+    "id": "pillager",
+    "name": "약탈자",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "석궁을 사용해 원거리 공격을 하는 약탈자 무리 몹입니다.",
+    "acquisition": "약탈자 전초기지 주변에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 화살, 에메랄드(낮은 확률) 드랍"
+    ],
+    "relatedItems": [
+      "crossbow"
+    ]
+  },
+  {
+    "id": "evoker",
+    "name": "소환사",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "엄니를 소환해 공격하는 약탈자 무리의 강력한 몹입니다.",
+    "acquisition": "약탈자 전초기지, 마을 습격 이벤트에서 등장합니다.",
+    "uses": [
+      "처치 시 마을의 영웅 부여 토템(불사의 토템) 드랍"
+    ],
+    "relatedItems": [
+      "totem_of_undying"
+    ]
+  },
+  {
+    "id": "ravager",
+    "name": "라바저",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "돌진 공격을 하는 거대한 약탈자 탈것 몹입니다.",
+    "acquisition": "마을 습격 이벤트에서 소환사와 함께 등장합니다.",
+    "uses": [
+      "처치 시 새들 드랍하지 않음, 습격 진행 요소"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "magma_cube",
+    "name": "마그마 큐브",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "네더에 서식하는 슬라임의 변종으로 점프 공격을 합니다.",
+    "acquisition": "네더 차원 전역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 마그마 크림 드랍"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "zombified_piglin",
+    "name": "좀비화 피글린",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "네더에 서식하며 공격받지 않으면 중립적인 좀비형 몹입니다.",
+    "acquisition": "네더 차원 전역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 금 조각(너겟), 썩은 살점 드랍"
+    ],
+    "relatedItems": [
+      "gold_ingot"
+    ]
+  },
+  {
+    "id": "hoglin",
+    "name": "호글린",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "네더 황금 숲에 서식하는 멧돼지형 몹입니다.",
+    "acquisition": "뒤틀린 숲 외 네더 황금 숲 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "처치 시 돼지고기, 가죽 드랍"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "piglin_brute",
+    "name": "우두머리 피글린",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "물물교환을 하지 않고 항상 공격적인 피글린 변종입니다.",
+    "acquisition": "네더 요새 내부의 특정 구조물에서 스폰됩니다.",
+    "uses": [
+      "처치 시 아이템 드랍 없음, 위협적인 전투 몹"
+    ],
+    "relatedItems": [
+      "piglin"
+    ]
+  },
+  {
+    "id": "warden",
+    "name": "워든",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "고대 도시에 서식하며 시야 없이 소리와 진동으로 사냥하는 최강급 몹입니다.",
+    "acquisition": "고대 도시에서 감지기가 감지를 반복하면 소환됩니다.",
+    "uses": [
+      "매우 강력한 공격력, 전투보다 회피 권장"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "sulfur",
+    "name": "유황",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "유황 동굴에서 발견되는 노란색 건축 자재로, 거품이 올라오는 웅덩이와 간헐천을 만들 수 있습니다.",
+    "acquisition": "유황 동굴 바이옴에서 채굴해 얻습니다.",
+    "uses": [
+      "건축 자재",
+      "거품 웅덩이·간헐천 장식 요소 구성"
+    ],
+    "relatedItems": [],
+    "version": "26.2"
+  },
+  {
+    "id": "sulfur_cube",
+    "name": "유황 큐브",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "유황 동굴에 서식하는 수동적인 몹으로, 주변 블록을 흡수해 형태와 성질이 바뀝니다.",
+    "acquisition": "유황 동굴 바이옴에서 자연 스폰됩니다.",
+    "uses": [
+      "블록을 흡수시켜 튕기거나 미끄러지는 등 다양한 상호작용 유도",
+      "블록을 흡수한 상태에서는 공격 피해를 받지 않음"
+    ],
+    "relatedItems": [
+      "sulfur"
+    ],
+    "version": "26.2"
+  },
+  {
+    "id": "red_poplar_log",
+    "name": "붉은 포플러 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "단풍이 든 듯한 붉은색 잎을 가진 포플러나무의 원목입니다.",
+    "acquisition": "포플러나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자·계단·반블록 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "poplar_planks"
+    ],
+    "version": "26.3"
+  },
+  {
+    "id": "orange_poplar_log",
+    "name": "주황 포플러 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "단풍이 든 듯한 주황색 잎을 가진 포플러나무의 원목입니다.",
+    "acquisition": "포플러나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자·계단·반블록 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "poplar_planks"
+    ],
+    "version": "26.3"
+  },
+  {
+    "id": "yellow_poplar_log",
+    "name": "노란 포플러 원목",
+    "category": "블록",
+    "subcategory": "자연",
+    "description": "단풍이 든 듯한 노란색 잎을 가진 포플러나무의 원목입니다.",
+    "acquisition": "포플러나무를 손이나 도끼로 채취합니다.",
+    "uses": [
+      "판자·계단·반블록 제작",
+      "화로 연료"
+    ],
+    "relatedItems": [
+      "poplar_planks"
+    ],
+    "version": "26.3"
+  },
+  {
+    "id": "poplar_planks",
+    "name": "포플러 판자",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "포플러 원목을 가공해 만드는 기본 건축 자재입니다.",
+    "acquisition": "포플러 원목 1개를 조합대에서 가공해 4개를 얻습니다.",
+    "uses": [
+      "계단·반블록·문 등 건축 재료"
+    ],
+    "relatedItems": [
+      "red_poplar_log"
+    ],
+    "version": "26.3"
+  },
+  {
+    "id": "dappled_forest",
+    "name": "얼룩덜룩한 숲",
+    "category": "기타",
+    "subcategory": "바이옴",
+    "description": "붉은·주황·노란 포플러나무가 뒤섞여 단풍 든 숲처럼 보이는 신규 바이옴입니다.",
+    "acquisition": "지상에서 자연적으로 생성되는 바이옴이라 별도 채집 없이 탐험으로 발견합니다.",
+    "uses": [
+      "포플러나무 채집",
+      "경관 감상 및 건축 배경지"
+    ],
+    "relatedItems": [
+      "red_poplar_log",
+      "orange_poplar_log",
+      "yellow_poplar_log"
+    ],
+    "version": "26.3"
+  },
+  {
+    "id": "carved_pumpkin",
+    "name": "조각된 호박",
+    "category": "블록",
+    "subcategory": "장식",
+    "description": "얼굴 모양을 새긴 호박으로, 골렘 소환과 장식에 쓰입니다.",
+    "acquisition": "호박을 가위로 조각해 얻습니다.",
+    "uses": [
+      "아이언 골렘/눈 골렘 소환 시 머리 부분",
+      "장식용 블록",
+      "쓰고 있으면 엔더맨을 화나게 하지 않음"
+    ],
+    "relatedItems": [
+      "pumpkin",
+      "iron_golem",
+      "snow_golem"
+    ]
+  },
+  {
+    "id": "mule",
+    "name": "노새",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "말과 당나귀 사이에서 태어나는 잡종 동물로, 상자를 실어 짐을 옮길 수 있습니다.",
+    "acquisition": "말과 당나귀를 교배시키면 태어납니다. 자연 스폰은 하지 않습니다.",
+    "uses": [
+      "안장 + 상자 장착 시 운송 수단"
+    ],
+    "relatedItems": [
+      "horse",
+      "donkey"
+    ]
+  },
+  {
+    "id": "skeleton_horse",
+    "name": "스켈레톤 말",
+    "category": "몹",
+    "subcategory": "중립적",
+    "description": "천둥번개가 칠 때 드물게 나타나는 언데드 말입니다.",
+    "acquisition": "뇌우가 칠 때 스켈레톤 트랩(함정)으로 낮은 확률로 스폰됩니다.",
+    "uses": [
+      "길들여서 안장 장착 시 탑승 가능 (번식 불가)"
+    ],
+    "relatedItems": [
+      "horse"
+    ]
+  },
+  {
+    "id": "camel",
+    "name": "낙타",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "사막 마을에 서식하며, 한 번에 두 명이 탈 수 있는 동물입니다.",
+    "acquisition": "사막 마을에서 자연 스폰됩니다.",
+    "uses": [
+      "안장 장착 시 2인 동시 탑승",
+      "대시(돌진) 이동 가능"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "sniffer",
+    "name": "스니퍼",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "땅을 킁킁대며 고대 씨앗을 캐내는, 부활시켜야 만날 수 있는 고대 동물입니다.",
+    "acquisition": "고고학 유적지에서 발굴한 스니퍼 알을 부화시켜 얻습니다.",
+    "uses": [
+      "땅에서 고대 씨앗(토치플라워 등) 발굴"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "armadillo",
+    "name": "아르마딜로",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "위협을 느끼면 몸을 둥글게 마는 동물로, 등딱지 비늘을 드랍합니다.",
+    "acquisition": "사바나 지역에서 자연 스폰됩니다.",
+    "uses": [
+      "비늘을 채집해 늑대 갑옷 제작"
+    ],
+    "relatedItems": [
+      "wolf"
+    ]
+  },
+  {
+    "id": "tadpole",
+    "name": "올챙이",
+    "category": "몹",
+    "subcategory": "우호적",
+    "description": "개구리의 새끼 단계로, 자라면서 서식 바이옴에 따라 다른 개구리가 됩니다.",
+    "acquisition": "개구리 알에서 부화해 태어납니다.",
+    "uses": [
+      "성장하면 온대/열대/한대 개구리로 변태"
+    ],
+    "relatedItems": [
+      "frog"
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { glob, file } from 'astro/loaders';
 
 const postSchema = z.object({
   title: z.string(),
@@ -21,4 +21,21 @@ const study = defineCollection({
   schema: postSchema,
 });
 
-export const collections = { hobby, study };
+const minecraftItemSchema = z.object({
+  name: z.string(),
+  category: z.enum(['블록', '아이템', '몹', '작물', '기타']),
+  subcategory: z.string(),
+  description: z.string(),
+  acquisition: z.string(),
+  uses: z.array(z.string()),
+  relatedItems: z.array(z.string()).default([]),
+  farming: z.string().optional(),
+  version: z.string().optional(),
+});
+
+const minecraft = defineCollection({
+  loader: file('src/content/minecraft/items.json'),
+  schema: minecraftItemSchema,
+});
+
+export const collections = { hobby, study, minecraft };

@@ -1,0 +1,80 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const items = await getCollection('minecraft');
+  return items.map((item) => ({
+    params: { id: item.id },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+
+const relatedEntries = (
+  await Promise.all((item.data.relatedItems ?? []).map((relId) => getEntry('minecraft', relId)))
+).filter((entry) => entry !== undefined);
+---
+
+<BaseLayout title={item.data.name} description={item.data.description}>
+  <main class="mx-auto max-w-2xl px-5 py-14">
+    <a href="/minecraft/" class="mb-4 inline-block text-sm text-emerald-600 hover:underline dark:text-emerald-400">
+      ← 전체 목록으로
+    </a>
+
+    <div class="mb-1 text-xs text-neutral-500 dark:text-neutral-400">
+      {item.data.category} · {item.data.subcategory}
+      {item.data.version && ` · v${item.data.version} 추가`}
+    </div>
+    <h1 class="mb-3 text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+      {item.data.name}
+    </h1>
+    <p class="mb-6 text-neutral-700 dark:text-neutral-300">
+      {item.data.description}
+    </p>
+
+    <section class="mb-5">
+      <h2 class="mb-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+        획득 방법
+      </h2>
+      <p class="text-sm text-neutral-700 dark:text-neutral-300">{item.data.acquisition}</p>
+    </section>
+
+    {item.data.farming && (
+      <section class="mb-5">
+        <h2 class="mb-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+          재배 / 사육 방법
+        </h2>
+        <p class="text-sm text-neutral-700 dark:text-neutral-300">{item.data.farming}</p>
+      </section>
+    )}
+
+    <section class="mb-5">
+      <h2 class="mb-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+        용도
+      </h2>
+      <ul class="list-inside list-disc text-sm text-neutral-700 dark:text-neutral-300">
+        {item.data.uses.map((use) => <li>{use}</li>)}
+      </ul>
+    </section>
+
+    {relatedEntries.length > 0 && (
+      <section>
+        <h2 class="mb-2 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+          관련 항목
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          {relatedEntries.map((rel) => (
+            <a
+              href={`/minecraft/item/${rel!.id}/`}
+              class="rounded-full border border-neutral-300 px-3 py-1 text-sm text-neutral-700 transition-colors hover:border-emerald-500 hover:text-emerald-600 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-emerald-400"
+            >
+              {rel!.data.name}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </main>
+</BaseLayout>
