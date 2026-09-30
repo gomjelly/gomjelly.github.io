@@ -1,0 +1,35 @@
+---
+import { getIcon } from '../utils/mcIcons';
+
+interface Props {
+  item: { id: string; category: string; subcategory: string };
+  size?: number;
+}
+
+const { item, size = 32 } = Astro.props;
+const { shape, color } = getIcon(item);
+const cell = size / 8;
+
+const colorMap: Record<string, string> = {
+  A: color.a,
+  B: color.b,
+  C: color.c,
+  D: color.d,
+  O: '#3a3a3a',
+};
+
+const rects: { x: number; y: number; fill: string }[] = [];
+shape.forEach((row, y) => {
+  row.split('').forEach((ch, x) => {
+    if (ch !== '.' && colorMap[ch]) {
+      rects.push({ x: x * cell, y: y * cell, fill: colorMap[ch] });
+    }
+  });
+});
+---
+
+<svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} shape-rendering="crispEdges" aria-hidden="true">
+  {rects.map((r) => (
+    <rect x={r.x} y={r.y} width={cell} height={cell} fill={r.fill} />
+  ))}
+</svg>

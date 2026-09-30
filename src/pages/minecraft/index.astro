@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import MCIcon from '../../components/MCIcon.astro';
 import { MINECRAFT_VERSION } from '../../utils/minecraft';
 
 const items = (await getCollection('minecraft')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'ko'));
@@ -49,8 +50,8 @@ const categories = ['전체', '블록', '아이템', '몹', '작물', '기타'];
           data-name={item.data.name}
           data-category={item.data.category}
         >
-          <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-neutral-100 text-lg dark:bg-neutral-900">
-            {item.data.emoji ?? '❔'}
+          <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-neutral-100 dark:bg-neutral-900">
+            <MCIcon item={{ id: item.id, category: item.data.category, subcategory: item.data.subcategory }} size={28} />
           </span>
           <span class="min-w-0">
             <span class="block text-xs text-neutral-500 dark:text-neutral-400">
