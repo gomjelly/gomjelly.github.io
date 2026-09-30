@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { MINECRAFT_VERSION } from '../../utils/minecraft';
 
 const items = (await getCollection('minecraft')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'ko'));
 
@@ -9,7 +10,12 @@ const categories = ['전체', '블록', '아이템', '몹', '작물', '기타'];
 
 <BaseLayout title="마인크래프트 백과사전" description="아이템·블록·몹·작물을 분류별로 찾아보고, 획득법·사육법·용도까지 정리한 백과사전">
   <section class="mx-auto max-w-4xl px-5 py-14">
-    <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">Minecraft</p>
+    <div class="flex items-center gap-2">
+      <p class="text-sm font-medium text-emerald-600 dark:text-emerald-400">Minecraft</p>
+      <span class="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300">
+        {MINECRAFT_VERSION} 기준
+      </span>
+    </div>
     <h1 class="mt-2 text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">마인크래프트 백과사전</h1>
     <p class="mt-2 text-neutral-500 dark:text-neutral-400">
       아이템·블록·몹·작물을 분류별로 찾아보고, 획득법·사육법·용도까지 한눈에 확인하세요. (총 {items.length}개 항목)
@@ -39,16 +45,21 @@ const categories = ['전체', '블록', '아이템', '몹', '작물', '기타'];
       {items.map((item) => (
         <a
           href={`/minecraft/item/${item.id}/`}
-          class="item-card block rounded-lg border border-neutral-200 p-3 transition-colors hover:border-emerald-500 dark:border-neutral-800"
+          class="item-card flex items-start gap-3 rounded-lg border border-neutral-200 p-3 transition-colors hover:border-emerald-500 dark:border-neutral-800"
           data-name={item.data.name}
           data-category={item.data.category}
         >
-          <div class="mb-1 text-xs text-neutral-500 dark:text-neutral-400">
-            {item.data.category} · {item.data.subcategory}
-          </div>
-          <div class="font-medium text-neutral-900 dark:text-neutral-100">
-            {item.data.name}
-          </div>
+          <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-neutral-100 text-lg dark:bg-neutral-900">
+            {item.data.emoji ?? '❔'}
+          </span>
+          <span class="min-w-0">
+            <span class="block text-xs text-neutral-500 dark:text-neutral-400">
+              {item.data.category} · {item.data.subcategory}
+            </span>
+            <span class="block truncate font-medium text-neutral-900 dark:text-neutral-100">
+              {item.data.name}
+            </span>
+          </span>
         </a>
       ))}
     </div>

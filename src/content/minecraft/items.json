@@ -15,7 +15,8 @@
       "diamond_ore",
       "diamond_sword",
       "diamond_pickaxe"
-    ]
+    ],
+    "emoji": "💎"
   },
   {
     "id": "diamond_ore",
@@ -29,7 +30,8 @@
     ],
     "relatedItems": [
       "diamond"
-    ]
+    ],
+    "emoji": "💎"
   },
   {
     "id": "diamond_sword",
@@ -44,6 +46,18 @@
     "relatedItems": [
       "diamond",
       "diamond_pickaxe"
+    ],
+    "emoji": "⚔️",
+    "recipe": [
+      null,
+      "diamond",
+      null,
+      null,
+      "diamond",
+      null,
+      null,
+      "stick",
+      null
     ]
   },
   {
@@ -59,6 +73,18 @@
     "relatedItems": [
       "diamond",
       "diamond_sword"
+    ],
+    "emoji": "⛏️",
+    "recipe": [
+      "diamond",
+      "diamond",
+      "diamond",
+      null,
+      "stick",
+      null,
+      null,
+      "stick",
+      null
     ]
   },
   {
@@ -75,7 +101,14 @@
     "relatedItems": [
       "cow"
     ],
-    "farming": "경작지에 밀 씨앗을 심고 물 근처에서 재배합니다. 다 자라면(황금색) 수확 후 씨앗 1~4개와 밀을 드랍합니다."
+    "farming": "경작지에 밀 씨앗을 심고 물 근처에서 재배합니다. 다 자라면(황금색) 수확 후 씨앗 1~4개와 밀을 드랍합니다.",
+    "emoji": "🌾",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌾 1~3단계 자람",
+      "🌾 4~6단계 자람",
+      "🌾 다 자람(황금색) → 수확"
+    ]
   },
   {
     "id": "cow",
@@ -85,14 +118,19 @@
     "description": "가죽과 소고기를 얻을 수 있는 우호적 동물입니다.",
     "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "소고기(익히면 스테이크)",
-      "가죽 획득"
+      "우유 짜기(양동이 필요)",
+      "번식용 밀 먹이"
     ],
     "relatedItems": [
       "wheat",
       "leather"
     ],
-    "farming": "밀을 든 채로 소 두 마리에게 사용하면 번식하며, 새끼 소가 태어나 성체가 될 때까지 자랍니다."
+    "farming": "밀을 든 채로 소 두 마리에게 사용하면 번식하며, 새끼 소가 태어나 성체가 될 때까지 자랍니다.",
+    "emoji": "🐄",
+    "drops": [
+      "생 소고기 1~3개",
+      "가죽 0~2개"
+    ]
   },
   {
     "id": "leather",
@@ -108,7 +146,8 @@
     ],
     "relatedItems": [
       "cow"
-    ]
+    ],
+    "emoji": "🟤"
   },
   {
     "id": "oak_log",
@@ -121,7 +160,8 @@
       "참나무 판자 제작",
       "화로 연료"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪵"
   },
   {
     "id": "coal_ore",
@@ -136,7 +176,8 @@
     "relatedItems": [
       "coal",
       "torch"
-    ]
+    ],
+    "emoji": "⚫"
   },
   {
     "id": "coal",
@@ -152,7 +193,8 @@
     "relatedItems": [
       "coal_ore",
       "torch"
-    ]
+    ],
+    "emoji": "⚫"
   },
   {
     "id": "iron_ore",
@@ -166,7 +208,8 @@
     ],
     "relatedItems": [
       "iron_ingot"
-    ]
+    ],
+    "emoji": "⛏️"
   },
   {
     "id": "iron_ingot",
@@ -184,7 +227,8 @@
       "iron_ore",
       "iron_sword",
       "iron_pickaxe"
-    ]
+    ],
+    "emoji": "🔩"
   },
   {
     "id": "gold_ore",
@@ -198,7 +242,8 @@
     ],
     "relatedItems": [
       "gold_ingot"
-    ]
+    ],
+    "emoji": "🟡"
   },
   {
     "id": "gold_ingot",
@@ -215,7 +260,8 @@
     "relatedItems": [
       "gold_ore",
       "netherite_ingot"
-    ]
+    ],
+    "emoji": "🟨"
   },
   {
     "id": "redstone_ore",
@@ -229,7 +275,8 @@
     ],
     "relatedItems": [
       "redstone"
-    ]
+    ],
+    "emoji": "🔴"
   },
   {
     "id": "redstone",
@@ -246,7 +293,8 @@
       "redstone_ore",
       "repeater",
       "piston"
-    ]
+    ],
+    "emoji": "🔴"
   },
   {
     "id": "lapis_ore",
@@ -260,7 +308,8 @@
     ],
     "relatedItems": [
       "lapis_lazuli"
-    ]
+    ],
+    "emoji": "🔵"
   },
   {
     "id": "lapis_lazuli",
@@ -275,7 +324,8 @@
     ],
     "relatedItems": [
       "lapis_ore"
-    ]
+    ],
+    "emoji": "🔵"
   },
   {
     "id": "emerald_ore",
@@ -289,7 +339,8 @@
     ],
     "relatedItems": [
       "emerald"
-    ]
+    ],
+    "emoji": "🟢"
   },
   {
     "id": "emerald",
@@ -304,7 +355,8 @@
     ],
     "relatedItems": [
       "emerald_ore"
-    ]
+    ],
+    "emoji": "💚"
   },
   {
     "id": "copper_ore",
@@ -318,7 +370,8 @@
     ],
     "relatedItems": [
       "copper_ingot"
-    ]
+    ],
+    "emoji": "🟠"
   },
   {
     "id": "copper_ingot",
@@ -334,7 +387,8 @@
     ],
     "relatedItems": [
       "copper_ore"
-    ]
+    ],
+    "emoji": "🟠"
   },
   {
     "id": "ancient_debris",
@@ -348,7 +402,8 @@
     ],
     "relatedItems": [
       "netherite_scrap"
-    ]
+    ],
+    "emoji": "🟫"
   },
   {
     "id": "netherite_scrap",
@@ -363,7 +418,8 @@
     "relatedItems": [
       "ancient_debris",
       "netherite_ingot"
-    ]
+    ],
+    "emoji": "⬛"
   },
   {
     "id": "netherite_ingot",
@@ -378,7 +434,8 @@
     "relatedItems": [
       "netherite_scrap",
       "gold_ingot"
-    ]
+    ],
+    "emoji": "⬛"
   },
   {
     "id": "spruce_log",
@@ -393,7 +450,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🪵"
   },
   {
     "id": "birch_log",
@@ -408,7 +466,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🪵"
   },
   {
     "id": "jungle_log",
@@ -423,7 +482,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🪵"
   },
   {
     "id": "acacia_log",
@@ -438,7 +498,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🪵"
   },
   {
     "id": "dark_oak_log",
@@ -453,7 +514,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🪵"
   },
   {
     "id": "mangrove_log",
@@ -468,7 +530,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🪵"
   },
   {
     "id": "cherry_log",
@@ -483,7 +546,8 @@
     ],
     "relatedItems": [
       "oak_log"
-    ]
+    ],
+    "emoji": "🌸"
   },
   {
     "id": "stone",
@@ -498,7 +562,8 @@
     ],
     "relatedItems": [
       "cobblestone"
-    ]
+    ],
+    "emoji": "🪨"
   },
   {
     "id": "cobblestone",
@@ -513,7 +578,8 @@
     ],
     "relatedItems": [
       "stone"
-    ]
+    ],
+    "emoji": "🪨"
   },
   {
     "id": "deepslate",
@@ -526,7 +592,8 @@
       "건축 재료",
       "제련하여 매끄러운 심층암 제작"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "⬛"
   },
   {
     "id": "granite",
@@ -538,7 +605,8 @@
     "uses": [
       "건축·장식용 블록"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🟥"
   },
   {
     "id": "obsidian",
@@ -554,7 +622,8 @@
     ],
     "relatedItems": [
       "diamond_pickaxe"
-    ]
+    ],
+    "emoji": "🟪"
   },
   {
     "id": "glass",
@@ -569,7 +638,8 @@
     ],
     "relatedItems": [
       "sand"
-    ]
+    ],
+    "emoji": "🪟"
   },
   {
     "id": "sand",
@@ -584,7 +654,8 @@
     ],
     "relatedItems": [
       "glass"
-    ]
+    ],
+    "emoji": "🟨"
   },
   {
     "id": "bookshelf",
@@ -599,6 +670,18 @@
     "relatedItems": [
       "book",
       "enchanting_table"
+    ],
+    "emoji": "📚",
+    "recipe": [
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      "book",
+      "book",
+      "book",
+      "oak_planks",
+      "oak_planks",
+      "oak_planks"
     ]
   },
   {
@@ -611,7 +694,19 @@
     "uses": [
       "3x3 제작 칸 사용"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🔨",
+    "recipe": [
+      "oak_planks",
+      "oak_planks",
+      null,
+      "oak_planks",
+      "oak_planks",
+      null,
+      null,
+      null,
+      null
+    ]
   },
   {
     "id": "furnace",
@@ -628,6 +723,18 @@
     "relatedItems": [
       "blast_furnace",
       "smoker"
+    ],
+    "emoji": "🔥",
+    "recipe": [
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      null,
+      "cobblestone",
+      "cobblestone",
+      "cobblestone",
+      "cobblestone"
     ]
   },
   {
@@ -643,7 +750,8 @@
     "relatedItems": [
       "furnace",
       "iron_ingot"
-    ]
+    ],
+    "emoji": "🔥"
   },
   {
     "id": "smoker",
@@ -657,7 +765,8 @@
     ],
     "relatedItems": [
       "furnace"
-    ]
+    ],
+    "emoji": "🔥"
   },
   {
     "id": "anvil",
@@ -674,7 +783,8 @@
     "relatedItems": [
       "iron_ingot",
       "enchanted_book"
-    ]
+    ],
+    "emoji": "⚒️"
   },
   {
     "id": "enchanting_table",
@@ -691,7 +801,8 @@
       "diamond",
       "lapis_lazuli",
       "book"
-    ]
+    ],
+    "emoji": "✨"
   },
   {
     "id": "brewing_stand",
@@ -706,7 +817,8 @@
     "relatedItems": [
       "blaze_rod",
       "nether_wart"
-    ]
+    ],
+    "emoji": "🧪"
   },
   {
     "id": "ender_chest",
@@ -721,7 +833,8 @@
     "relatedItems": [
       "obsidian",
       "ender_pearl"
-    ]
+    ],
+    "emoji": "🟪"
   },
   {
     "id": "chest",
@@ -734,7 +847,19 @@
       "아이템 보관",
       "이중 상자로 확장 가능"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "📦",
+    "recipe": [
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      null,
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      "oak_planks"
+    ]
   },
   {
     "id": "hopper",
@@ -749,7 +874,8 @@
     "relatedItems": [
       "iron_ingot",
       "chest"
-    ]
+    ],
+    "emoji": "⏳"
   },
   {
     "id": "piston",
@@ -765,7 +891,8 @@
     "relatedItems": [
       "redstone",
       "iron_ingot"
-    ]
+    ],
+    "emoji": "➡️"
   },
   {
     "id": "tnt",
@@ -781,7 +908,8 @@
     "relatedItems": [
       "gunpowder",
       "sand"
-    ]
+    ],
+    "emoji": "🧨"
   },
   {
     "id": "wood_pickaxe",
@@ -795,6 +923,18 @@
     ],
     "relatedItems": [
       "crafting_table"
+    ],
+    "emoji": "⛏️",
+    "recipe": [
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      null,
+      "stick",
+      null,
+      null,
+      "stick",
+      null
     ]
   },
   {
@@ -808,7 +948,8 @@
       "나무 블록 채취",
       "근접 공격"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪓"
   },
   {
     "id": "wood_shovel",
@@ -820,7 +961,8 @@
     "uses": [
       "흙·모래·자갈 등 채취"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪏"
   },
   {
     "id": "wood_hoe",
@@ -835,7 +977,8 @@
     ],
     "relatedItems": [
       "wheat"
-    ]
+    ],
+    "emoji": "🛠️"
   },
   {
     "id": "wood_sword",
@@ -847,7 +990,8 @@
     "uses": [
       "전투용 근접 무기"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "⚔️"
   },
   {
     "id": "stone_pickaxe",
@@ -861,7 +1005,8 @@
     ],
     "relatedItems": [
       "crafting_table"
-    ]
+    ],
+    "emoji": "⛏️"
   },
   {
     "id": "stone_axe",
@@ -874,7 +1019,8 @@
       "나무 블록 채취",
       "근접 공격"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪓"
   },
   {
     "id": "stone_shovel",
@@ -886,7 +1032,8 @@
     "uses": [
       "흙·모래·자갈 등 채취"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪏"
   },
   {
     "id": "stone_hoe",
@@ -901,7 +1048,8 @@
     ],
     "relatedItems": [
       "wheat"
-    ]
+    ],
+    "emoji": "🛠️"
   },
   {
     "id": "stone_sword",
@@ -913,7 +1061,8 @@
     "uses": [
       "전투용 근접 무기"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "⚔️"
   },
   {
     "id": "iron_pickaxe",
@@ -927,7 +1076,8 @@
     ],
     "relatedItems": [
       "crafting_table"
-    ]
+    ],
+    "emoji": "⛏️"
   },
   {
     "id": "iron_axe",
@@ -940,7 +1090,8 @@
       "나무 블록 채취",
       "근접 공격"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪓"
   },
   {
     "id": "iron_shovel",
@@ -952,7 +1103,8 @@
     "uses": [
       "흙·모래·자갈 등 채취"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪏"
   },
   {
     "id": "iron_hoe",
@@ -967,7 +1119,8 @@
     ],
     "relatedItems": [
       "wheat"
-    ]
+    ],
+    "emoji": "🛠️"
   },
   {
     "id": "iron_sword",
@@ -979,7 +1132,8 @@
     "uses": [
       "전투용 근접 무기"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "⚔️"
   },
   {
     "id": "gold_pickaxe",
@@ -993,7 +1147,8 @@
     ],
     "relatedItems": [
       "crafting_table"
-    ]
+    ],
+    "emoji": "⛏️"
   },
   {
     "id": "gold_axe",
@@ -1006,7 +1161,8 @@
       "나무 블록 채취",
       "근접 공격"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪓"
   },
   {
     "id": "gold_shovel",
@@ -1018,7 +1174,8 @@
     "uses": [
       "흙·모래·자갈 등 채취"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪏"
   },
   {
     "id": "gold_hoe",
@@ -1033,7 +1190,8 @@
     ],
     "relatedItems": [
       "wheat"
-    ]
+    ],
+    "emoji": "🛠️"
   },
   {
     "id": "gold_sword",
@@ -1045,7 +1203,8 @@
     "uses": [
       "전투용 근접 무기"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "⚔️"
   },
   {
     "id": "stick",
@@ -1058,7 +1217,19 @@
       "도구/무기 자루",
       "횃불, 화살 제작"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🥢",
+    "recipe": [
+      null,
+      "oak_planks",
+      null,
+      null,
+      "oak_planks",
+      null,
+      null,
+      null,
+      null
+    ]
   },
   {
     "id": "netherite_sword",
@@ -1073,7 +1244,8 @@
     "relatedItems": [
       "diamond_sword",
       "netherite_ingot"
-    ]
+    ],
+    "emoji": "⚔️"
   },
   {
     "id": "bow",
@@ -1088,6 +1260,18 @@
     "relatedItems": [
       "arrow",
       "string"
+    ],
+    "emoji": "🏹",
+    "recipe": [
+      null,
+      "string",
+      "stick",
+      "stick",
+      null,
+      "string",
+      null,
+      "string",
+      "stick"
     ]
   },
   {
@@ -1104,7 +1288,8 @@
       "bow",
       "feather",
       "flint"
-    ]
+    ],
+    "emoji": "🏹"
   },
   {
     "id": "crossbow",
@@ -1120,7 +1305,8 @@
     "relatedItems": [
       "arrow",
       "iron_ingot"
-    ]
+    ],
+    "emoji": "🏹"
   },
   {
     "id": "trident",
@@ -1133,7 +1319,8 @@
       "근접 공격",
       "투척 공격 (물속에서 회수 가능)"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🔱"
   },
   {
     "id": "shield",
@@ -1147,6 +1334,18 @@
     ],
     "relatedItems": [
       "iron_ingot"
+    ],
+    "emoji": "🛡️",
+    "recipe": [
+      "oak_planks",
+      "iron_ingot",
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      "oak_planks",
+      null,
+      "oak_planks",
+      null
     ]
   },
   {
@@ -1162,7 +1361,8 @@
     ],
     "relatedItems": [
       "arrow"
-    ]
+    ],
+    "emoji": "🪨"
   },
   {
     "id": "flint_and_steel",
@@ -1179,7 +1379,8 @@
     "relatedItems": [
       "flint",
       "iron_ingot"
-    ]
+    ],
+    "emoji": "🔥"
   },
   {
     "id": "leather_helmet",
@@ -1191,7 +1392,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪖"
   },
   {
     "id": "leather_chestplate",
@@ -1203,7 +1405,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦺"
   },
   {
     "id": "leather_leggings",
@@ -1215,7 +1418,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "👖"
   },
   {
     "id": "leather_boots",
@@ -1227,7 +1431,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🥾"
   },
   {
     "id": "iron_helmet",
@@ -1239,7 +1444,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪖"
   },
   {
     "id": "iron_chestplate",
@@ -1251,7 +1457,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦺"
   },
   {
     "id": "iron_leggings",
@@ -1263,7 +1470,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "👖"
   },
   {
     "id": "iron_boots",
@@ -1275,7 +1483,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🥾"
   },
   {
     "id": "gold_helmet",
@@ -1287,7 +1496,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪖"
   },
   {
     "id": "gold_chestplate",
@@ -1299,7 +1509,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦺"
   },
   {
     "id": "gold_leggings",
@@ -1311,7 +1522,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "👖"
   },
   {
     "id": "gold_boots",
@@ -1323,7 +1535,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🥾"
   },
   {
     "id": "diamond_helmet",
@@ -1335,7 +1548,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪖"
   },
   {
     "id": "diamond_chestplate",
@@ -1347,7 +1561,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦺"
   },
   {
     "id": "diamond_leggings",
@@ -1359,7 +1574,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "👖"
   },
   {
     "id": "diamond_boots",
@@ -1371,7 +1587,8 @@
     "uses": [
       "방어력 증가"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🥾"
   },
   {
     "id": "netherite_chestplate",
@@ -1386,7 +1603,8 @@
     "relatedItems": [
       "diamond_chestplate",
       "netherite_ingot"
-    ]
+    ],
+    "emoji": "🦺"
   },
   {
     "id": "turtle_helmet",
@@ -1399,7 +1617,8 @@
       "수중 호흡 보조",
       "머리 방어구"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐢"
   },
   {
     "id": "apple",
@@ -1414,7 +1633,8 @@
     ],
     "relatedItems": [
       "golden_apple"
-    ]
+    ],
+    "emoji": "🍎"
   },
   {
     "id": "golden_apple",
@@ -1429,7 +1649,8 @@
     "relatedItems": [
       "apple",
       "gold_ingot"
-    ]
+    ],
+    "emoji": "🍏"
   },
   {
     "id": "bread",
@@ -1443,7 +1664,8 @@
     ],
     "relatedItems": [
       "wheat"
-    ]
+    ],
+    "emoji": "🍞"
   },
   {
     "id": "cooked_beef",
@@ -1457,7 +1679,8 @@
     ],
     "relatedItems": [
       "cow"
-    ]
+    ],
+    "emoji": "🥩"
   },
   {
     "id": "cooked_porkchop",
@@ -1471,7 +1694,8 @@
     ],
     "relatedItems": [
       "pig"
-    ]
+    ],
+    "emoji": "🥓"
   },
   {
     "id": "cooked_chicken",
@@ -1485,7 +1709,8 @@
     ],
     "relatedItems": [
       "chicken"
-    ]
+    ],
+    "emoji": "🍗"
   },
   {
     "id": "golden_carrot",
@@ -1501,7 +1726,8 @@
     "relatedItems": [
       "carrot",
       "gold_ingot"
-    ]
+    ],
+    "emoji": "🥕"
   },
   {
     "id": "cake",
@@ -1516,7 +1742,8 @@
     "relatedItems": [
       "wheat",
       "sugar"
-    ]
+    ],
+    "emoji": "🍰"
   },
   {
     "id": "cookie",
@@ -1531,7 +1758,8 @@
     "relatedItems": [
       "wheat",
       "cocoa_beans"
-    ]
+    ],
+    "emoji": "🍪"
   },
   {
     "id": "pumpkin_pie",
@@ -1545,7 +1773,8 @@
     ],
     "relatedItems": [
       "pumpkin"
-    ]
+    ],
+    "emoji": "🥧"
   },
   {
     "id": "honey_bottle",
@@ -1560,7 +1789,8 @@
     ],
     "relatedItems": [
       "bee"
-    ]
+    ],
+    "emoji": "🍯"
   },
   {
     "id": "string",
@@ -1575,7 +1805,8 @@
     ],
     "relatedItems": [
       "bow"
-    ]
+    ],
+    "emoji": "🧵"
   },
   {
     "id": "feather",
@@ -1591,7 +1822,8 @@
     "relatedItems": [
       "chicken",
       "arrow"
-    ]
+    ],
+    "emoji": "🪶"
   },
   {
     "id": "gunpowder",
@@ -1606,7 +1838,8 @@
     ],
     "relatedItems": [
       "tnt"
-    ]
+    ],
+    "emoji": "💥"
   },
   {
     "id": "ender_pearl",
@@ -1621,7 +1854,8 @@
     ],
     "relatedItems": [
       "ender_chest"
-    ]
+    ],
+    "emoji": "🟣"
   },
   {
     "id": "ender_eye",
@@ -1637,7 +1871,8 @@
     "relatedItems": [
       "ender_pearl",
       "blaze_powder"
-    ]
+    ],
+    "emoji": "👁️"
   },
   {
     "id": "blaze_rod",
@@ -1653,7 +1888,8 @@
     "relatedItems": [
       "blaze_powder",
       "brewing_stand"
-    ]
+    ],
+    "emoji": "🔥"
   },
   {
     "id": "blaze_powder",
@@ -1669,7 +1905,8 @@
     "relatedItems": [
       "blaze_rod",
       "ender_eye"
-    ]
+    ],
+    "emoji": "🔥"
   },
   {
     "id": "nether_star",
@@ -1683,7 +1920,8 @@
     ],
     "relatedItems": [
       "beacon"
-    ]
+    ],
+    "emoji": "⭐"
   },
   {
     "id": "beacon",
@@ -1697,7 +1935,8 @@
     ],
     "relatedItems": [
       "nether_star"
-    ]
+    ],
+    "emoji": "📡"
   },
   {
     "id": "ghast_tear",
@@ -1710,7 +1949,8 @@
       "재생성 물약 재료",
       "물이 있는 네더 포탈 생성 재료"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "💧"
   },
   {
     "id": "slime_ball",
@@ -1725,7 +1965,8 @@
     ],
     "relatedItems": [
       "piston"
-    ]
+    ],
+    "emoji": "🟢"
   },
   {
     "id": "bone",
@@ -1740,7 +1981,8 @@
     ],
     "relatedItems": [
       "bone_meal"
-    ]
+    ],
+    "emoji": "🦴"
   },
   {
     "id": "bone_meal",
@@ -1757,7 +1999,8 @@
     "relatedItems": [
       "bone",
       "wheat"
-    ]
+    ],
+    "emoji": "🦴"
   },
   {
     "id": "paper",
@@ -1773,7 +2016,8 @@
     "relatedItems": [
       "sugar_cane",
       "book"
-    ]
+    ],
+    "emoji": "📄"
   },
   {
     "id": "book",
@@ -1791,7 +2035,8 @@
       "paper",
       "leather",
       "enchanted_book"
-    ]
+    ],
+    "emoji": "📖"
   },
   {
     "id": "enchanted_book",
@@ -1806,7 +2051,8 @@
     "relatedItems": [
       "book",
       "anvil"
-    ]
+    ],
+    "emoji": "📘"
   },
   {
     "id": "name_tag",
@@ -1818,7 +2064,8 @@
     "uses": [
       "몹 이름 지정 및 디스폰 방지"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🏷️"
   },
   {
     "id": "saddle",
@@ -1832,7 +2079,8 @@
     ],
     "relatedItems": [
       "pig"
-    ]
+    ],
+    "emoji": "🐴"
   },
   {
     "id": "compass",
@@ -1847,6 +2095,18 @@
     "relatedItems": [
       "iron_ingot",
       "redstone"
+    ],
+    "emoji": "🧭",
+    "recipe": [
+      null,
+      "iron_ingot",
+      null,
+      "iron_ingot",
+      "redstone",
+      "iron_ingot",
+      null,
+      "iron_ingot",
+      null
     ]
   },
   {
@@ -1862,7 +2122,8 @@
     "relatedItems": [
       "gold_ingot",
       "redstone"
-    ]
+    ],
+    "emoji": "🕐"
   },
   {
     "id": "map",
@@ -1877,7 +2138,8 @@
     "relatedItems": [
       "paper",
       "compass"
-    ]
+    ],
+    "emoji": "🗺️"
   },
   {
     "id": "shears",
@@ -1893,6 +2155,18 @@
     ],
     "relatedItems": [
       "iron_ingot"
+    ],
+    "emoji": "✂️",
+    "recipe": [
+      null,
+      "iron_ingot",
+      null,
+      "iron_ingot",
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   {
@@ -1908,6 +2182,18 @@
     ],
     "relatedItems": [
       "iron_ingot"
+    ],
+    "emoji": "🪣",
+    "recipe": [
+      "iron_ingot",
+      null,
+      "iron_ingot",
+      null,
+      "iron_ingot",
+      null,
+      null,
+      null,
+      null
     ]
   },
   {
@@ -1923,6 +2209,18 @@
     "relatedItems": [
       "string",
       "stick"
+    ],
+    "emoji": "🎣",
+    "recipe": [
+      null,
+      null,
+      "stick",
+      null,
+      "stick",
+      "string",
+      "stick",
+      null,
+      "string"
     ]
   },
   {
@@ -1938,7 +2236,8 @@
     "relatedItems": [
       "string",
       "slime_ball"
-    ]
+    ],
+    "emoji": "🪢"
   },
   {
     "id": "elytra",
@@ -1950,7 +2249,8 @@
     "uses": [
       "등에 장착해 활공 비행"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🪽"
   },
   {
     "id": "totem_of_undying",
@@ -1962,7 +2262,8 @@
     "uses": [
       "손에 들고 있으면 사망 대신 부활 효과 발동"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🗿"
   },
   {
     "id": "ink_sac",
@@ -1977,7 +2278,8 @@
     ],
     "relatedItems": [
       "squid"
-    ]
+    ],
+    "emoji": "⬛"
   },
   {
     "id": "glow_ink_sac",
@@ -1989,7 +2291,8 @@
     "uses": [
       "발광 표지판/아이템 프레임 제작"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "✨"
   },
   {
     "id": "firework_rocket",
@@ -2005,7 +2308,8 @@
     "relatedItems": [
       "gunpowder",
       "elytra"
-    ]
+    ],
+    "emoji": "🎆"
   },
   {
     "id": "potion",
@@ -2020,7 +2324,8 @@
     "relatedItems": [
       "brewing_stand",
       "nether_wart"
-    ]
+    ],
+    "emoji": "🧪"
   },
   {
     "id": "carrot",
@@ -2035,7 +2340,14 @@
       "돼지 번식용 먹이"
     ],
     "relatedItems": [],
-    "farming": "경작지에 당근을 심어 재배합니다. 다 자라면 수확해 여러 개를 얻습니다."
+    "farming": "경작지에 당근을 심어 재배합니다. 다 자라면 수확해 여러 개를 얻습니다.",
+    "emoji": "🥕",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌿 잎이 자람",
+      "🌿 더 무성해짐",
+      "🥕 다 자람 → 수확"
+    ]
   },
   {
     "id": "potato",
@@ -2049,7 +2361,14 @@
       "돼지 번식용 먹이는 아님(당근·감자류 참고)"
     ],
     "relatedItems": [],
-    "farming": "경작지에 감자를 심어 재배합니다. 다 자라면 수확해 여러 개를 얻습니다."
+    "farming": "경작지에 감자를 심어 재배합니다. 다 자라면 수확해 여러 개를 얻습니다.",
+    "emoji": "🥔",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌿 잎이 자람",
+      "🌿 더 무성해짐",
+      "🥔 다 자람 → 수확"
+    ]
   },
   {
     "id": "beetroot",
@@ -2063,7 +2382,14 @@
       "배고픔 소량 회복"
     ],
     "relatedItems": [],
-    "farming": "경작지에 비트 씨앗을 심어 재배합니다. 다 자라면 수확합니다."
+    "farming": "경작지에 비트 씨앗을 심어 재배합니다. 다 자라면 수확합니다.",
+    "emoji": "🟥",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌿 새싹",
+      "🌿 잎이 자람",
+      "🟥 다 자람 → 수확"
+    ]
   },
   {
     "id": "melon",
@@ -2078,7 +2404,8 @@
     ],
     "relatedItems": [
       "melon_block"
-    ]
+    ],
+    "emoji": "🍈"
   },
   {
     "id": "melon_block",
@@ -2091,7 +2418,14 @@
       "채취해 수박 조각 획득"
     ],
     "relatedItems": [],
-    "farming": "흙에 수박 씨앗을 심고 물 근처에서 재배합니다. 줄기가 자라면 옆 칸에 수박이 열립니다."
+    "farming": "흙에 수박 씨앗을 심고 물 근처에서 재배합니다. 줄기가 자라면 옆 칸에 수박이 열립니다.",
+    "emoji": "🍈",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌿 줄기 자람",
+      "🌿 줄기 다 자람",
+      "🍈 옆 칸에 수박 열림"
+    ]
   },
   {
     "id": "pumpkin",
@@ -2106,7 +2440,14 @@
       "호박 등 제작"
     ],
     "relatedItems": [],
-    "farming": "흙에 호박 씨앗을 심고 물 근처에서 재배합니다. 줄기가 자라면 옆 칸에 호박이 열립니다."
+    "farming": "흙에 호박 씨앗을 심고 물 근처에서 재배합니다. 줄기가 자라면 옆 칸에 호박이 열립니다.",
+    "emoji": "🎃",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌿 줄기 자람",
+      "🌿 줄기 다 자람",
+      "🎃 옆 칸에 호박 열림"
+    ]
   },
   {
     "id": "sugar_cane",
@@ -2120,7 +2461,13 @@
       "설탕 제작"
     ],
     "relatedItems": [],
-    "farming": "물 옆 흙이나 모래에 심으면 자연적으로 위로 자랍니다."
+    "farming": "물 옆 흙이나 모래에 심으면 자연적으로 위로 자랍니다.",
+    "emoji": "🎋",
+    "stages": [
+      "🎋 1칸",
+      "🎋🎋 2칸",
+      "🎋🎋🎋 3칸(최대) → 아랫부분부터 수확"
+    ]
   },
   {
     "id": "sugar",
@@ -2135,7 +2482,8 @@
     ],
     "relatedItems": [
       "sugar_cane"
-    ]
+    ],
+    "emoji": "🍬"
   },
   {
     "id": "cocoa_beans",
@@ -2149,7 +2497,14 @@
       "갈색 염료로 사용"
     ],
     "relatedItems": [],
-    "farming": "정글 원목 옆면에 심고 자랄 때까지 기다립니다."
+    "farming": "정글 원목 옆면에 심고 자랄 때까지 기다립니다.",
+    "emoji": "🍫",
+    "stages": [
+      "🌱 나무 옆면에 심기",
+      "🟢 작은 꼬투리",
+      "🟠 중간 꼬투리",
+      "🟤 다 익음 → 수확"
+    ]
   },
   {
     "id": "nether_wart",
@@ -2162,7 +2517,13 @@
       "대부분의 물약 제조 기본 재료"
     ],
     "relatedItems": [],
-    "farming": "영혼 모래 위에 심으면 시간이 지나 자랍니다. 물은 필요 없습니다."
+    "farming": "영혼 모래 위에 심으면 시간이 지나 자랍니다. 물은 필요 없습니다.",
+    "emoji": "🍄",
+    "stages": [
+      "🍄 심기",
+      "🍄 자람",
+      "🍄 다 자람 → 수확(물 불필요)"
+    ]
   },
   {
     "id": "sweet_berries",
@@ -2175,7 +2536,13 @@
       "배고픔 소량 회복",
       "여우 번식용 먹이"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🍒",
+    "stages": [
+      "🌱 새싹",
+      "🟢 어린 덤불",
+      "🔴 열매 맺음(계속 채집 가능)"
+    ]
   },
   {
     "id": "kelp",
@@ -2189,7 +2556,12 @@
       "거북 먹이"
     ],
     "relatedItems": [],
-    "farming": "물속 흙이나 자갈 위에 심으면 위로 계속 자랍니다."
+    "farming": "물속 흙이나 자갈 위에 심으면 위로 계속 자랍니다.",
+    "emoji": "🌿",
+    "stages": [
+      "🌿 심기",
+      "🌿 위로 자람(계속 반복)"
+    ]
   },
   {
     "id": "bamboo",
@@ -2204,7 +2576,13 @@
       "뗏목 제작"
     ],
     "relatedItems": [],
-    "farming": "흙이나 모래 위에 심으면 매우 빠르게 자랍니다."
+    "farming": "흙이나 모래 위에 심으면 매우 빠르게 자랍니다.",
+    "emoji": "🎍",
+    "stages": [
+      "🎍 새싹",
+      "🎍 빠르게 자람",
+      "🎍 최대 높이 도달"
+    ]
   },
   {
     "id": "pig",
@@ -2214,11 +2592,15 @@
     "description": "돼지고기를 얻을 수 있는 우호적 동물입니다.",
     "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "돼지고기(익히면 구운 돼지고기)",
-      "안장 장착 시 탑승 가능"
+      "안장 장착 시 탑승 가능",
+      "당근으로 유인·번식"
     ],
     "relatedItems": [],
-    "farming": "당근을 든 채로 두 마리에게 사용하면 번식합니다."
+    "farming": "당근을 든 채로 두 마리에게 사용하면 번식합니다.",
+    "emoji": "🐷",
+    "drops": [
+      "생 돼지고기 1~3개"
+    ]
   },
   {
     "id": "sheep",
@@ -2228,11 +2610,15 @@
     "description": "양털과 양고기를 얻을 수 있는 우호적 동물입니다.",
     "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "양털 채취(가위)",
-      "양고기 획득"
+      "가위로 양털 채취(죽이지 않아도 됨, 자연 재생)",
+      "밀로 번식"
     ],
     "relatedItems": [],
-    "farming": "밀을 든 채로 두 마리에게 사용하면 번식합니다."
+    "farming": "밀을 든 채로 두 마리에게 사용하면 번식합니다.",
+    "emoji": "🐑",
+    "drops": [
+      "생 양고기 1~2개"
+    ]
   },
   {
     "id": "chicken",
@@ -2242,11 +2628,16 @@
     "description": "달걀·깃털·닭고기를 제공하는 우호적 동물입니다.",
     "acquisition": "초원 등 지상 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "달걀 자연 생산",
-      "닭고기/깃털 획득"
+      "달걀을 주기적으로 자연 생산",
+      "씨앗으로 번식"
     ],
     "relatedItems": [],
-    "farming": "씨앗류를 든 채로 두 마리에게 사용하면 번식합니다."
+    "farming": "씨앗류를 든 채로 두 마리에게 사용하면 번식합니다.",
+    "emoji": "🐔",
+    "drops": [
+      "생 닭고기 1개",
+      "깃털 0~2개"
+    ]
   },
   {
     "id": "horse",
@@ -2256,10 +2647,15 @@
     "description": "탑승해 빠르게 이동할 수 있는 동물입니다.",
     "acquisition": "초원 등에서 자연 스폰되며 길들여서 탑승합니다.",
     "uses": [
-      "안장 장착 후 탑승 및 이동 수단"
+      "길들인 뒤 안장 장착 시 탑승 및 이동 수단",
+      "황금 사과/당근으로 번식"
     ],
     "relatedItems": [],
-    "farming": "황금 사과나 황금 당근으로 번식시킬 수 있습니다."
+    "farming": "황금 사과나 황금 당근으로 번식시킬 수 있습니다.",
+    "emoji": "🐴",
+    "drops": [
+      "가죽 0~2개"
+    ]
   },
   {
     "id": "villager",
@@ -2269,10 +2665,12 @@
     "description": "직업에 따라 다양한 아이템을 거래할 수 있는 마을 주민입니다.",
     "acquisition": "마을에서 자연 스폰되거나 아기 주민이 자라서 생깁니다.",
     "uses": [
-      "에메랄드로 아이템 거래"
+      "에메랄드로 아이템 거래",
+      "침대+일자리 블록으로 직업 배정"
     ],
     "relatedItems": [],
-    "farming": "충분한 음식과 침대가 있으면 마을에서 자연적으로 번식합니다."
+    "farming": "충분한 음식과 침대가 있으면 마을에서 자연적으로 번식합니다.",
+    "emoji": "🧑‍🌾"
   },
   {
     "id": "cat",
@@ -2285,7 +2683,8 @@
       "팬텀 접근 방지",
       "크리퍼 회피 유도"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐱"
   },
   {
     "id": "wolf",
@@ -2300,7 +2699,8 @@
     ],
     "relatedItems": [
       "bone"
-    ]
+    ],
+    "emoji": "🐺"
   },
   {
     "id": "bee",
@@ -2315,7 +2715,8 @@
     ],
     "relatedItems": [
       "honey_bottle"
-    ]
+    ],
+    "emoji": "🐝"
   },
   {
     "id": "rabbit",
@@ -2325,9 +2726,15 @@
     "description": "빠르게 움직이는 작은 동물로, 토끼 스튜 재료를 제공합니다.",
     "acquisition": "초원, 사막 등 다양한 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "토끼고기/토끼 가죽 획득"
+      "당근/민들레로 번식"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐰",
+    "drops": [
+      "생 토끼고기 0~1개",
+      "토끼 가죽 0~1개",
+      "토끼 발(낮은 확률)"
+    ]
   },
   {
     "id": "iron_golem",
@@ -2341,6 +2748,11 @@
     ],
     "relatedItems": [
       "carved_pumpkin"
+    ],
+    "emoji": "🗿",
+    "drops": [
+      "철 주괴 3~5개",
+      "양귀비(낮은 확률)"
     ]
   },
   {
@@ -2351,9 +2763,13 @@
     "description": "밤에 나타나 플레이어를 공격하는 기본 언데드 몹입니다.",
     "acquisition": "어두운 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 썩은 살점 드랍"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🧟",
+    "drops": [
+      "썩은 살점"
+    ]
   },
   {
     "id": "skeleton",
@@ -2363,11 +2779,15 @@
     "description": "활로 원거리 공격을 하는 언데드 몹입니다.",
     "acquisition": "어두운 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 뼈, 화살 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "bone",
       "arrow"
+    ],
+    "emoji": "💀",
+    "drops": [
+      "뼈, 화살"
     ]
   },
   {
@@ -2378,11 +2798,14 @@
     "description": "가까이 다가가 폭발을 일으키는 대표적인 마인크래프트 몹입니다.",
     "acquisition": "어두운 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 화약 드랍",
       "고양이 근처에서 도망감"
     ],
     "relatedItems": [
       "gunpowder"
+    ],
+    "emoji": "🟩",
+    "drops": [
+      "화약"
     ]
   },
   {
@@ -2393,10 +2816,14 @@
     "description": "벽을 타고 오를 수 있는 몹으로, 밝을 땐 중립적입니다.",
     "acquisition": "어두운 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 실, 거미눈 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "string"
+    ],
+    "emoji": "🕷️",
+    "drops": [
+      "실, 거미눈"
     ]
   },
   {
@@ -2407,10 +2834,14 @@
     "description": "블록을 옮길 수 있고 눈을 마주치면 공격해오는 큰 몹입니다.",
     "acquisition": "어두운 지역 및 엔드 차원에서 스폰됩니다.",
     "uses": [
-      "처치 시 엔더 진주 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "ender_pearl"
+    ],
+    "emoji": "🟪",
+    "drops": [
+      "엔더 진주"
     ]
   },
   {
@@ -2421,11 +2852,15 @@
     "description": "다양한 물약을 던져 공격하는 몹입니다.",
     "acquisition": "늪 오두막 및 어두운 지역에서 스폰됩니다.",
     "uses": [
-      "처치 시 화약, 레드스톤, 설탕 등 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "gunpowder",
       "redstone"
+    ],
+    "emoji": "🧙",
+    "drops": [
+      "화약, 레드스톤, 설탕 등"
     ]
   },
   {
@@ -2436,10 +2871,14 @@
     "description": "죽으면 작게 분열되는 젤리 형태의 몹입니다.",
     "acquisition": "늪 지역 및 지하 특정 구역에서 스폰됩니다.",
     "uses": [
-      "처치 시 슬라임볼 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "slime_ball"
+    ],
+    "emoji": "🟢",
+    "drops": [
+      "슬라임볼"
     ]
   },
   {
@@ -2453,7 +2892,8 @@
       "처치 시 팬텀 막",
       "불사의 토템 등 고급 물약 재료"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦇"
   },
   {
     "id": "drowned",
@@ -2463,10 +2903,14 @@
     "description": "물속에 서식하는 좀비형 몹으로 삼지창을 드랍할 수 있습니다.",
     "acquisition": "물속 어두운 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 삼지창(낮은 확률), 청동 조각 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "trident"
+    ],
+    "emoji": "🌊",
+    "drops": [
+      "삼지창(낮은 확률), 청동 조각"
     ]
   },
   {
@@ -2481,7 +2925,8 @@
     ],
     "relatedItems": [
       "gold_ingot"
-    ]
+    ],
+    "emoji": "🐷"
   },
   {
     "id": "blaze",
@@ -2491,10 +2936,14 @@
     "description": "네더 요새에 서식하며 불덩이를 발사하는 몹입니다.",
     "acquisition": "네더 요새 스포너에서 스폰됩니다.",
     "uses": [
-      "처치 시 블레이즈 막대 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "blaze_rod"
+    ],
+    "emoji": "🔥",
+    "drops": [
+      "블레이즈 막대"
     ]
   },
   {
@@ -2505,11 +2954,15 @@
     "description": "네더에서 떠다니며 폭발성 화염구를 발사하는 대형 몹입니다.",
     "acquisition": "네더 차원 전역에서 스폰됩니다.",
     "uses": [
-      "처치 시 화약, 가스트의 눈물 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "gunpowder",
       "ghast_tear"
+    ],
+    "emoji": "👻",
+    "drops": [
+      "화약, 가스트의 눈물"
     ]
   },
   {
@@ -2520,10 +2973,14 @@
     "description": "물속에서 발견되는 수중 생물입니다.",
     "acquisition": "바다·강 등 물이 있는 곳에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 먹물 주머니 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "ink_sac"
+    ],
+    "emoji": "🦑",
+    "drops": [
+      "먹물 주머니 1~3개"
     ]
   },
   {
@@ -2536,7 +2993,8 @@
     "uses": [
       "처치 시 엔드 포탈 활성화 및 용의 알 획득"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐉"
   },
   {
     "id": "wither",
@@ -2546,10 +3004,14 @@
     "description": "네더의 별을 드랍하는 소환형 보스 몹입니다.",
     "acquisition": "영혼 모래 3개와 위더 스켈레톤 두개골 3개를 T자 모양으로 배치해 소환합니다.",
     "uses": [
-      "처치 시 네더의 별 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "nether_star"
+    ],
+    "emoji": "💀",
+    "drops": [
+      "네더의 별"
     ]
   },
   {
@@ -2564,6 +3026,10 @@
     ],
     "relatedItems": [
       "horse"
+    ],
+    "emoji": "🫏",
+    "drops": [
+      "가죽 0~2개"
     ]
   },
   {
@@ -2577,7 +3043,11 @@
       "카라반 구성(목줄로 연결)",
       "짐 운반용 카펫/상자 장착"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦙",
+    "drops": [
+      "가죽 0~2개"
+    ]
   },
   {
     "id": "parrot",
@@ -2588,9 +3058,10 @@
     "acquisition": "정글 바이옴에서 자연 스폰됩니다.",
     "uses": [
       "씨앗으로 길들이기",
-      "몹 소리를 흉내내는 특징"
+      "어깨에 탑승, 몹 소리 흉내"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦜"
   },
   {
     "id": "fox",
@@ -2600,11 +3071,13 @@
     "description": "아이템을 입에 물고 다니는 타이가 지역의 동물입니다.",
     "acquisition": "타이가, 눈 덮인 타이가에서 자연 스폰됩니다.",
     "uses": [
-      "달콤한 열매 채집 도움 없이 관찰용"
+      "달콤한 열매로 길들이기(제한적)",
+      "관찰용"
     ],
     "relatedItems": [
       "sweet_berries"
-    ]
+    ],
+    "emoji": "🦊"
   },
   {
     "id": "panda",
@@ -2618,7 +3091,8 @@
     ],
     "relatedItems": [
       "bamboo"
-    ]
+    ],
+    "emoji": "🐼"
   },
   {
     "id": "turtle",
@@ -2628,11 +3102,12 @@
     "description": "바다 근처 모래 해변에 서식하며 거북 등껍질 재료를 드랍합니다.",
     "acquisition": "따뜻한 해변에서 자연 스폰됩니다.",
     "uses": [
-      "거북 비늘 드랍(성체가 알에서 부화할 때)"
+      "알을 낳고 부화 시 새끼가 거북 비늘 드랍"
     ],
     "relatedItems": [
       "turtle_helmet"
-    ]
+    ],
+    "emoji": "🐢"
   },
   {
     "id": "dolphin",
@@ -2645,7 +3120,8 @@
       "생선을 주면 보물 안내 효과",
       "수영 속도 증가 효과 제공"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐬"
   },
   {
     "id": "bat",
@@ -2655,9 +3131,10 @@
     "description": "동굴에 서식하는 작은 야행성 생물입니다.",
     "acquisition": "어두운 동굴 지역에서 자연 스폰됩니다.",
     "uses": [
-      "특별한 자원 제공 없음(장식성 몹)"
+      "특별한 상호작용 없음(장식성 몹)"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🦇"
   },
   {
     "id": "mooshroom",
@@ -2672,6 +3149,11 @@
     ],
     "relatedItems": [
       "cow"
+    ],
+    "emoji": "🍄",
+    "drops": [
+      "생 소고기 1~3개",
+      "가죽 0~2개"
     ]
   },
   {
@@ -2686,7 +3168,8 @@
     ],
     "relatedItems": [
       "carved_pumpkin"
-    ]
+    ],
+    "emoji": "⛄"
   },
   {
     "id": "allay",
@@ -2697,9 +3180,10 @@
     "acquisition": "고대 도시 안 새장에서 발견해 해방시킵니다.",
     "uses": [
       "같은 아이템 자동 수집",
-      "음표 블록 소리에 반응해 춤춤"
+      "음표 블록 소리에 반응해 춤"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "✨"
   },
   {
     "id": "axolotl",
@@ -2712,7 +3196,8 @@
       "양동이로 포획해 이동",
       "물속 몹과 전투 시 도움"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🩷"
   },
   {
     "id": "goat",
@@ -2722,9 +3207,10 @@
     "description": "산악 지역에 서식하며 박치기 공격을 하는 동물입니다.",
     "acquisition": "산악 바이옴 정상 부근에서 자연 스폰됩니다.",
     "uses": [
-      "처치 또는 뿔 획득 시 나팔피리 제작 재료"
+      "박치기로 나팔피리 재료(뿔) 획득 유도"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐐"
   },
   {
     "id": "frog",
@@ -2736,7 +3222,8 @@
     "uses": [
       "작은 마그마 큐브 사냥 시 개구리 조명 드랍"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐸"
   },
   {
     "id": "strider",
@@ -2748,7 +3235,8 @@
     "uses": [
       "뒤틀린 균사체 사용 시 용암 위 이동 수단"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🔥"
   },
   {
     "id": "glow_squid",
@@ -2758,10 +3246,14 @@
     "description": "어두운 물속에서 빛을 내는 오징어의 변종입니다.",
     "acquisition": "동굴 및 깊은 물속에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 발광 먹물 주머니 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "glow_ink_sac"
+    ],
+    "emoji": "🦑",
+    "drops": [
+      "발광 먹물 주머니 1~3개"
     ]
   },
   {
@@ -2774,7 +3266,8 @@
     "uses": [
       "새끼를 데리고 있을 때만 공격적"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐻‍❄️"
   },
   {
     "id": "ocelot",
@@ -2786,7 +3279,8 @@
     "uses": [
       "관상용, 고양이의 야생 원종"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐆"
   },
   {
     "id": "cod",
@@ -2796,9 +3290,13 @@
     "description": "바다에서 헤엄치는 기본 물고기입니다.",
     "acquisition": "차가운·따뜻한 바다에서 자연 스폰되며 낚시로도 얻습니다.",
     "uses": [
-      "익혀서 음식으로 섭취"
+      "낚시로도 획득"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐟",
+    "drops": [
+      "익히지 않은 대구"
+    ]
   },
   {
     "id": "salmon",
@@ -2808,10 +3306,14 @@
     "description": "강과 차가운 바다에서 발견되는 물고기입니다.",
     "acquisition": "강, 차가운 바다에서 자연 스폰되며 낚시로도 얻습니다.",
     "uses": [
-      "익혀서 음식으로 섭취",
-      "북극곰 유인"
+      "북극곰 유인",
+      "낚시로도 획득"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐟",
+    "drops": [
+      "익히지 않은 연어"
+    ]
   },
   {
     "id": "tropical_fish",
@@ -2823,7 +3325,11 @@
     "uses": [
       "양동이로 포획해 수족관 장식용"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐠",
+    "drops": [
+      "열대어(1개)"
+    ]
   },
   {
     "id": "pufferfish",
@@ -2837,6 +3343,10 @@
     ],
     "relatedItems": [
       "potion"
+    ],
+    "emoji": "🐡",
+    "drops": [
+      "복어(1개)"
     ]
   },
   {
@@ -2847,10 +3357,14 @@
     "description": "사막에 서식하며 공격 시 배고픔 효과를 주는 좀비 변종입니다.",
     "acquisition": "사막 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 썩은 살점 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "zombie"
+    ],
+    "emoji": "🧟",
+    "drops": [
+      "썩은 살점"
     ]
   },
   {
@@ -2861,10 +3375,14 @@
     "description": "얼음 지역에 서식하며 화살에 느려짐 효과를 부여하는 스켈레톤 변종입니다.",
     "acquisition": "눈 덮인 바이옴에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 뼈, 화살, 느려짐 화살 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "skeleton"
+    ],
+    "emoji": "💀",
+    "drops": [
+      "뼈, 화살, 느려짐 화살"
     ]
   },
   {
@@ -2875,10 +3393,14 @@
     "description": "네더 요새에 서식하며 공격 시 위더 효과를 주는 몹입니다.",
     "acquisition": "네더 요새 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 위더 스켈레톤 두개골 드랍(위더 소환 재료)"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "wither"
+    ],
+    "emoji": "💀",
+    "drops": [
+      "위더 스켈레톤 두개골 드랍(위더 소환 재료)"
     ]
   },
   {
@@ -2889,10 +3411,14 @@
     "description": "독을 가진 작은 크기의 거미로 광산에 서식합니다.",
     "acquisition": "폐광 스포너 주변에서 스폰됩니다.",
     "uses": [
-      "처치 시 실 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "spider"
+    ],
+    "emoji": "🕷️",
+    "drops": [
+      "실"
     ]
   },
   {
@@ -2903,9 +3429,13 @@
     "description": "벽 블록 안에 숨어있다가 부수면 튀어나오는 작은 몹입니다.",
     "acquisition": "감염된 돌 블록을 부수면 등장합니다.",
     "uses": [
-      "특별한 드랍 없음, 무리지어 공격"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐛",
+    "drops": [
+      "특별한 드랍 없음, 무리지어 공격"
+    ]
   },
   {
     "id": "guardian",
@@ -2915,9 +3445,13 @@
     "description": "해저 신전에 서식하며 레이저 빔으로 공격하는 몹입니다.",
     "acquisition": "해저 신전 내부에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 프리즈머린 조각/수정, 대구/생선 드랍"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🟢",
+    "drops": [
+      "프리즈머린 조각/수정, 대구/생선"
+    ]
   },
   {
     "id": "elder_guardian",
@@ -2927,10 +3461,14 @@
     "description": "해저 신전 보스급 몹으로 채광 피로 효과를 부여합니다.",
     "acquisition": "해저 신전마다 3마리가 고정 배치되어 있습니다.",
     "uses": [
-      "처치 시 해면 드랍, 채광 피로 디버프 해제"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "guardian"
+    ],
+    "emoji": "🟢",
+    "drops": [
+      "해면 드랍, 채광 피로 디버프 해제"
     ]
   },
   {
@@ -2941,9 +3479,13 @@
     "description": "엔드 도시에 서식하며 상자로 위장할 수 있는 몹입니다.",
     "acquisition": "엔드 도시 건물 내부에서 발견됩니다.",
     "uses": [
-      "처치 시 쉘커 껍질 드랍(쉘커 상자 제작 재료)"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "📦",
+    "drops": [
+      "쉘커 껍질 드랍(쉘커 상자 제작 재료)"
+    ]
   },
   {
     "id": "vindicator",
@@ -2953,10 +3495,14 @@
     "description": "도끼를 휘두르는 강한 약탈자 무리 몹입니다.",
     "acquisition": "약탈자 전초기지 및 약탈 이벤트에서 스폰됩니다.",
     "uses": [
-      "처치 시 에메랄드(낮은 확률) 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "emerald"
+    ],
+    "emoji": "🪓",
+    "drops": [
+      "에메랄드(낮은 확률)"
     ]
   },
   {
@@ -2967,10 +3513,14 @@
     "description": "석궁을 사용해 원거리 공격을 하는 약탈자 무리 몹입니다.",
     "acquisition": "약탈자 전초기지 주변에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 화살, 에메랄드(낮은 확률) 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "crossbow"
+    ],
+    "emoji": "🏹",
+    "drops": [
+      "화살, 에메랄드(낮은 확률)"
     ]
   },
   {
@@ -2981,10 +3531,14 @@
     "description": "엄니를 소환해 공격하는 약탈자 무리의 강력한 몹입니다.",
     "acquisition": "약탈자 전초기지, 마을 습격 이벤트에서 등장합니다.",
     "uses": [
-      "처치 시 마을의 영웅 부여 토템(불사의 토템) 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "totem_of_undying"
+    ],
+    "emoji": "🧙",
+    "drops": [
+      "마을의 영웅 부여 토템(불사의 토템)"
     ]
   },
   {
@@ -2995,9 +3549,13 @@
     "description": "돌진 공격을 하는 거대한 약탈자 탈것 몹입니다.",
     "acquisition": "마을 습격 이벤트에서 소환사와 함께 등장합니다.",
     "uses": [
-      "처치 시 새들 드랍하지 않음, 습격 진행 요소"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐗",
+    "drops": [
+      "새들 드랍하지 않음, 습격 진행 요소"
+    ]
   },
   {
     "id": "magma_cube",
@@ -3007,9 +3565,13 @@
     "description": "네더에 서식하는 슬라임의 변종으로 점프 공격을 합니다.",
     "acquisition": "네더 차원 전역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 마그마 크림 드랍"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🟧",
+    "drops": [
+      "마그마 크림"
+    ]
   },
   {
     "id": "zombified_piglin",
@@ -3019,10 +3581,14 @@
     "description": "네더에 서식하며 공격받지 않으면 중립적인 좀비형 몹입니다.",
     "acquisition": "네더 차원 전역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 금 조각(너겟), 썩은 살점 드랍"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "gold_ingot"
+    ],
+    "emoji": "🧟",
+    "drops": [
+      "금 조각(너겟), 썩은 살점"
     ]
   },
   {
@@ -3033,9 +3599,13 @@
     "description": "네더 황금 숲에 서식하는 멧돼지형 몹입니다.",
     "acquisition": "뒤틀린 숲 외 네더 황금 숲 지역에서 자연 스폰됩니다.",
     "uses": [
-      "처치 시 돼지고기, 가죽 드랍"
+      "특별한 상호작용 없음"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐗",
+    "drops": [
+      "돼지고기, 가죽"
+    ]
   },
   {
     "id": "piglin_brute",
@@ -3045,10 +3615,14 @@
     "description": "물물교환을 하지 않고 항상 공격적인 피글린 변종입니다.",
     "acquisition": "네더 요새 내부의 특정 구조물에서 스폰됩니다.",
     "uses": [
-      "처치 시 아이템 드랍 없음, 위협적인 전투 몹"
+      "특별한 상호작용 없음"
     ],
     "relatedItems": [
       "piglin"
+    ],
+    "emoji": "🐷",
+    "drops": [
+      "아이템 드랍 없음, 위협적인 전투 몹"
     ]
   },
   {
@@ -3061,7 +3635,8 @@
     "uses": [
       "매우 강력한 공격력, 전투보다 회피 권장"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "⬛"
   },
   {
     "id": "sulfur",
@@ -3075,7 +3650,8 @@
       "거품 웅덩이·간헐천 장식 요소 구성"
     ],
     "relatedItems": [],
-    "version": "26.2"
+    "version": "26.2",
+    "emoji": "🟡"
   },
   {
     "id": "sulfur_cube",
@@ -3091,7 +3667,8 @@
     "relatedItems": [
       "sulfur"
     ],
-    "version": "26.2"
+    "version": "26.2",
+    "emoji": "🟡"
   },
   {
     "id": "red_poplar_log",
@@ -3107,7 +3684,8 @@
     "relatedItems": [
       "poplar_planks"
     ],
-    "version": "26.3"
+    "version": "26.3",
+    "emoji": "🍁"
   },
   {
     "id": "orange_poplar_log",
@@ -3123,7 +3701,8 @@
     "relatedItems": [
       "poplar_planks"
     ],
-    "version": "26.3"
+    "version": "26.3",
+    "emoji": "🍁"
   },
   {
     "id": "yellow_poplar_log",
@@ -3139,7 +3718,8 @@
     "relatedItems": [
       "poplar_planks"
     ],
-    "version": "26.3"
+    "version": "26.3",
+    "emoji": "🍁"
   },
   {
     "id": "poplar_planks",
@@ -3154,7 +3734,8 @@
     "relatedItems": [
       "red_poplar_log"
     ],
-    "version": "26.3"
+    "version": "26.3",
+    "emoji": "🟫"
   },
   {
     "id": "dappled_forest",
@@ -3172,7 +3753,8 @@
       "orange_poplar_log",
       "yellow_poplar_log"
     ],
-    "version": "26.3"
+    "version": "26.3",
+    "emoji": "🍂"
   },
   {
     "id": "carved_pumpkin",
@@ -3190,7 +3772,8 @@
       "pumpkin",
       "iron_golem",
       "snow_golem"
-    ]
+    ],
+    "emoji": "🎃"
   },
   {
     "id": "mule",
@@ -3200,11 +3783,15 @@
     "description": "말과 당나귀 사이에서 태어나는 잡종 동물로, 상자를 실어 짐을 옮길 수 있습니다.",
     "acquisition": "말과 당나귀를 교배시키면 태어납니다. 자연 스폰은 하지 않습니다.",
     "uses": [
-      "안장 + 상자 장착 시 운송 수단"
+      "안장+상자 장착 시 운송 수단(번식 불가)"
     ],
     "relatedItems": [
       "horse",
       "donkey"
+    ],
+    "emoji": "🫏",
+    "drops": [
+      "가죽 0~2개"
     ]
   },
   {
@@ -3215,10 +3802,14 @@
     "description": "천둥번개가 칠 때 드물게 나타나는 언데드 말입니다.",
     "acquisition": "뇌우가 칠 때 스켈레톤 트랩(함정)으로 낮은 확률로 스폰됩니다.",
     "uses": [
-      "길들여서 안장 장착 시 탑승 가능 (번식 불가)"
+      "길들여서 안장 장착 시 탑승 가능(번식 불가)"
     ],
     "relatedItems": [
       "horse"
+    ],
+    "emoji": "💀",
+    "drops": [
+      "가죽 0~2개"
     ]
   },
   {
@@ -3232,7 +3823,8 @@
       "안장 장착 시 2인 동시 탑승",
       "대시(돌진) 이동 가능"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🐪"
   },
   {
     "id": "sniffer",
@@ -3244,7 +3836,8 @@
     "uses": [
       "땅에서 고대 씨앗(토치플라워 등) 발굴"
     ],
-    "relatedItems": []
+    "relatedItems": [],
+    "emoji": "🟢"
   },
   {
     "id": "armadillo",
@@ -3258,6 +3851,10 @@
     ],
     "relatedItems": [
       "wolf"
+    ],
+    "emoji": "🦔",
+    "drops": [
+      "비늘(공격받아 몸을 말 때, 죽이지 않아도 획득)"
     ]
   },
   {
@@ -3272,6 +3869,1201 @@
     ],
     "relatedItems": [
       "frog"
+    ],
+    "emoji": "🐸"
+  },
+  {
+    "id": "zombie_villager",
+    "name": "좀비 주민",
+    "emoji": "🧟",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "좀비에게 감염된 주민으로, 특정 방법으로 다시 주민으로 되돌릴 수 있습니다.",
+    "acquisition": "좀비가 주민을 공격해 감염시키거나, 낮은 확률로 좀비 습격 시 자연 생성됩니다.",
+    "uses": [
+      "악화 물약 투척 + 황금 사과를 먹이면 일반 주민으로 치료 가능"
+    ],
+    "drops": [
+      "썩은 살점"
+    ],
+    "relatedItems": [
+      "zombie",
+      "villager",
+      "golden_apple"
+    ]
+  },
+  {
+    "id": "illusioner",
+    "name": "환영사",
+    "emoji": "🧙",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "투명화와 분신 환영으로 플레이어를 교란시키는 희귀한 약탈자 계열 몹입니다.",
+    "acquisition": "일반 플레이에서는 자연 스폰되지 않으며, 명령어로만 소환할 수 있습니다.",
+    "uses": [
+      "활로 원거리 공격, 투명화 마법으로 위치를 숨김"
+    ],
+    "drops": [],
+    "relatedItems": [
+      "pillager",
+      "evoker"
+    ]
+  },
+  {
+    "id": "vex",
+    "name": "조무래기",
+    "emoji": "👻",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "벽을 통과해 날아다니며 검으로 공격하는 작은 소환형 몹입니다.",
+    "acquisition": "소환사(Evoker)가 전투 중 소환하며, 일정 시간이 지나면 소멸합니다.",
+    "uses": [
+      "소환사가 죽으면 곧 사라짐"
+    ],
+    "drops": [],
+    "relatedItems": [
+      "evoker"
+    ]
+  },
+  {
+    "id": "endermite",
+    "name": "엔더마이트",
+    "emoji": "🐛",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "엔더 진주를 던졌을 때 낮은 확률로 나타나는 작은 적대 몹입니다.",
+    "acquisition": "엔더 진주 투척 시 약 5% 확률로 스폰됩니다.",
+    "uses": [
+      "엔더맨이 근처에 있으면 엔더맨이 조무래기를 공격함"
+    ],
+    "drops": [],
+    "relatedItems": [
+      "ender_pearl",
+      "enderman"
+    ]
+  },
+  {
+    "id": "bogged",
+    "name": "보그드",
+    "emoji": "💀",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "늪·맹그로브 늪에 서식하며 화살에 중독 효과를 부여하는 스켈레톤 변종입니다.",
+    "acquisition": "늪, 맹그로브 늪 바이옴 및 일부 트라이얼 챔버에서 스폰됩니다.",
+    "uses": [
+      "활로 원거리 공격, 중독 화살로 지속 피해"
+    ],
+    "drops": [
+      "뼈",
+      "화살(중독 화살 포함)",
+      "활(낮은 확률)"
+    ],
+    "relatedItems": [
+      "skeleton",
+      "arrow"
+    ]
+  },
+  {
+    "id": "breeze",
+    "name": "브리즈",
+    "emoji": "🌪️",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "바람 돌풍을 발사하고 자유자재로 떠다니는 트라이얼 체임버의 몹입니다.",
+    "acquisition": "트라이얼 체임버(시련의 방) 내부 스포너에서 스폰됩니다.",
+    "uses": [
+      "바람 돌풍으로 넉백 공격",
+      "점프대처럼 높은 곳으로 튕겨 올리기 가능"
+    ],
+    "drops": [
+      "바람 화약(Breeze Rod)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "creaking",
+    "name": "크리킹",
+    "emoji": "🌲",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "보고 있을 때는 움직이지 않다가, 시선을 돌리면 다가오는 나무 몹입니다.",
+    "acquisition": "창백한 정원(Pale Garden) 바이옴에서 크리킹의 심장과 함께 스폰됩니다.",
+    "uses": [
+      "플레이어가 보는 동안은 정지 상태",
+      "연결된 크리킹의 심장을 파괴하면 즉시 소멸"
+    ],
+    "drops": [],
+    "relatedItems": []
+  },
+  {
+    "id": "gloom_wraith",
+    "name": "글룸 레이스",
+    "emoji": "👤",
+    "category": "몹",
+    "subcategory": "적대적",
+    "description": "심층부(고대 도시) 인근에 나타나는 반투명 몹으로, 일반 무기로는 피해를 줄 수 없습니다.",
+    "acquisition": "깊은 어둠(Deep Dark) 인접 지역에서 스폰됩니다. 26.2 \"Chaos Cubed\" 업데이트에서 추가된 신규 몹입니다.",
+    "uses": [
+      "빛에 노출시키면 엑토플라즘을 드랍",
+      "엑토플라즘으로 만든 특수 화살로만 처치 가능"
+    ],
+    "drops": [
+      "엑토플라즘(빛에 노출됐을 때)"
+    ],
+    "relatedItems": [
+      "ectoplasm"
+    ],
+    "version": "26.2"
+  },
+  {
+    "id": "ectoplasm",
+    "name": "엑토플라즘",
+    "emoji": "🟢",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "글룸 레이스가 빛에 노출됐을 때 떨어뜨리는 특수 재료입니다.",
+    "acquisition": "글룸 레이스를 빛(횃불, 낮 등)에 노출시켜 드랍시킵니다.",
+    "uses": [
+      "글룸 레이스를 처치할 수 있는 특수 화살 제작"
+    ],
+    "relatedItems": [
+      "gloom_wraith"
+    ],
+    "version": "26.2"
+  },
+  {
+    "id": "ench_sharpness",
+    "name": "날카로움",
+    "emoji": "⚔️",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "근접 무기의 공격력을 높이는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북), 전리품 상자에서 획득.",
+    "uses": [
+      "검/도끼의 기본 피해량 증가 (최대 5레벨)"
+    ],
+    "relatedItems": [
+      "diamond_sword",
+      "enchanting_table"
+    ]
+  },
+  {
+    "id": "ench_efficiency",
+    "name": "효율",
+    "emoji": "⛏️",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "도구의 채굴·채취 속도를 높이는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "곡괭이/도끼/삽의 작업 속도 증가 (최대 5레벨)"
+    ],
+    "relatedItems": [
+      "diamond_pickaxe"
+    ]
+  },
+  {
+    "id": "ench_unbreaking",
+    "name": "내구성",
+    "emoji": "🛡️",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "도구·방어구의 내구도 소모 확률을 낮추는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "내구도 감소를 일정 확률로 무시 (최대 3레벨)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "ench_fortune",
+    "name": "행운",
+    "emoji": "🍀",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "채굴 시 드랍되는 아이템 개수를 늘려주는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "다이아몬드 원석 등 채굴 드랍량 증가 (최대 3레벨)"
+    ],
+    "relatedItems": [
+      "diamond_pickaxe",
+      "diamond_ore"
+    ]
+  },
+  {
+    "id": "ench_silk_touch",
+    "name": "섬세한 손길",
+    "emoji": "✋",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "블록을 파괴한 형태 그대로 얻을 수 있게 해주는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "광물 원석 블록을 가공 없이 그대로 채취(행운과 동시 적용 불가)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "ench_looting",
+    "name": "약탈",
+    "emoji": "💰",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "몹 처치 시 드랍량을 늘려주는 무기 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "몹 처치 드랍 개수 증가 (최대 3레벨)"
+    ],
+    "relatedItems": [
+      "diamond_sword"
+    ]
+  },
+  {
+    "id": "ench_mending",
+    "name": "수선",
+    "emoji": "🔧",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "경험치를 얻을 때 장착 중인 도구의 내구도를 회복시키는 인챈트입니다.",
+    "acquisition": "전리품 상자, 낚시, 주민 거래로만 획득 가능(인챈트 테이블 불가).",
+    "uses": [
+      "경험치 획득 시 내구도 자동 회복"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "ench_infinity",
+    "name": "무한",
+    "emoji": "♾️",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "화살을 소모하지 않고 활을 쏠 수 있게 해주는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "화살 1개만 있어도 무한 발사(내구도는 소모됨)"
+    ],
+    "relatedItems": [
+      "bow",
+      "arrow"
+    ]
+  },
+  {
+    "id": "ench_protection",
+    "name": "보호",
+    "emoji": "🛡️",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "전반적인 피해를 줄여주는 방어구 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "받는 피해 감소 (최대 4레벨)"
+    ],
+    "relatedItems": [
+      "diamond_chestplate"
+    ]
+  },
+  {
+    "id": "ench_feather_falling",
+    "name": "가시 방지",
+    "emoji": "🪶",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "낙하 피해를 줄여주는 부츠 전용 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "낙하 피해 대폭 감소 (최대 4레벨)"
+    ],
+    "relatedItems": [
+      "diamond_boots"
+    ]
+  },
+  {
+    "id": "ench_respiration",
+    "name": "호흡",
+    "emoji": "💨",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "물속 숨 참는 시간을 늘려주는 투구 전용 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "수중 호흡 시간 연장, 익사 피해 감소 (최대 3레벨)"
+    ],
+    "relatedItems": [
+      "diamond_helmet"
+    ]
+  },
+  {
+    "id": "ench_aqua_affinity",
+    "name": "물의 친화",
+    "emoji": "🌊",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "물속에서 채굴 속도 저하를 없애주는 투구 전용 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "수중 채굴 속도를 지상과 동일하게 유지"
+    ],
+    "relatedItems": [
+      "diamond_helmet"
+    ]
+  },
+  {
+    "id": "ench_power",
+    "name": "힘",
+    "emoji": "🏹",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "활의 공격력을 높이는 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "화살 피해량 증가 (최대 5레벨)"
+    ],
+    "relatedItems": [
+      "bow"
+    ]
+  },
+  {
+    "id": "ench_punch",
+    "name": "밀치기",
+    "emoji": "👊",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "화살에 맞은 대상을 크게 밀쳐내는 활 전용 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "적을 멀리 밀어내는 넉백 효과 (최대 2레벨)"
+    ],
+    "relatedItems": [
+      "bow"
+    ]
+  },
+  {
+    "id": "ench_flame",
+    "name": "화염",
+    "emoji": "🔥",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "화살에 불을 붙이는 활 전용 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "맞은 대상에게 지속 화염 피해 부여"
+    ],
+    "relatedItems": [
+      "bow"
+    ]
+  },
+  {
+    "id": "ench_thorns",
+    "name": "가시",
+    "emoji": "🌵",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "공격받았을 때 상대에게 반사 피해를 주는 방어구 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "일정 확률로 공격자에게 반사 피해 (최대 3레벨)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "ench_sweeping_edge",
+    "name": "휩쓸기 베기",
+    "emoji": "⚔️",
+    "category": "기타",
+    "subcategory": "인챈트",
+    "description": "휩쓸기 공격의 피해량을 높이는 검 전용 인챈트입니다.",
+    "acquisition": "인챈트 테이블, 모루(인챈트북)에서 획득.",
+    "uses": [
+      "주변 여러 적에게 가하는 휩쓸기 피해 증가 (최대 3레벨)"
+    ],
+    "relatedItems": [
+      "diamond_sword"
+    ]
+  },
+  {
+    "id": "potion_healing",
+    "name": "치유의 물약",
+    "emoji": "❤️",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "체력을 즉시 회복시켜주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 황금 사과(또는 반짝이는 수박 조각)로 양조.",
+    "uses": [
+      "체력 즉시 회복",
+      "언데드 몹에게는 반대로 피해를 줌"
+    ],
+    "relatedItems": [
+      "brewing_stand",
+      "golden_apple"
+    ]
+  },
+  {
+    "id": "potion_regeneration",
+    "name": "재생의 물약",
+    "emoji": "💗",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "일정 시간 동안 체력을 서서히 회복시키는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 가스트의 눈물로 양조.",
+    "uses": [
+      "지속적인 체력 회복 효과"
+    ],
+    "relatedItems": [
+      "ghast_tear",
+      "brewing_stand"
+    ]
+  },
+  {
+    "id": "potion_strength",
+    "name": "힘의 물약",
+    "emoji": "💪",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "근접 공격력을 높여주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 블레이즈 가루로 양조.",
+    "uses": [
+      "근접 공격 피해량 증가"
+    ],
+    "relatedItems": [
+      "blaze_powder"
+    ]
+  },
+  {
+    "id": "potion_swiftness",
+    "name": "신속의 물약",
+    "emoji": "💨",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "이동 속도를 높여주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 설탕으로 양조.",
+    "uses": [
+      "이동 속도 증가"
+    ],
+    "relatedItems": [
+      "sugar"
+    ]
+  },
+  {
+    "id": "potion_fire_resistance",
+    "name": "화염 저항의 물약",
+    "emoji": "🔥",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "화염과 용암 피해를 무효화하는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 마그마 크림으로 양조.",
+    "uses": [
+      "불·용암 피해 완전 무효화"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "potion_water_breathing",
+    "name": "수중 호흡의 물약",
+    "emoji": "🫧",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "물속에서 숨을 쉴 수 있게 해주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 복어로 양조.",
+    "uses": [
+      "수중 호흡 가능, 익사 방지"
+    ],
+    "relatedItems": [
+      "pufferfish"
+    ]
+  },
+  {
+    "id": "potion_night_vision",
+    "name": "야간 투시의 물약",
+    "emoji": "👁️",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "어두운 곳에서도 밝게 볼 수 있게 해주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 당근으로 양조.",
+    "uses": [
+      "어두운 지역/수중 시야 밝게 개선"
+    ],
+    "relatedItems": [
+      "golden_carrot"
+    ]
+  },
+  {
+    "id": "potion_invisibility",
+    "name": "투명화의 물약",
+    "emoji": "🫥",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "몸을 투명하게 만들어주는 물약입니다.",
+    "acquisition": "야간 투시의 물약을 발효된 거미 눈으로 변환해 양조.",
+    "uses": [
+      "몹과 플레이어에게 보이지 않게 됨(장비는 보임)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "potion_poison",
+    "name": "독의 물약",
+    "emoji": "🤢",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "지속적인 독 피해를 주는 투척용 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 거미 눈으로 양조.",
+    "uses": [
+      "적에게 지속 피해(체력 1 이하로는 죽이지 않음)"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "potion_weakness",
+    "name": "나약함의 물약",
+    "emoji": "📉",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "근접 공격력을 낮추는 물약으로, 좀비 주민 치료에 필수입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 발효된 거미 눈으로 양조.",
+    "uses": [
+      "좀비 주민을 일반 주민으로 되돌릴 때 필요"
+    ],
+    "relatedItems": [
+      "zombie_villager"
+    ]
+  },
+  {
+    "id": "potion_slowness",
+    "name": "느려짐의 물약",
+    "emoji": "🐌",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "이동 속도를 낮추는 투척용 물약입니다.",
+    "acquisition": "신속의 물약을 발효된 거미 눈으로 변환해 양조.",
+    "uses": [
+      "적의 이동 속도 저하"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "potion_leaping",
+    "name": "점프 강화의 물약",
+    "emoji": "🦘",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "점프 높이를 크게 늘려주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 토끼 발로 양조.",
+    "uses": [
+      "점프 높이 증가, 낙하 피해는 그대로 받음"
+    ],
+    "relatedItems": [
+      "rabbit"
+    ]
+  },
+  {
+    "id": "potion_luck",
+    "name": "행운의 물약",
+    "emoji": "🍀",
+    "category": "기타",
+    "subcategory": "물약 효과",
+    "description": "낚시·전리품 상자 등에서 더 좋은 결과가 나올 확률을 높여주는 물약입니다.",
+    "acquisition": "양조대에서 어색한 물약 + 토끼 발로 양조(특수 제작 필요).",
+    "uses": [
+      "행운 스탯 증가로 전리품 품질 상승"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "torch",
+    "name": "횃불",
+    "emoji": "🔥",
+    "category": "블록",
+    "subcategory": "조명",
+    "description": "어두운 곳을 밝히고 몹 스폰을 막는 기본 조명 블록입니다.",
+    "acquisition": "석탄(또는 목탄) 1개 + 막대기 1개로 4개 제작.",
+    "uses": [
+      "조명, 몹 자연 스폰 방지",
+      "눈 위에 놓으면 눈을 녹임"
+    ],
+    "relatedItems": [
+      "coal",
+      "stick"
+    ],
+    "recipe": [
+      null,
+      "coal",
+      null,
+      null,
+      "stick",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "redstone_torch",
+    "name": "레드스톤 횃불",
+    "emoji": "🔴",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "항상 레드스톤 신호를 내보내는 회로용 조명 블록입니다.",
+    "acquisition": "레드스톤 가루 1개 + 막대기 1개로 제작.",
+    "uses": [
+      "레드스톤 회로의 기본 신호원",
+      "NOT 게이트(신호 반전 장치) 구성"
+    ],
+    "relatedItems": [
+      "redstone",
+      "stick"
+    ],
+    "recipe": [
+      null,
+      "redstone",
+      null,
+      null,
+      "stick",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "id": "repeater",
+    "name": "레드스톤 중계기",
+    "emoji": "➡️",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "레드스톤 신호를 지연시키거나 한 방향으로만 흐르게 하는 장치입니다.",
+    "acquisition": "레드스톤 횃불 2개 + 돌 3개 + 레드스톤 가루 1개로 제작.",
+    "uses": [
+      "신호 지연(1~4틱)",
+      "신호 방향 고정",
+      "신호 증폭(재전송)"
+    ],
+    "relatedItems": [
+      "redstone_torch",
+      "redstone"
+    ]
+  },
+  {
+    "id": "comparator",
+    "name": "레드스톤 비교기",
+    "emoji": "🔀",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "두 신호를 비교하거나 상자의 내용물 양을 신호로 변환하는 장치입니다.",
+    "acquisition": "레드스톤 횃불 3개 + 석영 1개 + 돌 3개로 제작.",
+    "uses": [
+      "상자/화로 내용물 양 측정",
+      "신호 비교(빼기/비교 모드)"
+    ],
+    "relatedItems": [
+      "redstone_torch"
+    ]
+  },
+  {
+    "id": "observer",
+    "name": "관측기",
+    "emoji": "👁️",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "앞의 블록 변화를 감지해 레드스톤 신호를 내보내는 장치입니다.",
+    "acquisition": "조각난 석재 6개 + 레드스톤 가루 2개 + 네더 사마귀 1개로 제작.",
+    "uses": [
+      "자동 사탕수수/대나무 농장의 수확 감지",
+      "자동 회로 트리거"
+    ],
+    "relatedItems": [
+      "redstone",
+      "nether_wart"
+    ]
+  },
+  {
+    "id": "dispenser",
+    "name": "디스펜서",
+    "emoji": "📤",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "신호를 받으면 내부 아이템을 밖으로 발사하거나 사용하는 장치입니다.",
+    "acquisition": "통나무돌 7개 + 활 1개 + 레드스톤 가루 1개로 제작.",
+    "uses": [
+      "화살/물약 자동 발사",
+      "양동이 자동 사용"
+    ],
+    "relatedItems": [
+      "bow",
+      "redstone"
+    ]
+  },
+  {
+    "id": "dropper",
+    "name": "드로퍼",
+    "emoji": "📦",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "신호를 받으면 내부 아이템을 앞으로 떨어뜨리는 장치입니다.",
+    "acquisition": "통나무돌 7개 + 레드스톤 가루 1개로 제작.",
+    "uses": [
+      "아이템 자동 운반/분배 시스템"
+    ],
+    "relatedItems": [
+      "redstone"
+    ]
+  },
+  {
+    "id": "lever",
+    "name": "레버",
+    "emoji": "🔛",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "손으로 켜고 끌 수 있는 기본 신호 스위치입니다.",
+    "acquisition": "통나무돌 1개 + 막대기 1개로 제작.",
+    "uses": [
+      "수동 On/Off 스위치"
+    ],
+    "relatedItems": [
+      "stick"
+    ]
+  },
+  {
+    "id": "stone_button",
+    "name": "돌 버튼",
+    "emoji": "🔘",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "눌렀을 때 잠깐 신호를 내보내는 버튼입니다.",
+    "acquisition": "돌 1개로 제작.",
+    "uses": [
+      "순간 신호 발생(문 자동 닫힘 등)"
+    ],
+    "relatedItems": [
+      "stone"
+    ]
+  },
+  {
+    "id": "wooden_pressure_plate",
+    "name": "나무 압력판",
+    "emoji": "⬜",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "위에 올라서면 신호를 내보내는 판입니다.",
+    "acquisition": "나무 판자 2개로 제작.",
+    "uses": [
+      "플레이어/몹 감지 트랩·자동문"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "daylight_detector",
+    "name": "태양광 감지기",
+    "emoji": "☀️",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "주변 밝기(낮/밤)에 비례해 신호를 내보내는 장치입니다.",
+    "acquisition": "나무 반블록 3개 + 유리 3개 + 퀴르츠 3개로 제작.",
+    "uses": [
+      "낮/밤에 따라 자동으로 작동하는 장치 제작(가로등 등)"
+    ],
+    "relatedItems": [
+      "glass"
+    ]
+  },
+  {
+    "id": "target_block",
+    "name": "표적 블록",
+    "emoji": "🎯",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "화살이 맞은 정확도에 비례해 신호 세기를 내보내는 블록입니다.",
+    "acquisition": "레드스톤 가루 4개 + 건초 더미 1개로 제작.",
+    "uses": [
+      "활 명중률 트리거, 사격장 미니게임 제작"
+    ],
+    "relatedItems": [
+      "redstone",
+      "arrow"
+    ]
+  },
+  {
+    "id": "note_block",
+    "name": "음표 블록",
+    "emoji": "🎵",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "신호를 받으면 설정된 음을 재생하는 블록입니다.",
+    "acquisition": "나무 판자 8개 + 레드스톤 가루 1개로 제작.",
+    "uses": [
+      "음악 회로 제작",
+      "알레이가 반응해 춤을 춤"
+    ],
+    "relatedItems": [
+      "redstone",
+      "allay"
+    ]
+  },
+  {
+    "id": "jukebox",
+    "name": "주크박스",
+    "emoji": "📀",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "음악 디스크를 넣어 음악을 재생하는 블록입니다.",
+    "acquisition": "나무 판자 8개 + 다이아몬드 1개로 제작.",
+    "uses": [
+      "음악 디스크 재생"
+    ],
+    "relatedItems": [
+      "diamond"
+    ]
+  },
+  {
+    "id": "redstone_lamp",
+    "name": "레드스톤 램프",
+    "emoji": "💡",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "신호를 받을 때만 밝게 빛나는 조명 블록입니다.",
+    "acquisition": "레드스톤 가루 4개 + 발광석 1개로 제작.",
+    "uses": [
+      "신호 연동형 조명"
+    ],
+    "relatedItems": [
+      "redstone"
+    ]
+  },
+  {
+    "id": "sticky_piston",
+    "name": "끈끈이 피스톤",
+    "emoji": "➡️",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "블록을 밀 뿐 아니라 당겨올 수도 있는 피스톤입니다.",
+    "acquisition": "피스톤 1개 + 슬라임볼 1개로 제작.",
+    "uses": [
+      "블록을 밀고 당기는 자동화 장치"
+    ],
+    "relatedItems": [
+      "piston",
+      "slime_ball"
+    ]
+  },
+  {
+    "id": "dye",
+    "name": "염료 (16색)",
+    "emoji": "🎨",
+    "category": "아이템",
+    "subcategory": "재료",
+    "description": "양털·콘크리트·유리 등을 물들이는 데 쓰이는 16가지 색상의 염료입니다.",
+    "acquisition": "꽃·오징어 먹물 등 재료별로 채집하거나 다른 염료를 조합해 만듭니다.",
+    "uses": [
+      "양털/콘크리트/유리/테라코타/카펫/배너 염색",
+      "불꽃놀이 로켓 색상 지정"
+    ],
+    "relatedItems": [
+      "wool",
+      "ink_sac"
+    ]
+  },
+  {
+    "id": "wool",
+    "name": "양털 (16색)",
+    "emoji": "🧶",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "염료로 물들일 수 있는 부드러운 건축 블록으로, 16가지 색상이 있습니다.",
+    "acquisition": "양을 가위로 깎거나 처치해서 얻습니다.",
+    "uses": [
+      "건축/장식",
+      "침대 제작 재료"
+    ],
+    "relatedItems": [
+      "sheep",
+      "dye"
+    ]
+  },
+  {
+    "id": "concrete",
+    "name": "콘크리트 (16색)",
+    "emoji": "🧱",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "콘크리트 가루가 물에 닿아 굳어진 튼튼한 건축 블록으로, 16가지 색상이 있습니다.",
+    "acquisition": "콘크리트 가루(염료+모래+자갈)를 물에 닿게 하면 생성됩니다.",
+    "uses": [
+      "튼튼하고 선명한 색의 건축 재료"
+    ],
+    "relatedItems": [
+      "dye",
+      "sand"
+    ]
+  },
+  {
+    "id": "stained_glass",
+    "name": "색유리 (16색)",
+    "emoji": "🪟",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "색이 있는 투명한 건축 블록으로, 16가지 색상이 있습니다.",
+    "acquisition": "유리 8개 + 염료 1개를 조합해 제작합니다.",
+    "uses": [
+      "색이 있는 창문 등 장식용 건축"
+    ],
+    "relatedItems": [
+      "glass",
+      "dye"
+    ]
+  },
+  {
+    "id": "terracotta",
+    "name": "테라코타 (16색)",
+    "emoji": "🟧",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "점토를 구워 만든 단단한 건축 블록으로, 염료로 물들이면 16가지 색상이 됩니다.",
+    "acquisition": "점토 블록을 제련해 얻고, 염료 8개와 조합해 색을 입힙니다.",
+    "uses": [
+      "건축·장식, 오래가도 색이 바래지 않음"
+    ],
+    "relatedItems": [
+      "dye"
+    ]
+  },
+  {
+    "id": "carpet",
+    "name": "카펫 (16색)",
+    "emoji": "🟫",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "바닥에 까는 얇은 장식용 블록으로, 16가지 색상이 있습니다.",
+    "acquisition": "같은 색 양털 2개로 3개 제작합니다.",
+    "uses": [
+      "바닥 장식",
+      "라마 장식용으로 장착 가능"
+    ],
+    "relatedItems": [
+      "wool"
+    ]
+  },
+  {
+    "id": "bed",
+    "name": "침대 (16색)",
+    "emoji": "🛏️",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "밤에 자서 아침으로 시간을 건너뛰거나 리스폰 지점을 설정하는 블록입니다.",
+    "acquisition": "양털 3개 + 나무 판자 3개로 제작합니다.",
+    "uses": [
+      "수면으로 밤 건너뛰기 및 리스폰 지점 설정",
+      "네더/엔드에서 사용 시 폭발"
+    ],
+    "relatedItems": [
+      "wool"
+    ]
+  },
+  {
+    "id": "banner",
+    "name": "배너 (16색 + 무늬)",
+    "emoji": "🚩",
+    "category": "블록",
+    "subcategory": "장식",
+    "description": "깃발 모양의 장식 블록으로, 무늬를 겹쳐 다양한 디자인을 만들 수 있습니다.",
+    "acquisition": "같은 색 양털 6개 + 막대기 1개로 제작합니다.",
+    "uses": [
+      "장식",
+      "방패에 무늬 복사"
+    ],
+    "relatedItems": [
+      "wool",
+      "shield"
+    ]
+  },
+  {
+    "id": "boat",
+    "name": "보트",
+    "emoji": "🚣",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "물 위를 이동하는 기본 탈것입니다.",
+    "acquisition": "같은 나무 판자 5개로 제작합니다.",
+    "uses": [
+      "수상 이동",
+      "상자 장착형 보트로 화물 운반"
+    ],
+    "relatedItems": []
+  },
+  {
+    "id": "minecart",
+    "name": "광산 수레",
+    "emoji": "🛒",
+    "category": "아이템",
+    "subcategory": "도구",
+    "description": "레일 위를 달리는 기본 탈것입니다.",
+    "acquisition": "철 주괴 5개로 제작합니다.",
+    "uses": [
+      "레일을 따라 빠르게 이동",
+      "화물/화로/상자 장착형으로 확장 가능"
+    ],
+    "relatedItems": [
+      "iron_ingot",
+      "rail"
+    ]
+  },
+  {
+    "id": "rail",
+    "name": "레일",
+    "emoji": "🛤️",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "광산 수레가 달릴 수 있는 기본 선로 블록입니다.",
+    "acquisition": "철 주괴 6개 + 막대기 1개로 16개 제작합니다.",
+    "uses": [
+      "광산 수레 이동 경로 구성"
+    ],
+    "relatedItems": [
+      "iron_ingot",
+      "minecart"
+    ]
+  },
+  {
+    "id": "powered_rail",
+    "name": "동력 레일",
+    "emoji": "🟧",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "레드스톤 신호를 받으면 광산 수레를 가속시키는 레일입니다.",
+    "acquisition": "금 주괴 6개 + 막대기 1개 + 레드스톤 가루 1개로 6개 제작합니다.",
+    "uses": [
+      "광산 수레 가속/감속 구간 구성"
+    ],
+    "relatedItems": [
+      "gold_ingot",
+      "rail"
+    ]
+  },
+  {
+    "id": "detector_rail",
+    "name": "감지 레일",
+    "emoji": "🟨",
+    "category": "블록",
+    "subcategory": "레드스톤",
+    "description": "광산 수레가 지나가면 레드스톤 신호를 보내는 레일입니다.",
+    "acquisition": "철 주괴 6개 + 압력판 1개 + 레드스톤 가루 1개로 6개 제작합니다.",
+    "uses": [
+      "광산 수레 위치 감지, 자동화 트리거"
+    ],
+    "relatedItems": [
+      "iron_ingot",
+      "rail"
+    ]
+  },
+  {
+    "id": "ladder",
+    "name": "사다리",
+    "emoji": "🪜",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "수직으로 오르내릴 수 있게 해주는 블록입니다.",
+    "acquisition": "막대기 7개로 3개 제작합니다.",
+    "uses": [
+      "수직 이동 통로 구성"
+    ],
+    "relatedItems": [
+      "stick"
+    ],
+    "recipe": [
+      "stick",
+      null,
+      "stick",
+      "stick",
+      "stick",
+      "stick",
+      "stick",
+      null,
+      "stick"
+    ]
+  },
+  {
+    "id": "scaffolding",
+    "name": "비계",
+    "emoji": "🪛",
+    "category": "블록",
+    "subcategory": "기능성",
+    "description": "빠르게 오르내릴 수 있고 건축 중 임시로 쓰는 블록입니다.",
+    "acquisition": "대나무 6개 + 실 1개로 6개 제작합니다.",
+    "uses": [
+      "건축용 임시 발판",
+      "위아래로 빠르게 이동"
+    ],
+    "relatedItems": [
+      "bamboo",
+      "string"
+    ]
+  },
+  {
+    "id": "experience_bottle",
+    "name": "경험치 병",
+    "emoji": "🍾",
+    "category": "아이템",
+    "subcategory": "기타",
+    "description": "던지면 깨지면서 경험치를 주는 병입니다.",
+    "acquisition": "주민과의 거래로 얻습니다(제작 불가).",
+    "uses": [
+      "원할 때 경험치 획득"
+    ],
+    "relatedItems": [
+      "villager"
+    ]
+  },
+  {
+    "id": "torchflower",
+    "name": "토치플라워",
+    "emoji": "🌼",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "스니퍼가 발굴해주는 고대 장식용 꽃 작물입니다.",
+    "acquisition": "스니퍼가 땅에서 발굴한 토치플라워 씨앗을 심어 재배합니다.",
+    "uses": [
+      "장식용 꽃",
+      "사냥꾼의 덫 씨앗 제작 재료"
+    ],
+    "relatedItems": [
+      "sniffer"
+    ],
+    "farming": "흙에 씨앗을 심으면 시간이 지나 꽃으로 자랍니다.",
+    "stages": [
+      "🌱 씨앗 심기",
+      "🌿 줄기 자람",
+      "🌼 개화 → 수확"
+    ]
+  },
+  {
+    "id": "glow_berries",
+    "name": "동굴 열매",
+    "emoji": "🫐",
+    "category": "작물",
+    "subcategory": "식물 작물",
+    "description": "발광 덩굴에서 자라는, 빛을 내는 식용 열매입니다.",
+    "acquisition": "무성한 동굴 바이옴의 발광 덩굴에서 채취합니다.",
+    "uses": [
+      "배고픔 소량 회복",
+      "발광 덩굴 심기"
+    ],
+    "relatedItems": [],
+    "farming": "뼛가루로 발광 덩굴을 자라게 하면 계속 채집할 수 있습니다."
+  },
+  {
+    "id": "oak_planks",
+    "name": "참나무 판자",
+    "emoji": "🟫",
+    "category": "블록",
+    "subcategory": "건축",
+    "description": "참나무 원목을 가공해 만드는 기본 건축·제작 재료입니다.",
+    "acquisition": "참나무 원목 1개를 조합대에서 가공해 4개를 얻습니다.",
+    "uses": [
+      "조합대·상자 등 기능 블록 제작",
+      "계단·반블록·문 등 건축 재료"
+    ],
+    "relatedItems": [
+      "oak_log",
+      "crafting_table"
     ]
   }
 ]

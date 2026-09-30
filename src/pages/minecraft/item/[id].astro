@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { MINECRAFT_VERSION } from '../../../utils/minecraft';
 
 export async function getStaticPaths() {
   const items = await getCollection('minecraft');
@@ -15,6 +16,10 @@ const { item } = Astro.props;
 const relatedEntries = (
   await Promise.all((item.data.relatedItems ?? []).map((relId) => getEntry('minecraft', relId)))
 ).filter((entry) => entry !== undefined);
+
+const recipeEntries = item.data.recipe
+  ? await Promise.all(item.data.recipe.map((slotId) => (slotId ? getEntry('minecraft', slotId) : null)))
+  : null;
 ---
 
 <BaseLayout title={item.data.name} description={item.data.description}>
@@ -23,14 +28,22 @@ const relatedEntries = (
       ← 전체 목록으로
     </a>
 
-    <div class="mb-1 text-xs text-neutral-500 dark:text-neutral-400">
-      {item.data.category} · {item.data.subcategory}
-      {item.data.version && ` · v${item.data.version} 추가`}
+    <div class="flex items-start gap-4">
+      <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-neutral-100 text-4xl dark:bg-neutral-900">
+        {item.data.emoji ?? '❔'}
+      </span>
+      <div>
+        <div class="mb-1 text-xs text-neutral-500 dark:text-neutral-400">
+          {item.data.category} · {item.data.subcategory}
+          {' · '}{item.data.version ?? MINECRAFT_VERSION} 기준
+        </div>
+        <h1 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+          {item.data.name}
+        </h1>
+      </div>
     </div>
-    <h1 class="mb-3 text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-      {item.data.name}
-    </h1>
-    <p class="mb-6 text-neutral-700 dark:text-neutral-300">
+
+    <p class="mb-6 mt-4 text-neutral-700 dark:text-neutral-300">
       {item.data.description}
     </p>
 
@@ -50,6 +63,47 @@ const relatedEntries = (
       </section>
     )}
 
+    {item.data.stages && item.data.stages.length > 0 && (
+      <section class="mb-5">
+        <h2 class="mb-2 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+          성장 단계
+        </h2>
+        <div class="flex flex-wrap items-center gap-2">
+          {item.data.stages.map((stage, i) => (
+            <>
+              <span class="rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm text-neutral-700 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">
+                {stage}
+              </span>
+              {i < item.data.stages!.length - 1 && (
+                <span class="text-neutral-300 dark:text-neutral-700">→</span>
+              )}
+            </>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {recipeEntries && (
+      <section class="mb-5">
+        <h2 class="mb-2 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+          제작법
+        </h2>
+        <div class="inline-grid grid-cols-3 gap-1 rounded-lg border border-neutral-200 bg-neutral-50 p-2 dark:border-neutral-800 dark:bg-neutral-900">
+          {recipeEntries.map((slot) => (
+            <span
+              class="flex h-10 w-10 items-center justify-center rounded border border-neutral-200 bg-white text-lg dark:border-neutral-700 dark:bg-neutral-800"
+              title={slot ? slot.data.name : ''}
+            >
+              {slot ? slot.data.emoji ?? '❔' : ''}
+            </span>
+          ))}
+        </div>
+        <p class="mt-2 text-xs text-neutral-400 dark:text-neutral-500">
+          조합대의 3×3 칸에 위 배치대로 놓으면 {item.data.name}이(가) 만들어져요.
+        </p>
+      </section>
+    )}
+
     <section class="mb-5">
       <h2 class="mb-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
         용도
@@ -58,6 +112,21 @@ const relatedEntries = (
         {item.data.uses.map((use) => <li>{use}</li>)}
       </ul>
     </section>
+
+    {item.data.drops && (
+      <section class="mb-5">
+        <h2 class="mb-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+          처치 시 드랍
+        </h2>
+        {item.data.drops.length > 0 ? (
+          <ul class="list-inside list-disc text-sm text-neutral-700 dark:text-neutral-300">
+            {item.data.drops.map((drop) => <li>{drop}</li>)}
+          </ul>
+        ) : (
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">특별한 아이템을 드랍하지 않아요.</p>
+        )}
+      </section>
+    )}
 
     {relatedEntries.length > 0 && (
       <section>
@@ -68,9 +137,10 @@ const relatedEntries = (
           {relatedEntries.map((rel) => (
             <a
               href={`/minecraft/item/${rel!.id}/`}
-              class="rounded-full border border-neutral-300 px-3 py-1 text-sm text-neutral-700 transition-colors hover:border-emerald-500 hover:text-emerald-600 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-emerald-400"
+              class="flex items-center gap-1.5 rounded-full border border-neutral-300 px-3 py-1 text-sm text-neutral-700 transition-colors hover:border-emerald-500 hover:text-emerald-600 dark:border-neutral-700 dark:text-neutral-300 dark:hover:text-emerald-400"
             >
-              {rel!.data.name}
+              <span>{rel!.data.emoji ?? '❔'}</span>
+              <span>{rel!.data.name}</span>
             </a>
           ))}
         </div>

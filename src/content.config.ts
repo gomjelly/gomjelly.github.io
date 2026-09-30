@@ -23,13 +23,17 @@ const study = defineCollection({
 
 const minecraftItemSchema = z.object({
   name: z.string(),
+  emoji: z.string().optional(),
   category: z.enum(['블록', '아이템', '몹', '작물', '기타']),
   subcategory: z.string(),
   description: z.string(),
   acquisition: z.string(),
   uses: z.array(z.string()),
+  drops: z.array(z.string()).optional(),
   relatedItems: z.array(z.string()).default([]),
   farming: z.string().optional(),
+  stages: z.array(z.string()).optional(),
+  recipe: z.array(z.string().nullable()).length(9).optional(),
   version: z.string().optional(),
 });
 
